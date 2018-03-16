@@ -1,0 +1,759 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08556B5DAF2356812AFB3E0A /* Pods_BalticMuseumsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8C00812BC9984925F38AB42 /* Pods_BalticMuseumsTests.framework */; };
+		43198FE8FDDC3C06874E0897 /* Pods_BalticMuseumsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F79FCD2EC0E2CEC4C77CF3 /* Pods_BalticMuseumsUITests.framework */; };
+		764F7630A5AE8932B9AACC09 /* Pods_BalticMuseums.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB09756C1A03984BE6478CC /* Pods_BalticMuseums.framework */; };
+		FB7BBD00205BB33400363510 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7BBCFF205BB33400363510 /* AppDelegate.swift */; };
+		FB7BBD02205BB33400363510 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7BBD01205BB33400363510 /* ViewController.swift */; };
+		FB7BBD05205BB33400363510 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7BBD03205BB33400363510 /* Main.storyboard */; };
+		FB7BBD07205BB33400363510 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7BBD06205BB33400363510 /* Assets.xcassets */; };
+		FB7BBD0A205BB33400363510 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7BBD08205BB33400363510 /* LaunchScreen.storyboard */; };
+		FB7BBD15205BB33500363510 /* BalticMuseumsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7BBD14205BB33500363510 /* BalticMuseumsTests.swift */; };
+		FB7BBD20205BB33500363510 /* BalticMuseumsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7BBD1F205BB33500363510 /* BalticMuseumsUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FB7BBD11205BB33500363510 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB7BBCF4205BB33400363510 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB7BBCFB205BB33400363510;
+			remoteInfo = BalticMuseums;
+		};
+		FB7BBD1C205BB33500363510 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FB7BBCF4205BB33400363510 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB7BBCFB205BB33400363510;
+			remoteInfo = BalticMuseums;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		37F79FCD2EC0E2CEC4C77CF3 /* Pods_BalticMuseumsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BalticMuseumsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CB0065251AC546E215324EC /* Pods-BalticMuseumsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalticMuseumsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BalticMuseumsUITests/Pods-BalticMuseumsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4BB09756C1A03984BE6478CC /* Pods_BalticMuseums.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BalticMuseums.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA2E3808C930B4E9673133B8 /* Pods-BalticMuseumsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalticMuseumsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BalticMuseumsTests/Pods-BalticMuseumsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BD0DA3674D7475E15B81C9BD /* Pods-BalticMuseumsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalticMuseumsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BalticMuseumsUITests/Pods-BalticMuseumsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C46C846EA0BDD3C6326E3261 /* Pods-BalticMuseums.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalticMuseums.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BalticMuseums/Pods-BalticMuseums.debug.xcconfig"; sourceTree = "<group>"; };
+		DA8FBAC8F556CE7D7F4E1265 /* Pods-BalticMuseums.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalticMuseums.release.xcconfig"; path = "Pods/Target Support Files/Pods-BalticMuseums/Pods-BalticMuseums.release.xcconfig"; sourceTree = "<group>"; };
+		DD993EEA447FC89AA3F2A8A0 /* Pods-BalticMuseumsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalticMuseumsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BalticMuseumsTests/Pods-BalticMuseumsTests.release.xcconfig"; sourceTree = "<group>"; };
+		E8C00812BC9984925F38AB42 /* Pods_BalticMuseumsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BalticMuseumsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB7BBCFC205BB33400363510 /* BalticMuseums.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BalticMuseums.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB7BBCFF205BB33400363510 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB7BBD01205BB33400363510 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FB7BBD04205BB33400363510 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB7BBD06205BB33400363510 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FB7BBD09205BB33400363510 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FB7BBD0B205BB33400363510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB7BBD10205BB33500363510 /* BalticMuseumsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BalticMuseumsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB7BBD14205BB33500363510 /* BalticMuseumsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalticMuseumsTests.swift; sourceTree = "<group>"; };
+		FB7BBD16205BB33500363510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB7BBD1B205BB33500363510 /* BalticMuseumsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BalticMuseumsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB7BBD1F205BB33500363510 /* BalticMuseumsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalticMuseumsUITests.swift; sourceTree = "<group>"; };
+		FB7BBD21205BB33500363510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FB7BBCF9205BB33400363510 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				764F7630A5AE8932B9AACC09 /* Pods_BalticMuseums.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB7BBD0D205BB33500363510 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08556B5DAF2356812AFB3E0A /* Pods_BalticMuseumsTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB7BBD18205BB33500363510 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				43198FE8FDDC3C06874E0897 /* Pods_BalticMuseumsUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B4B2357B307248D5A9B4AA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4BB09756C1A03984BE6478CC /* Pods_BalticMuseums.framework */,
+				E8C00812BC9984925F38AB42 /* Pods_BalticMuseumsTests.framework */,
+				37F79FCD2EC0E2CEC4C77CF3 /* Pods_BalticMuseumsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D02394535E18961047A91346 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C46C846EA0BDD3C6326E3261 /* Pods-BalticMuseums.debug.xcconfig */,
+				DA8FBAC8F556CE7D7F4E1265 /* Pods-BalticMuseums.release.xcconfig */,
+				AA2E3808C930B4E9673133B8 /* Pods-BalticMuseumsTests.debug.xcconfig */,
+				DD993EEA447FC89AA3F2A8A0 /* Pods-BalticMuseumsTests.release.xcconfig */,
+				BD0DA3674D7475E15B81C9BD /* Pods-BalticMuseumsUITests.debug.xcconfig */,
+				3CB0065251AC546E215324EC /* Pods-BalticMuseumsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FB7BBCF3205BB33400363510 = {
+			isa = PBXGroup;
+			children = (
+				FB7BBCFE205BB33400363510 /* BalticMuseums */,
+				FB7BBD13205BB33500363510 /* BalticMuseumsTests */,
+				FB7BBD1E205BB33500363510 /* BalticMuseumsUITests */,
+				FB7BBCFD205BB33400363510 /* Products */,
+				D02394535E18961047A91346 /* Pods */,
+				5B4B2357B307248D5A9B4AA3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FB7BBCFD205BB33400363510 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FB7BBCFC205BB33400363510 /* BalticMuseums.app */,
+				FB7BBD10205BB33500363510 /* BalticMuseumsTests.xctest */,
+				FB7BBD1B205BB33500363510 /* BalticMuseumsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FB7BBCFE205BB33400363510 /* BalticMuseums */ = {
+			isa = PBXGroup;
+			children = (
+				FB7BBCFF205BB33400363510 /* AppDelegate.swift */,
+				FB7BBD01205BB33400363510 /* ViewController.swift */,
+				FB7BBD03205BB33400363510 /* Main.storyboard */,
+				FB7BBD06205BB33400363510 /* Assets.xcassets */,
+				FB7BBD08205BB33400363510 /* LaunchScreen.storyboard */,
+				FB7BBD0B205BB33400363510 /* Info.plist */,
+			);
+			path = BalticMuseums;
+			sourceTree = "<group>";
+		};
+		FB7BBD13205BB33500363510 /* BalticMuseumsTests */ = {
+			isa = PBXGroup;
+			children = (
+				FB7BBD14205BB33500363510 /* BalticMuseumsTests.swift */,
+				FB7BBD16205BB33500363510 /* Info.plist */,
+			);
+			path = BalticMuseumsTests;
+			sourceTree = "<group>";
+		};
+		FB7BBD1E205BB33500363510 /* BalticMuseumsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FB7BBD1F205BB33500363510 /* BalticMuseumsUITests.swift */,
+				FB7BBD21205BB33500363510 /* Info.plist */,
+			);
+			path = BalticMuseumsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FB7BBCFB205BB33400363510 /* BalticMuseums */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB7BBD24205BB33500363510 /* Build configuration list for PBXNativeTarget "BalticMuseums" */;
+			buildPhases = (
+				A08DBB0F61C9C5EF7C48DC5F /* [CP] Check Pods Manifest.lock */,
+				FB7BBCF8205BB33400363510 /* Sources */,
+				FB7BBCF9205BB33400363510 /* Frameworks */,
+				FB7BBCFA205BB33400363510 /* Resources */,
+				71063E84155FA6EE09FAF24D /* [CP] Embed Pods Frameworks */,
+				B32BFD287A0993811BA7183F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BalticMuseums;
+			productName = BalticMuseums;
+			productReference = FB7BBCFC205BB33400363510 /* BalticMuseums.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FB7BBD0F205BB33500363510 /* BalticMuseumsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB7BBD27205BB33500363510 /* Build configuration list for PBXNativeTarget "BalticMuseumsTests" */;
+			buildPhases = (
+				01A6931505D0195E00E28DDA /* [CP] Check Pods Manifest.lock */,
+				FB7BBD0C205BB33500363510 /* Sources */,
+				FB7BBD0D205BB33500363510 /* Frameworks */,
+				FB7BBD0E205BB33500363510 /* Resources */,
+				14F9B19657B91B1B8A72847F /* [CP] Embed Pods Frameworks */,
+				CB46C1CFF01666757D8F2301 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB7BBD12205BB33500363510 /* PBXTargetDependency */,
+			);
+			name = BalticMuseumsTests;
+			productName = BalticMuseumsTests;
+			productReference = FB7BBD10205BB33500363510 /* BalticMuseumsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FB7BBD1A205BB33500363510 /* BalticMuseumsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FB7BBD2A205BB33500363510 /* Build configuration list for PBXNativeTarget "BalticMuseumsUITests" */;
+			buildPhases = (
+				669BBF49D9B7CDC63A5D20DA /* [CP] Check Pods Manifest.lock */,
+				FB7BBD17205BB33500363510 /* Sources */,
+				FB7BBD18205BB33500363510 /* Frameworks */,
+				FB7BBD19205BB33500363510 /* Resources */,
+				08C4C98D8F23963914FA01C1 /* [CP] Embed Pods Frameworks */,
+				28F09E7C1F7F23F0BDE38B00 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FB7BBD1D205BB33500363510 /* PBXTargetDependency */,
+			);
+			name = BalticMuseumsUITests;
+			productName = BalticMuseumsUITests;
+			productReference = FB7BBD1B205BB33500363510 /* BalticMuseumsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FB7BBCF4205BB33400363510 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Grzegorz Sagadyn";
+				TargetAttributes = {
+					FB7BBCFB205BB33400363510 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					FB7BBD0F205BB33500363510 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FB7BBCFB205BB33400363510;
+					};
+					FB7BBD1A205BB33500363510 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FB7BBCFB205BB33400363510;
+					};
+				};
+			};
+			buildConfigurationList = FB7BBCF7205BB33400363510 /* Build configuration list for PBXProject "BalticMuseums" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FB7BBCF3205BB33400363510;
+			productRefGroup = FB7BBCFD205BB33400363510 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB7BBCFB205BB33400363510 /* BalticMuseums */,
+				FB7BBD0F205BB33500363510 /* BalticMuseumsTests */,
+				FB7BBD1A205BB33500363510 /* BalticMuseumsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FB7BBCFA205BB33400363510 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB7BBD0A205BB33400363510 /* LaunchScreen.storyboard in Resources */,
+				FB7BBD07205BB33400363510 /* Assets.xcassets in Resources */,
+				FB7BBD05205BB33400363510 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB7BBD0E205BB33500363510 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB7BBD19205BB33500363510 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		01A6931505D0195E00E28DDA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BalticMuseumsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		08C4C98D8F23963914FA01C1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BalticMuseumsUITests/Pods-BalticMuseumsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		14F9B19657B91B1B8A72847F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BalticMuseumsTests/Pods-BalticMuseumsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28F09E7C1F7F23F0BDE38B00 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BalticMuseumsUITests/Pods-BalticMuseumsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		669BBF49D9B7CDC63A5D20DA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BalticMuseumsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71063E84155FA6EE09FAF24D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BalticMuseums/Pods-BalticMuseums-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A08DBB0F61C9C5EF7C48DC5F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BalticMuseums-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B32BFD287A0993811BA7183F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BalticMuseums/Pods-BalticMuseums-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB46C1CFF01666757D8F2301 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BalticMuseumsTests/Pods-BalticMuseumsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FB7BBCF8205BB33400363510 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB7BBD02205BB33400363510 /* ViewController.swift in Sources */,
+				FB7BBD00205BB33400363510 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB7BBD0C205BB33500363510 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB7BBD15205BB33500363510 /* BalticMuseumsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB7BBD17205BB33500363510 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FB7BBD20205BB33500363510 /* BalticMuseumsUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FB7BBD12205BB33500363510 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB7BBCFB205BB33400363510 /* BalticMuseums */;
+			targetProxy = FB7BBD11205BB33500363510 /* PBXContainerItemProxy */;
+		};
+		FB7BBD1D205BB33500363510 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FB7BBCFB205BB33400363510 /* BalticMuseums */;
+			targetProxy = FB7BBD1C205BB33500363510 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FB7BBD03205BB33400363510 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB7BBD04205BB33400363510 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FB7BBD08205BB33400363510 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FB7BBD09205BB33400363510 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FB7BBD22205BB33500363510 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FB7BBD23205BB33500363510 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FB7BBD25205BB33500363510 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C46C846EA0BDD3C6326E3261 /* Pods-BalticMuseums.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BalticMuseums/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.hackathon.BalticMuseums;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FB7BBD26205BB33500363510 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA8FBAC8F556CE7D7F4E1265 /* Pods-BalticMuseums.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BalticMuseums/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.hackathon.BalticMuseums;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FB7BBD28205BB33500363510 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA2E3808C930B4E9673133B8 /* Pods-BalticMuseumsTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BalticMuseumsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.hackathon.BalticMuseumsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BalticMuseums.app/BalticMuseums";
+			};
+			name = Debug;
+		};
+		FB7BBD29205BB33500363510 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD993EEA447FC89AA3F2A8A0 /* Pods-BalticMuseumsTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BalticMuseumsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.hackathon.BalticMuseumsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BalticMuseums.app/BalticMuseums";
+			};
+			name = Release;
+		};
+		FB7BBD2B205BB33500363510 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD0DA3674D7475E15B81C9BD /* Pods-BalticMuseumsUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BalticMuseumsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.hackathon.BalticMuseumsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BalticMuseums;
+			};
+			name = Debug;
+		};
+		FB7BBD2C205BB33500363510 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CB0065251AC546E215324EC /* Pods-BalticMuseumsUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = BalticMuseumsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = pl.hackathon.BalticMuseumsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BalticMuseums;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FB7BBCF7205BB33400363510 /* Build configuration list for PBXProject "BalticMuseums" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB7BBD22205BB33500363510 /* Debug */,
+				FB7BBD23205BB33500363510 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB7BBD24205BB33500363510 /* Build configuration list for PBXNativeTarget "BalticMuseums" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB7BBD25205BB33500363510 /* Debug */,
+				FB7BBD26205BB33500363510 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB7BBD27205BB33500363510 /* Build configuration list for PBXNativeTarget "BalticMuseumsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB7BBD28205BB33500363510 /* Debug */,
+				FB7BBD29205BB33500363510 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FB7BBD2A205BB33500363510 /* Build configuration list for PBXNativeTarget "BalticMuseumsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB7BBD2B205BB33500363510 /* Debug */,
+				FB7BBD2C205BB33500363510 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FB7BBCF4205BB33400363510 /* Project object */;
+}
