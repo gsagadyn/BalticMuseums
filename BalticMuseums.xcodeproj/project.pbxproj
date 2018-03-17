@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75842DDA205D4C7200877A1A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DD9205D4C7200877A1A /* MapView.swift */; };
+		75842DDC205D4E3500877A1A /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75842DDB205D4E3500877A1A /* MapView.xib */; };
 		764F7630A5AE8932B9AACC09 /* Pods_BalticMuseums.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB09756C1A03984BE6478CC /* Pods_BalticMuseums.framework */; };
 		933D5AF6205D45F500E7D107 /* ViewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5AF5205D45F500E7D107 /* ViewStore.swift */; };
 		933D5B00205D467200E7D107 /* Tab1Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5AFC205D467200E7D107 /* Tab1Navigator.swift */; };
@@ -36,6 +38,8 @@
 		37F79FCD2EC0E2CEC4C77CF3 /* Pods_BalticMuseumsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BalticMuseumsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CB0065251AC546E215324EC /* Pods-BalticMuseumsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalticMuseumsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BalticMuseumsUITests/Pods-BalticMuseumsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4BB09756C1A03984BE6478CC /* Pods_BalticMuseums.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BalticMuseums.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		75842DD9205D4C7200877A1A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		75842DDB205D4E3500877A1A /* MapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
 		933D5AF5205D45F500E7D107 /* ViewStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStore.swift; sourceTree = "<group>"; };
 		933D5AFC205D467200E7D107 /* Tab1Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1Navigator.swift; sourceTree = "<group>"; };
 		933D5AFD205D467200E7D107 /* Tab1Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1Presenter.swift; sourceTree = "<group>"; };
@@ -138,6 +142,8 @@
 				933D5AFC205D467200E7D107 /* Tab1Navigator.swift */,
 				933D5AFD205D467200E7D107 /* Tab1Presenter.swift */,
 				933D5AFF205D467200E7D107 /* Tab1ViewController.swift */,
+				75842DD9205D4C7200877A1A /* MapView.swift */,
+				75842DDB205D4E3500877A1A /* MapView.xib */,
 			);
 			path = Tab1;
 			sourceTree = "<group>";
@@ -298,6 +304,7 @@
 				933D5B1B205D469400E7D107 /* Tab4ViewController.storyboard in Resources */,
 				FB7BBD05205BB33400363510 /* TabBarViewController.storyboard in Resources */,
 				933D5B02205D467200E7D107 /* Tab1ViewController.storyboard in Resources */,
+				75842DDC205D4E3500877A1A /* MapView.xib in Resources */,
 				933D5B0A205D467D00E7D107 /* Tab2ViewController.storyboard in Resources */,
 				933D5B12205D468700E7D107 /* Tab3ViewController.storyboard in Resources */,
 			);
@@ -349,7 +356,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		B32BFD287A0993811BA7183F /* [CP] Copy Pods Resources */ = {
@@ -375,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				933D5B13205D468700E7D107 /* Tab3ViewController.swift in Sources */,
+				75842DDA205D4C7200877A1A /* MapView.swift in Sources */,
 				933D5B03205D467200E7D107 /* Tab1ViewController.swift in Sources */,
 				933D5B1C205D469400E7D107 /* Tab4ViewController.swift in Sources */,
 				933D5B01205D467200E7D107 /* Tab1Presenter.swift in Sources */,
