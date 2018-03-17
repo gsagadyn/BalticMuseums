@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,15 +25,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="EXPERYMENT Quiz" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91D-VW-sx5">
-                                <rect key="frame" x="60" y="58" width="256" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="30"/>
-                                <nil key="textColor"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="experyment_logo_black" translatesAutoresizingMaskIntoConstraints="NO" id="3os-Sy-5d4">
+                                <rect key="frame" x="37" y="40" width="300" height="71.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3os-Sy-5d4" secondAttribute="height" multiplier="4.2" id="VWK-Q3-Cu3"/>
+                                    <constraint firstAttribute="width" constant="300" id="jOa-k4-QUt"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quiz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aTm-A6-GBu">
+                                <rect key="frame" x="198" y="85" width="67.5" height="37"/>
+                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="31"/>
+                                <color key="textColor" name="main"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aTm-A6-GBu" firstAttribute="leading" secondItem="3os-Sy-5d4" secondAttribute="leading" constant="161" id="9Qv-Dt-Xul"/>
+                            <constraint firstItem="3os-Sy-5d4" firstAttribute="centerX" secondItem="KDa-7W-dlX" secondAttribute="centerX" id="ZKf-Fd-G4O"/>
+                            <constraint firstItem="3os-Sy-5d4" firstAttribute="top" secondItem="jU0-EV-19J" secondAttribute="top" constant="20" id="cJi-a5-1mQ"/>
+                            <constraint firstItem="aTm-A6-GBu" firstAttribute="top" secondItem="3os-Sy-5d4" secondAttribute="top" constant="45" id="gbt-aE-azl"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="jU0-EV-19J"/>
                     </view>
                 </viewController>
@@ -40,4 +54,10 @@
             <point key="canvasLocation" x="348" y="115.59220389805098"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="experyment_logo_black" width="591" height="140"/>
+        <namedColor name="main">
+            <color red="0.0" green="0.41200000047683716" blue="0.85100001096725464" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>

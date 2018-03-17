@@ -13,6 +13,6 @@ class Tab4ViewController: UserInterfaceLayer.Controller<Tab4Presenter>, UIStoryb
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor(named: "main")
+//        view.backgroundColor = UIColor(named: "main")
     }
 }
