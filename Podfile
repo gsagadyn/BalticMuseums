@@ -11,6 +11,7 @@ def shared_pods
     pod 'SnapKit'
     pod 'RxOptional'
     pod 'IQKeyboardManagerSwift'
+    pod 'EstimoteSDK', '~> 4.27.0'
 end
 
 target 'BalticMuseums' do

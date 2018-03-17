@@ -63,6 +63,7 @@
 		933D5BE0205D517900E7D107 /* UINavigationController+PopToClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5BBD205D517900E7D107 /* UINavigationController+PopToClass.swift */; };
 		933D5BE1205D517900E7D107 /* UITableView+ReloadDataAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5BBF205D517900E7D107 /* UITableView+ReloadDataAnimation.swift */; };
 		933D5BE2205D517900E7D107 /* UITableView+DequeueReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5BC0205D517900E7D107 /* UITableView+DequeueReusableCell.swift */; };
+		933D5BE6205D671E00E7D107 /* EstimoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5BE5205D671E00E7D107 /* EstimoteService.swift */; };
 		FB7BBD00205BB33400363510 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7BBCFF205BB33400363510 /* AppDelegate.swift */; };
 		FB7BBD02205BB33400363510 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7BBD01205BB33400363510 /* TabBarViewController.swift */; };
 		FB7BBD05205BB33400363510 /* TabBarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7BBD03205BB33400363510 /* TabBarViewController.storyboard */; };
@@ -130,6 +131,8 @@
 		933D5BBD205D517900E7D107 /* UINavigationController+PopToClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+PopToClass.swift"; sourceTree = "<group>"; };
 		933D5BBF205D517900E7D107 /* UITableView+ReloadDataAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+ReloadDataAnimation.swift"; sourceTree = "<group>"; };
 		933D5BC0205D517900E7D107 /* UITableView+DequeueReusableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+DequeueReusableCell.swift"; sourceTree = "<group>"; };
+		933D5BE5205D671E00E7D107 /* EstimoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimoteService.swift; sourceTree = "<group>"; };
+		933D5BE7205D712A00E7D107 /* ObjCBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCBridge.h; sourceTree = "<group>"; };
 		AA2E3808C930B4E9673133B8 /* Pods-BalticMuseumsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalticMuseumsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BalticMuseumsTests/Pods-BalticMuseumsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BD0DA3674D7475E15B81C9BD /* Pods-BalticMuseumsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalticMuseumsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BalticMuseumsUITests/Pods-BalticMuseumsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C46C846EA0BDD3C6326E3261 /* Pods-BalticMuseums.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalticMuseums.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BalticMuseums/Pods-BalticMuseums.debug.xcconfig"; sourceTree = "<group>"; };
@@ -261,6 +264,7 @@
 		933D5B1D205D47E000E7D107 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				933D5BE7205D712A00E7D107 /* ObjCBridge.h */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -276,6 +280,7 @@
 		933D5B7F205D515300E7D107 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				933D5BE4205D670F00E7D107 /* Estimote */,
 				933D5BA5205D517900E7D107 /* Layout */,
 				933D5B88205D517900E7D107 /* Tools */,
 			);
@@ -498,6 +503,14 @@
 			path = UITableView;
 			sourceTree = "<group>";
 		};
+		933D5BE4205D670F00E7D107 /* Estimote */ = {
+			isa = PBXGroup;
+			children = (
+				933D5BE5205D671E00E7D107 /* EstimoteService.swift */,
+			);
+			path = Estimote;
+			sourceTree = "<group>";
+		};
 		D02394535E18961047A91346 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -714,6 +727,7 @@
 				933D5BD6205D517900E7D107 /* UIApplication+HeadViewController.swift in Sources */,
 				933D5B0B205D467D00E7D107 /* Tab2ViewController.swift in Sources */,
 				FB7BBD02205BB33400363510 /* TabBarViewController.swift in Sources */,
+				933D5BE6205D671E00E7D107 /* EstimoteService.swift in Sources */,
 				933D5BC9205D517900E7D107 /* String+Localizable.swift in Sources */,
 				933D5BE0205D517900E7D107 /* UINavigationController+PopToClass.swift in Sources */,
 				75842DE8205D9C2000877A1A /* ExhibitionDetailHeaderView.swift in Sources */,
@@ -888,6 +902,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.hackathon.BalticMuseums;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/Supporting Files/Resources/ObjCBridge.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -904,6 +919,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.hackathon.BalticMuseums;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/Supporting Files/Resources/ObjCBridge.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

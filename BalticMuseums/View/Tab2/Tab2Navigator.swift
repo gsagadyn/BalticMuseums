@@ -1,5 +1,5 @@
 //
-//  Tab2Navigator.swift
+//  Tab3Navigator.swift
 //  BalticMuseums
 //
 //  Created by Kamil Szuba on 17.03.2018.
@@ -11,6 +11,6 @@ import Snapify
 
 class Tab2Navigator: NavigatorLayer {
     
-    // Add Tab2Navigator implementation here.
+    // Add Tab3Navigator implementation here.
     
 }
