@@ -67,8 +67,8 @@ class MapView: UIView {
 				}
 				
 				let pulseAnimation = CABasicAnimation(keyPath: #keyPath(CALayer.opacity))
-				pulseAnimation.duration = 1
-				pulseAnimation.fromValue = 0.3
+				pulseAnimation.duration = 0.7
+				pulseAnimation.fromValue = 0.1
 				pulseAnimation.toValue = 1
 				pulseAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
 				pulseAnimation.autoreverses = true

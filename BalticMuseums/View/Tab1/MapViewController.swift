@@ -9,12 +9,13 @@
 import UIKit
 import Snapify
 
-class MapViewController: UserInterfaceLayer.Controller<Tab1Presenter>, UIStoryboardInstantiate, MapViewDelegate, UIScrollViewDelegate, MapViewBarViewControllerDelegate {
+class MapViewController: UserInterfaceLayer.Controller<Tab1Presenter>, UIStoryboardInstantiate, MapViewDelegate, UIScrollViewDelegate, MapViewBarViewControllerDelegate, EstimoteServiceDelegate {
 	
 	@IBOutlet weak var mapView: MapView!
 	@IBOutlet weak var scrollView: UIScrollView!
 	@IBOutlet weak var bottomConstraint: NSLayoutConstraint!
 	
+	let estimoteService = EstimoteService()
 	var mapViewBarViewController: MapViewBarViewController?
 	
     override func viewDidLoad() {
@@ -33,15 +34,9 @@ class MapViewController: UserInterfaceLayer.Controller<Tab1Presenter>, UIStorybo
 		
 		bottomConstraint.constant = -70
 		view.setNeedsDisplay()
-    }
-	
-	override func viewDidAppear(_ animated: Bool) {
-		super.viewDidAppear(animated)
 		
-		Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { (Timer) in
-			self.mapView.selectedExibition = Exhibition(rawValue: Int(arc4random() % 19))
-		}
-	}
+		estimoteService.delegate = self
+    }
 	
 	func didSelectExhibition(exhibition: UIImageView) {
 		scrollView.zoom(to: exhibition.frame, animated: true)
@@ -90,5 +85,26 @@ class MapViewController: UserInterfaceLayer.Controller<Tab1Presenter>, UIStorybo
 			self.view.layoutIfNeeded()
 		}, completion: nil)
 	}
+	
+	func didChangedAuthorizaiton(status: CLAuthorizationStatus) {
+		
+	}
+	
+	func didFindBeaconZone() {
+		
+	}
+	
+	func didDiscover(beaconId: Int) {
+		if beaconId == 9294 {
+			mapView.selectedExibition = Exhibition.Hydro
+		} else if beaconId == 9000 {
+			mapView.selectedExibition = Exhibition.Health
+		}
+	}
+	
+	func didLoseBeaconZone() {
+		
+	}
+	
 	
 }
