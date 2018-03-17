@@ -9,10 +9,22 @@
 import UIKit
 import Snapify
 
-class Tab4ViewController: UserInterfaceLayer.Controller<Tab4Presenter>, UIStoryboardInstantiate {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-//        view.backgroundColor = UIColor(named: "main")
+let currentUsername = "Baltathon"
+
+class Tab4ViewController: UIViewController, UIStoryboardInstantiate {
+    
+    @IBOutlet private weak var scoreLabel: UILabel!
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let quizVC = segue.destination as? QuizViewController {
+            quizVC.deletage = self
+        }
+    }
+}
+
+extension Tab4ViewController: QuizViewControllerDelegate {
+    func quizViewController(_ quizViewController: QuizViewController, didReturn score: Int) {
+        scoreLabel.text = "\(score)"
+        QuizService.addQuizHighscore(username: currentUsername, score: score)
     }
 }
