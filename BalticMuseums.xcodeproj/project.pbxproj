@@ -64,6 +64,7 @@
 		FB7BBD05205BB33400363510 /* TabBarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7BBD03205BB33400363510 /* TabBarViewController.storyboard */; };
 		FB7BBD07205BB33400363510 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7BBD06205BB33400363510 /* Assets.xcassets */; };
 		FB7BBD0A205BB33400363510 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7BBD08205BB33400363510 /* LaunchScreen.storyboard */; };
+		FBCDF039205D74DD0016100D /* CIQRCodeDescriptor+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCDF038205D74DD0016100D /* CIQRCodeDescriptor+Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -134,6 +135,7 @@
 		FB7BBD06205BB33400363510 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB7BBD09205BB33400363510 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB7BBD0B205BB33400363510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBCDF038205D74DD0016100D /* CIQRCodeDescriptor+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CIQRCodeDescriptor+Data.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +228,7 @@
 		933D5AFA205D463300E7D107 /* Tab3 */ = {
 			isa = PBXGroup;
 			children = (
+				FBCDF037205D74CC0016100D /* Tools */,
 				933D5B0E205D468700E7D107 /* Tab3ViewController.storyboard */,
 				933D5B0F205D468700E7D107 /* Tab3ViewController.swift */,
 			);
@@ -525,6 +528,14 @@
 			path = BalticMuseums;
 			sourceTree = "<group>";
 		};
+		FBCDF037205D74CC0016100D /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				FBCDF038205D74DD0016100D /* CIQRCodeDescriptor+Data.swift */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -675,6 +686,7 @@
 				933D5BDD205D517900E7D107 /* UINavigationBar+Appearance.swift in Sources */,
 				933D5BCF205D517900E7D107 /* CollectionViewSection.swift in Sources */,
 				933D5BC3205D517900E7D107 /* TextFieldFormatter.swift in Sources */,
+				FBCDF039205D74DD0016100D /* CIQRCodeDescriptor+Data.swift in Sources */,
 				933D5BDB205D517900E7D107 /* UICollectionView+ReloadDataAnimation.swift in Sources */,
 				75842DDA205D4C7200877A1A /* MapView.swift in Sources */,
 				933D5B03205D467200E7D107 /* Tab1ViewController.swift in Sources */,
