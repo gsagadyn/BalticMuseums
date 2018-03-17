@@ -8,9 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		764F7630A5AE8932B9AACC09 /* Pods_BalticMuseums.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB09756C1A03984BE6478CC /* Pods_BalticMuseums.framework */; };
+		933D5AF6205D45F500E7D107 /* ViewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5AF5205D45F500E7D107 /* ViewStore.swift */; };
+		933D5B00205D467200E7D107 /* Tab1Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5AFC205D467200E7D107 /* Tab1Navigator.swift */; };
+		933D5B01205D467200E7D107 /* Tab1Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5AFD205D467200E7D107 /* Tab1Presenter.swift */; };
+		933D5B02205D467200E7D107 /* Tab1ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 933D5AFE205D467200E7D107 /* Tab1ViewController.storyboard */; };
+		933D5B03205D467200E7D107 /* Tab1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5AFF205D467200E7D107 /* Tab1ViewController.swift */; };
+		933D5B08205D467D00E7D107 /* Tab2Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5B04205D467D00E7D107 /* Tab2Navigator.swift */; };
+		933D5B09205D467D00E7D107 /* Tab2Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5B05205D467D00E7D107 /* Tab2Presenter.swift */; };
+		933D5B0A205D467D00E7D107 /* Tab2ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 933D5B06205D467D00E7D107 /* Tab2ViewController.storyboard */; };
+		933D5B0B205D467D00E7D107 /* Tab2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5B07205D467D00E7D107 /* Tab2ViewController.swift */; };
+		933D5B10205D468700E7D107 /* Tab3Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5B0C205D468700E7D107 /* Tab3Navigator.swift */; };
+		933D5B11205D468700E7D107 /* Tab3Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5B0D205D468700E7D107 /* Tab3Presenter.swift */; };
+		933D5B12205D468700E7D107 /* Tab3ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 933D5B0E205D468700E7D107 /* Tab3ViewController.storyboard */; };
+		933D5B13205D468700E7D107 /* Tab3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5B0F205D468700E7D107 /* Tab3ViewController.swift */; };
+		933D5B19205D469400E7D107 /* Tab4Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5B15205D469400E7D107 /* Tab4Navigator.swift */; };
+		933D5B1A205D469400E7D107 /* Tab4Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5B16205D469400E7D107 /* Tab4Presenter.swift */; };
+		933D5B1B205D469400E7D107 /* Tab4ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 933D5B17205D469400E7D107 /* Tab4ViewController.storyboard */; };
+		933D5B1C205D469400E7D107 /* Tab4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5B18205D469400E7D107 /* Tab4ViewController.swift */; };
 		FB7BBD00205BB33400363510 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7BBCFF205BB33400363510 /* AppDelegate.swift */; };
-		FB7BBD02205BB33400363510 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7BBD01205BB33400363510 /* ViewController.swift */; };
-		FB7BBD05205BB33400363510 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7BBD03205BB33400363510 /* Main.storyboard */; };
+		FB7BBD02205BB33400363510 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7BBD01205BB33400363510 /* TabBarViewController.swift */; };
+		FB7BBD05205BB33400363510 /* TabBarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7BBD03205BB33400363510 /* TabBarViewController.storyboard */; };
 		FB7BBD07205BB33400363510 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7BBD06205BB33400363510 /* Assets.xcassets */; };
 		FB7BBD0A205BB33400363510 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7BBD08205BB33400363510 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -19,6 +36,23 @@
 		37F79FCD2EC0E2CEC4C77CF3 /* Pods_BalticMuseumsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BalticMuseumsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CB0065251AC546E215324EC /* Pods-BalticMuseumsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalticMuseumsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BalticMuseumsUITests/Pods-BalticMuseumsUITests.release.xcconfig"; sourceTree = "<group>"; };
 		4BB09756C1A03984BE6478CC /* Pods_BalticMuseums.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BalticMuseums.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		933D5AF5205D45F500E7D107 /* ViewStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStore.swift; sourceTree = "<group>"; };
+		933D5AFC205D467200E7D107 /* Tab1Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1Navigator.swift; sourceTree = "<group>"; };
+		933D5AFD205D467200E7D107 /* Tab1Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1Presenter.swift; sourceTree = "<group>"; };
+		933D5AFE205D467200E7D107 /* Tab1ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tab1ViewController.storyboard; sourceTree = "<group>"; };
+		933D5AFF205D467200E7D107 /* Tab1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1ViewController.swift; sourceTree = "<group>"; };
+		933D5B04205D467D00E7D107 /* Tab2Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2Navigator.swift; sourceTree = "<group>"; };
+		933D5B05205D467D00E7D107 /* Tab2Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2Presenter.swift; sourceTree = "<group>"; };
+		933D5B06205D467D00E7D107 /* Tab2ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tab2ViewController.storyboard; sourceTree = "<group>"; };
+		933D5B07205D467D00E7D107 /* Tab2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2ViewController.swift; sourceTree = "<group>"; };
+		933D5B0C205D468700E7D107 /* Tab3Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab3Navigator.swift; sourceTree = "<group>"; };
+		933D5B0D205D468700E7D107 /* Tab3Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab3Presenter.swift; sourceTree = "<group>"; };
+		933D5B0E205D468700E7D107 /* Tab3ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tab3ViewController.storyboard; sourceTree = "<group>"; };
+		933D5B0F205D468700E7D107 /* Tab3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab3ViewController.swift; sourceTree = "<group>"; };
+		933D5B15205D469400E7D107 /* Tab4Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab4Navigator.swift; sourceTree = "<group>"; };
+		933D5B16205D469400E7D107 /* Tab4Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab4Presenter.swift; sourceTree = "<group>"; };
+		933D5B17205D469400E7D107 /* Tab4ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tab4ViewController.storyboard; sourceTree = "<group>"; };
+		933D5B18205D469400E7D107 /* Tab4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab4ViewController.swift; sourceTree = "<group>"; };
 		AA2E3808C930B4E9673133B8 /* Pods-BalticMuseumsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalticMuseumsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BalticMuseumsTests/Pods-BalticMuseumsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BD0DA3674D7475E15B81C9BD /* Pods-BalticMuseumsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalticMuseumsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BalticMuseumsUITests/Pods-BalticMuseumsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C46C846EA0BDD3C6326E3261 /* Pods-BalticMuseums.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalticMuseums.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BalticMuseums/Pods-BalticMuseums.debug.xcconfig"; sourceTree = "<group>"; };
@@ -27,8 +61,8 @@
 		E8C00812BC9984925F38AB42 /* Pods_BalticMuseumsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BalticMuseumsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB7BBCFC205BB33400363510 /* BalticMuseums.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BalticMuseums.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB7BBCFF205BB33400363510 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FB7BBD01205BB33400363510 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FB7BBD04205BB33400363510 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB7BBD01205BB33400363510 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		FB7BBD04205BB33400363510 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TabBarViewController.storyboard; sourceTree = "<group>"; };
 		FB7BBD06205BB33400363510 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB7BBD09205BB33400363510 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB7BBD0B205BB33400363510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,6 +88,106 @@
 				37F79FCD2EC0E2CEC4C77CF3 /* Pods_BalticMuseumsUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		933D5AF2205D45C200E7D107 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				933D5AF7205D462000E7D107 /* TabBar */,
+				933D5AF8205D462700E7D107 /* Tab1 */,
+				933D5AF9205D463100E7D107 /* Tab2 */,
+				933D5AFA205D463300E7D107 /* Tab3 */,
+				933D5AFB205D463600E7D107 /* Tab4 */,
+				933D5AF5205D45F500E7D107 /* ViewStore.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		933D5AF3205D45C900E7D107 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				FB7BBCFF205BB33400363510 /* AppDelegate.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		933D5AF4205D45D000E7D107 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				933D5B1D205D47E000E7D107 /* Resources */,
+				933D5B1E205D47FB00E7D107 /* Plist */,
+				FB7BBD08205BB33400363510 /* LaunchScreen.storyboard */,
+				FB7BBD0B205BB33400363510 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		933D5AF7205D462000E7D107 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				FB7BBD03205BB33400363510 /* TabBarViewController.storyboard */,
+				FB7BBD01205BB33400363510 /* TabBarViewController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		933D5AF8205D462700E7D107 /* Tab1 */ = {
+			isa = PBXGroup;
+			children = (
+				933D5AFE205D467200E7D107 /* Tab1ViewController.storyboard */,
+				933D5AFC205D467200E7D107 /* Tab1Navigator.swift */,
+				933D5AFD205D467200E7D107 /* Tab1Presenter.swift */,
+				933D5AFF205D467200E7D107 /* Tab1ViewController.swift */,
+			);
+			path = Tab1;
+			sourceTree = "<group>";
+		};
+		933D5AF9205D463100E7D107 /* Tab2 */ = {
+			isa = PBXGroup;
+			children = (
+				933D5B06205D467D00E7D107 /* Tab2ViewController.storyboard */,
+				933D5B04205D467D00E7D107 /* Tab2Navigator.swift */,
+				933D5B05205D467D00E7D107 /* Tab2Presenter.swift */,
+				933D5B07205D467D00E7D107 /* Tab2ViewController.swift */,
+			);
+			path = Tab2;
+			sourceTree = "<group>";
+		};
+		933D5AFA205D463300E7D107 /* Tab3 */ = {
+			isa = PBXGroup;
+			children = (
+				933D5B0E205D468700E7D107 /* Tab3ViewController.storyboard */,
+				933D5B0C205D468700E7D107 /* Tab3Navigator.swift */,
+				933D5B0D205D468700E7D107 /* Tab3Presenter.swift */,
+				933D5B0F205D468700E7D107 /* Tab3ViewController.swift */,
+			);
+			path = Tab3;
+			sourceTree = "<group>";
+		};
+		933D5AFB205D463600E7D107 /* Tab4 */ = {
+			isa = PBXGroup;
+			children = (
+				933D5B17205D469400E7D107 /* Tab4ViewController.storyboard */,
+				933D5B15205D469400E7D107 /* Tab4Navigator.swift */,
+				933D5B16205D469400E7D107 /* Tab4Presenter.swift */,
+				933D5B18205D469400E7D107 /* Tab4ViewController.swift */,
+			);
+			path = Tab4;
+			sourceTree = "<group>";
+		};
+		933D5B1D205D47E000E7D107 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		933D5B1E205D47FB00E7D107 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				FB7BBD06205BB33400363510 /* Assets.xcassets */,
+			);
+			path = Plist;
 			sourceTree = "<group>";
 		};
 		D02394535E18961047A91346 /* Pods */ = {
@@ -90,12 +224,9 @@
 		FB7BBCFE205BB33400363510 /* BalticMuseums */ = {
 			isa = PBXGroup;
 			children = (
-				FB7BBCFF205BB33400363510 /* AppDelegate.swift */,
-				FB7BBD01205BB33400363510 /* ViewController.swift */,
-				FB7BBD03205BB33400363510 /* Main.storyboard */,
-				FB7BBD06205BB33400363510 /* Assets.xcassets */,
-				FB7BBD08205BB33400363510 /* LaunchScreen.storyboard */,
-				FB7BBD0B205BB33400363510 /* Info.plist */,
+				933D5AF2205D45C200E7D107 /* View */,
+				933D5AF3205D45C900E7D107 /* Main */,
+				933D5AF4205D45D000E7D107 /* Supporting Files */,
 			);
 			path = BalticMuseums;
 			sourceTree = "<group>";
@@ -164,7 +295,11 @@
 			files = (
 				FB7BBD0A205BB33400363510 /* LaunchScreen.storyboard in Resources */,
 				FB7BBD07205BB33400363510 /* Assets.xcassets in Resources */,
-				FB7BBD05205BB33400363510 /* Main.storyboard in Resources */,
+				933D5B1B205D469400E7D107 /* Tab4ViewController.storyboard in Resources */,
+				FB7BBD05205BB33400363510 /* TabBarViewController.storyboard in Resources */,
+				933D5B02205D467200E7D107 /* Tab1ViewController.storyboard in Resources */,
+				933D5B0A205D467D00E7D107 /* Tab2ViewController.storyboard in Resources */,
+				933D5B12205D468700E7D107 /* Tab3ViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,20 +374,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB7BBD02205BB33400363510 /* ViewController.swift in Sources */,
+				933D5B13205D468700E7D107 /* Tab3ViewController.swift in Sources */,
+				933D5B03205D467200E7D107 /* Tab1ViewController.swift in Sources */,
+				933D5B1C205D469400E7D107 /* Tab4ViewController.swift in Sources */,
+				933D5B01205D467200E7D107 /* Tab1Presenter.swift in Sources */,
+				933D5B19205D469400E7D107 /* Tab4Navigator.swift in Sources */,
+				933D5B0B205D467D00E7D107 /* Tab2ViewController.swift in Sources */,
+				FB7BBD02205BB33400363510 /* TabBarViewController.swift in Sources */,
+				933D5B00205D467200E7D107 /* Tab1Navigator.swift in Sources */,
 				FB7BBD00205BB33400363510 /* AppDelegate.swift in Sources */,
+				933D5AF6205D45F500E7D107 /* ViewStore.swift in Sources */,
+				933D5B11205D468700E7D107 /* Tab3Presenter.swift in Sources */,
+				933D5B08205D467D00E7D107 /* Tab2Navigator.swift in Sources */,
+				933D5B1A205D469400E7D107 /* Tab4Presenter.swift in Sources */,
+				933D5B09205D467D00E7D107 /* Tab2Presenter.swift in Sources */,
+				933D5B10205D468700E7D107 /* Tab3Navigator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FB7BBD03205BB33400363510 /* Main.storyboard */ = {
+		FB7BBD03205BB33400363510 /* TabBarViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				FB7BBD04205BB33400363510 /* Base */,
 			);
-			name = Main.storyboard;
+			name = TabBarViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		FB7BBD08205BB33400363510 /* LaunchScreen.storyboard */ = {
@@ -379,7 +527,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = BalticMuseums/Info.plist;
+				DEVELOPMENT_TEAM = 889FLUST5R;
+				INFOPLIST_FILE = "$(SRCROOT)/BalticMuseums/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.hackathon.BalticMuseums;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -394,7 +543,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = BalticMuseums/Info.plist;
+				DEVELOPMENT_TEAM = 889FLUST5R;
+				INFOPLIST_FILE = "$(SRCROOT)/BalticMuseums/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.hackathon.BalticMuseums;
 				PRODUCT_NAME = "$(TARGET_NAME)";
