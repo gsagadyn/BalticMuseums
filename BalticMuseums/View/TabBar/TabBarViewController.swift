@@ -13,7 +13,7 @@ class TabBarViewController: UITabBarController, UIStoryboardInstantiate {
     // MARK: - Private Properties
 
     private let controllersData: [ControllerData] = [
-        ControllerData(controller: ViewStore.shared[Tab1ViewController.self],
+        ControllerData(controller: ViewStore.shared[MapViewController.self],
                        image: nil,
                        title: "Tab1",
                        isCustomActionEnabled: false),

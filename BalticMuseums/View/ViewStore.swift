@@ -24,8 +24,8 @@ class ViewStore: DependencyStore {
 
 private class DefaultViewStoreModule: IDependencyStoreModule {
     fileprivate func load(to dependencyStore: DependencyStore) {
-        dependencyStore.bind(closure: { () -> Tab1ViewController in
-            let vc = Tab1ViewController.instantiate()
+        dependencyStore.bind(closure: { () -> MapViewController in
+            let vc = MapViewController.instantiate()
             vc.presenter = Tab1Presenter(Tab1Navigator(vc))
             return vc
         })

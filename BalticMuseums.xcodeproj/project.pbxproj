@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		75842DDA205D4C7200877A1A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DD9205D4C7200877A1A /* MapView.swift */; };
 		75842DDC205D4E3500877A1A /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75842DDB205D4E3500877A1A /* MapView.xib */; };
+		75842DDE205D826B00877A1A /* MapViewBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DDD205D826B00877A1A /* MapViewBarViewController.swift */; };
+		75842DE0205D8B1D00877A1A /* ExhibitionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DDF205D8B1D00877A1A /* ExhibitionDetailViewController.swift */; };
+		75842DE3205D8CFC00877A1A /* Tab1Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DE1205D8CFB00877A1A /* Tab1Presenter.swift */; };
+		75842DE4205D8CFC00877A1A /* Tab1Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DE2205D8CFC00877A1A /* Tab1Navigator.swift */; };
 		764F7630A5AE8932B9AACC09 /* Pods_BalticMuseums.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB09756C1A03984BE6478CC /* Pods_BalticMuseums.framework */; };
 		933D5AF6205D45F500E7D107 /* ViewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5AF5205D45F500E7D107 /* ViewStore.swift */; };
-		933D5B00205D467200E7D107 /* Tab1Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5AFC205D467200E7D107 /* Tab1Navigator.swift */; };
-		933D5B01205D467200E7D107 /* Tab1Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5AFD205D467200E7D107 /* Tab1Presenter.swift */; };
-		933D5B02205D467200E7D107 /* Tab1ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 933D5AFE205D467200E7D107 /* Tab1ViewController.storyboard */; };
-		933D5B03205D467200E7D107 /* Tab1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5AFF205D467200E7D107 /* Tab1ViewController.swift */; };
+		933D5B02205D467200E7D107 /* MapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 933D5AFE205D467200E7D107 /* MapViewController.storyboard */; };
+		933D5B03205D467200E7D107 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5AFF205D467200E7D107 /* MapViewController.swift */; };
 		933D5B08205D467D00E7D107 /* Tab2Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5B04205D467D00E7D107 /* Tab2Navigator.swift */; };
 		933D5B09205D467D00E7D107 /* Tab2Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5B05205D467D00E7D107 /* Tab2Presenter.swift */; };
 		933D5B0A205D467D00E7D107 /* Tab2ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 933D5B06205D467D00E7D107 /* Tab2ViewController.storyboard */; };
@@ -73,11 +75,13 @@
 		4BB09756C1A03984BE6478CC /* Pods_BalticMuseums.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BalticMuseums.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75842DD9205D4C7200877A1A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		75842DDB205D4E3500877A1A /* MapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
+		75842DDD205D826B00877A1A /* MapViewBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewBarViewController.swift; sourceTree = "<group>"; };
+		75842DDF205D8B1D00877A1A /* ExhibitionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhibitionDetailViewController.swift; sourceTree = "<group>"; };
+		75842DE1205D8CFB00877A1A /* Tab1Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab1Presenter.swift; sourceTree = "<group>"; };
+		75842DE2205D8CFC00877A1A /* Tab1Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab1Navigator.swift; sourceTree = "<group>"; };
 		933D5AF5205D45F500E7D107 /* ViewStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStore.swift; sourceTree = "<group>"; };
-		933D5AFC205D467200E7D107 /* Tab1Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1Navigator.swift; sourceTree = "<group>"; };
-		933D5AFD205D467200E7D107 /* Tab1Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1Presenter.swift; sourceTree = "<group>"; };
-		933D5AFE205D467200E7D107 /* Tab1ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tab1ViewController.storyboard; sourceTree = "<group>"; };
-		933D5AFF205D467200E7D107 /* Tab1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1ViewController.swift; sourceTree = "<group>"; };
+		933D5AFE205D467200E7D107 /* MapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapViewController.storyboard; sourceTree = "<group>"; };
+		933D5AFF205D467200E7D107 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		933D5B04205D467D00E7D107 /* Tab2Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2Navigator.swift; sourceTree = "<group>"; };
 		933D5B05205D467D00E7D107 /* Tab2Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2Presenter.swift; sourceTree = "<group>"; };
 		933D5B06205D467D00E7D107 /* Tab2ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tab2ViewController.storyboard; sourceTree = "<group>"; };
@@ -204,12 +208,14 @@
 		933D5AF8205D462700E7D107 /* Tab1 */ = {
 			isa = PBXGroup;
 			children = (
-				933D5AFE205D467200E7D107 /* Tab1ViewController.storyboard */,
-				933D5AFC205D467200E7D107 /* Tab1Navigator.swift */,
-				933D5AFD205D467200E7D107 /* Tab1Presenter.swift */,
-				933D5AFF205D467200E7D107 /* Tab1ViewController.swift */,
+				933D5AFE205D467200E7D107 /* MapViewController.storyboard */,
+				75842DE2205D8CFC00877A1A /* Tab1Navigator.swift */,
+				75842DE1205D8CFB00877A1A /* Tab1Presenter.swift */,
+				933D5AFF205D467200E7D107 /* MapViewController.swift */,
+				75842DDD205D826B00877A1A /* MapViewBarViewController.swift */,
 				75842DD9205D4C7200877A1A /* MapView.swift */,
 				75842DDB205D4E3500877A1A /* MapView.xib */,
+				75842DDF205D8B1D00877A1A /* ExhibitionDetailViewController.swift */,
 			);
 			path = Tab1;
 			sourceTree = "<group>";
@@ -602,7 +608,7 @@
 				FB7BBD07205BB33400363510 /* Assets.xcassets in Resources */,
 				933D5B1B205D469400E7D107 /* Tab4ViewController.storyboard in Resources */,
 				FB7BBD05205BB33400363510 /* TabBarViewController.storyboard in Resources */,
-				933D5B02205D467200E7D107 /* Tab1ViewController.storyboard in Resources */,
+				933D5B02205D467200E7D107 /* MapViewController.storyboard in Resources */,
 				75842DDC205D4E3500877A1A /* MapView.xib in Resources */,
 				933D5B0A205D467D00E7D107 /* Tab2ViewController.storyboard in Resources */,
 				933D5B12205D468700E7D107 /* Tab3ViewController.storyboard in Resources */,
@@ -689,12 +695,11 @@
 				FBCDF039205D74DD0016100D /* CIQRCodeDescriptor+Data.swift in Sources */,
 				933D5BDB205D517900E7D107 /* UICollectionView+ReloadDataAnimation.swift in Sources */,
 				75842DDA205D4C7200877A1A /* MapView.swift in Sources */,
-				933D5B03205D467200E7D107 /* Tab1ViewController.swift in Sources */,
+				933D5B03205D467200E7D107 /* MapViewController.swift in Sources */,
 				933D5BE1205D517900E7D107 /* UITableView+ReloadDataAnimation.swift in Sources */,
 				933D5BD7205D517900E7D107 /* UIResponder+HideApplicationContent.swift in Sources */,
 				933D5B1C205D469400E7D107 /* Tab4ViewController.swift in Sources */,
 				933D5BD1205D517900E7D107 /* TableViewItem.swift in Sources */,
-				933D5B01205D467200E7D107 /* Tab1Presenter.swift in Sources */,
 				933D5BCC205D517900E7D107 /* String+AccountFormatter.swift in Sources */,
 				933D5BC4205D517900E7D107 /* Array+RemoveObject.swift in Sources */,
 				933D5BD9205D517900E7D107 /* UIView+HideAnimation.swift in Sources */,
@@ -704,7 +709,6 @@
 				933D5B0B205D467D00E7D107 /* Tab2ViewController.swift in Sources */,
 				FB7BBD02205BB33400363510 /* TabBarViewController.swift in Sources */,
 				933D5BC9205D517900E7D107 /* String+Localizable.swift in Sources */,
-				933D5B00205D467200E7D107 /* Tab1Navigator.swift in Sources */,
 				933D5BE0205D517900E7D107 /* UINavigationController+PopToClass.swift in Sources */,
 				933D5BC6205D517900E7D107 /* NSAttributedString+Concatenate.swift in Sources */,
 				933D5BD5205D517900E7D107 /* UILabel+TextAnimation.swift in Sources */,
@@ -712,13 +716,16 @@
 				933D5BDF205D517900E7D107 /* UINavigationController+Back.swift in Sources */,
 				933D5BC8205D517900E7D107 /* ObservableType+AlertController.swift in Sources */,
 				933D5BCA205D517900E7D107 /* String+CardFormatter.swift in Sources */,
+				75842DE3205D8CFC00877A1A /* Tab1Presenter.swift in Sources */,
 				933D5BE2205D517900E7D107 /* UITableView+DequeueReusableCell.swift in Sources */,
 				933D5BD4205D517900E7D107 /* UIWindow+RootViewController.swift in Sources */,
 				FB7BBD00205BB33400363510 /* AppDelegate.swift in Sources */,
 				933D5AF6205D45F500E7D107 /* ViewStore.swift in Sources */,
+				75842DDE205D826B00877A1A /* MapViewBarViewController.swift in Sources */,
 				933D5BC5205D517900E7D107 /* Reactive+Extensions.swift in Sources */,
 				933D5BD2205D517900E7D107 /* TableViewSection.swift in Sources */,
 				933D5B08205D467D00E7D107 /* Tab2Navigator.swift in Sources */,
+				75842DE4205D8CFC00877A1A /* Tab1Navigator.swift in Sources */,
 				933D5BC1205D517900E7D107 /* AmountTextFieldFormatter.swift in Sources */,
 				933D5BCE205D517900E7D107 /* CollectionViewItem.swift in Sources */,
 				933D5BCB205D517900E7D107 /* String+AmountFormatter.swift in Sources */,
@@ -727,6 +734,7 @@
 				933D5BD8205D517900E7D107 /* UIView+Instantiate.swift in Sources */,
 				933D5B09205D467D00E7D107 /* Tab2Presenter.swift in Sources */,
 				933D5BCD205D517900E7D107 /* String+Tools.swift in Sources */,
+				75842DE0205D8B1D00877A1A /* ExhibitionDetailViewController.swift in Sources */,
 				933D5BC2205D517900E7D107 /* SimpleTextFieldFormatter.swift in Sources */,
 				933D5BDC205D517900E7D107 /* UICollectionView+DequeueReusableCell.swift in Sources */,
 			);
