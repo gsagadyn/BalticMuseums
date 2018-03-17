@@ -29,6 +29,10 @@ class TabBarViewController: UITabBarController, UIStoryboardInstantiate {
                        image: nil,
                        title: "Tab4",
                        isCustomActionEnabled: false),
+        ControllerData(controller: ViewStore.shared[NewsFeedNavigationViewController.self],
+                       image: nil,
+                       title: "Aktualności",
+                       isCustomActionEnabled: false)
     ]
 
     private struct ControllerData {

@@ -55,5 +55,10 @@ private class DefaultViewStoreModule: IDependencyStoreModule {
             let vc = QuizNavigationViewController.instantiate()
             return vc
         })
+        
+        dependencyStore.bind(closure: { () -> NewsFeedNavigationViewController in
+            let vc = NewsFeedNavigationViewController.instantiate()
+            return vc
+        })
     }
 }
