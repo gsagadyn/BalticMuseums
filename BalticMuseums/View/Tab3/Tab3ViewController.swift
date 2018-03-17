@@ -11,21 +11,58 @@ import Snapify
 import SceneKit
 import ARKit
 import Vision
+import SpriteKit
 
 class Tab3ViewController: UIViewController, UIStoryboardInstantiate {
     @IBOutlet var sceneView: ARSCNView!
     
     var detectedDataAnchor: ARAnchor?
     var isProcessing = false
+    var node: SCNNode? = nil
+    var videoPlayer: AVPlayer = {
+        let videoUrl = Bundle.main.url(forResource: "movie", withExtension: "mov")!
+        return AVPlayer(url: videoUrl)
+    }()
     
     // MARK: - View Controller Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
+                
+        let spriteKitScene = SKScene(size: CGSize(width: 100, height: 100))
+        spriteKitScene.scaleMode = .aspectFit
+        
+        let videoSpriteKitNode = SKVideoNode(avPlayer: videoPlayer)
+        videoSpriteKitNode.position = CGPoint(x: spriteKitScene.size.width / 2.0, y: spriteKitScene.size.height / 2.0)
+        videoSpriteKitNode.size = spriteKitScene.size
+        videoSpriteKitNode.yScale = -1.0
+        videoSpriteKitNode.play()
+        spriteKitScene.addChild(videoSpriteKitNode)
+        
+        NotificationCenter.default.addObserver(
+            self,
+            selector: #selector(Tab3ViewController.playerItemDidReachEnd),
+            name: NSNotification.Name.AVPlayerItemDidPlayToEndTime,
+            object: videoPlayer.currentItem)
+                
+        // Create a SceneKit plane and add the SpriteKit scene as its material
+        let background = SCNPlane(width: CGFloat(0.2), height: CGFloat(0.2))
+        background.firstMaterial?.diffuse.contents = spriteKitScene
+        background.firstMaterial?.diffuse.wrapS = .clamp
+        background.firstMaterial?.diffuse.wrapT = .clamp
+        node = SCNNode(geometry: background)
+        
+        
         
         sceneView.delegate = self
         sceneView.session.delegate = self
         sceneView.showsStatistics = true
+    }
+    
+    @objc func playerItemDidReachEnd(notification: NSNotification) {
+        if let playerItem: AVPlayerItem = notification.object as? AVPlayerItem {
+            playerItem.seek(to: kCMTimeZero, completionHandler: nil)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -100,6 +137,26 @@ extension Tab3ViewController: ARSessionDelegate {
 
 extension Tab3ViewController: ARSCNViewDelegate {
     internal func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
-        return nil
+        guard detectedDataAnchor?.identifier == anchor.identifier else { return nil }
+        
+//        // Create a 3D Cup to display
+//        guard let virtualObjectScene = SCNScene(named: "cup.scn", inDirectory: "Models.scnassets/cup") else {
+//            return nil
+//        }
+        
+//        let test = UIView()
+//        test.backgroundColor = .red
+        
+//        let plane = SCNPlane(width: 1.0, height: 0.75)
+//        plane.firstMaterial?.diffuse.contents = planeView
+//        plane.firstMaterial?.isDoubleSided = true
+//
+//        let wrapperNode = SCNNode(geometry: plane)
+        
+        node?.transform = SCNMatrix4(anchor.transform)
+//
+        return node
+        
+//        return nil
     }
 }
