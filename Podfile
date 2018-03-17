@@ -1,6 +1,3 @@
-source 'https://github.com/gsagadyn/CocoaPodsSpecs.git'
-source 'https://github.com/artsy/Specs.git'
-source 'https://github.com/CocoaPods/Specs.git'
 platform :ios, '11.2'
 inhibit_all_warnings!
 use_frameworks!
@@ -12,10 +9,6 @@ use_frameworks!
 def shared_pods
     pod 'Snapify'
     pod 'SnapKit'
-    pod 'Fabric'
-    pod 'Crashlytics'
-    pod 'SwiftLint'
-    pod 'SwiftGen'
     pod 'RxOptional'
     pod 'IQKeyboardManagerSwift'
 end
