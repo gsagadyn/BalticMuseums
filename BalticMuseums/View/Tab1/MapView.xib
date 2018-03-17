@@ -125,7 +125,26 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
+                <outlet property="cash" destination="6Sh-dI-kMF" id="0bi-9L-TzB"/>
+                <outlet property="cloakRoom" destination="Cte-pb-bJ6" id="FqJ-sB-uPH"/>
+                <outlet property="entrance" destination="hgy-B5-YxM" id="VYe-F8-YrF"/>
+                <outlet property="familyRoom" destination="Kec-29-cay" id="4f0-Nm-ojL"/>
+                <outlet property="guestCloakRoom" destination="kio-Lq-QfK" id="AYw-uA-5KL"/>
+                <outlet property="health" destination="sxC-8r-8J7" id="sgf-Z6-waj"/>
+                <outlet property="human" destination="UX7-0I-9Yu" id="rGx-8d-siP"/>
+                <outlet property="hydro" destination="0gV-lq-CxO" id="1eW-f3-EkH"/>
+                <outlet property="invisibleForces" destination="BDI-o4-5vO" id="sPm-zb-QTz"/>
+                <outlet property="kid" destination="6Ey-XZ-xus" id="JFB-Vi-k9V"/>
+                <outlet property="laboratoryRoom" destination="iax-Qb-ST4" id="qD2-Td-Ufg"/>
+                <outlet property="lectureRoom" destination="zkI-2F-Peb" id="B5E-ES-lz5"/>
                 <outlet property="mapImageView" destination="N4c-K5-hBR" id="LXr-ZH-yD0"/>
+                <outlet property="portableScene" destination="DjD-5L-pJs" id="R9F-aZ-Phl"/>
+                <outlet property="restRoom" destination="dHZ-9f-uLL" id="fuP-ub-ySD"/>
+                <outlet property="shop" destination="bch-H8-UiB" id="7yh-Le-bxa"/>
+                <outlet property="tempExhibition" destination="LS7-ia-AMg" id="aDz-KN-Lr9"/>
+                <outlet property="toilets" destination="rQh-U0-Me3" id="uIL-z3-Xjc"/>
+                <outlet property="treeOfLife" destination="8n8-Wx-HZr" id="f3K-fY-z3C"/>
+                <outlet property="workshopRoom" destination="RNC-Di-Xa3" id="Owq-fT-tKk"/>
             </connections>
             <point key="canvasLocation" x="286" y="54"/>
         </view>
