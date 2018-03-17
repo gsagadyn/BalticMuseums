@@ -25,13 +25,11 @@ class Tab1ViewController: UserInterfaceLayer.Controller<Tab1Presenter>, UIStoryb
 		
 		mapView.delegate = self
 		
-		let widthScale = scrollView.frame.width / mapView.bounds.width * 1.5
-		let heightScale = scrollView.frame.height / mapView.bounds.height * 1.5
-		let minScale = min(widthScale, heightScale)
+		let widthScale = scrollView.frame.width / mapView.bounds.width * 1.3
+		let heightScale = scrollView.frame.height / mapView.bounds.height * 1.3
+		let maxScale = min(widthScale, heightScale)
 		
-//		scrollView.minimumZoomScale = minScale
-		scrollView.zoomScale = minScale
-		scrollView.maximumZoomScale = minScale
+		scrollView.maximumZoomScale = maxScale
 		
 		scrollView.delegate = self
     }
@@ -52,7 +50,4 @@ class Tab1ViewController: UserInterfaceLayer.Controller<Tab1Presenter>, UIStoryb
 		return mapView
 	}
 	
-//	func scrollViewDidZoom(_ scrollView: UIScrollView) {
-//
-//	}
 }
