@@ -20,6 +20,8 @@
 		75842DF4205DBD3C00877A1A /* RadialGradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DEE205DBD3C00877A1A /* RadialGradientButton.swift */; };
 		75842DF5205DBD3C00877A1A /* LinearGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DEF205DBD3C00877A1A /* LinearGradientLayer.swift */; };
 		75842DF6205DBD3C00877A1A /* RadialGradienLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DF0205DBD3C00877A1A /* RadialGradienLayer.swift */; };
+		75842DFD205DC0D200877A1A /* String+Exhibition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DFC205DC0D200877A1A /* String+Exhibition.swift */; };
+		75842DFF205DC14000877A1A /* UIImage+Exhibition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DFE205DC14000877A1A /* UIImage+Exhibition.swift */; };
 		764F7630A5AE8932B9AACC09 /* Pods_BalticMuseums.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB09756C1A03984BE6478CC /* Pods_BalticMuseums.framework */; };
 		933D5AF6205D45F500E7D107 /* ViewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5AF5205D45F500E7D107 /* ViewStore.swift */; };
 		933D5B02205D467200E7D107 /* MapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 933D5AFE205D467200E7D107 /* MapViewController.storyboard */; };
@@ -94,6 +96,8 @@
 		75842DEE205DBD3C00877A1A /* RadialGradientButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadialGradientButton.swift; sourceTree = "<group>"; };
 		75842DEF205DBD3C00877A1A /* LinearGradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearGradientLayer.swift; sourceTree = "<group>"; };
 		75842DF0205DBD3C00877A1A /* RadialGradienLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadialGradienLayer.swift; sourceTree = "<group>"; };
+		75842DFC205DC0D200877A1A /* String+Exhibition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Exhibition.swift"; sourceTree = "<group>"; };
+		75842DFE205DC14000877A1A /* UIImage+Exhibition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Exhibition.swift"; sourceTree = "<group>"; };
 		933D5AF5205D45F500E7D107 /* ViewStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStore.swift; sourceTree = "<group>"; };
 		933D5AFE205D467200E7D107 /* MapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapViewController.storyboard; sourceTree = "<group>"; };
 		933D5AFF205D467200E7D107 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -247,6 +251,8 @@
 				75842DDF205D8B1D00877A1A /* ExhibitionDetailViewController.swift */,
 				75842DE5205D95DC00877A1A /* ParallaxTableViewHeaderView.swift */,
 				75842DE7205D9C2000877A1A /* ExhibitionDetailHeaderView.swift */,
+				75842DFC205DC0D200877A1A /* String+Exhibition.swift */,
+				75842DFE205DC14000877A1A /* UIImage+Exhibition.swift */,
 			);
 			path = Tab1;
 			sourceTree = "<group>";
@@ -703,7 +709,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		B32BFD287A0993811BA7183F /* [CP] Copy Pods Resources */ = {
@@ -735,6 +741,7 @@
 				933D5BCF205D517900E7D107 /* CollectionViewSection.swift in Sources */,
 				933D5BC3205D517900E7D107 /* TextFieldFormatter.swift in Sources */,
 				75842DF5205DBD3C00877A1A /* LinearGradientLayer.swift in Sources */,
+				75842DFF205DC14000877A1A /* UIImage+Exhibition.swift in Sources */,
 				FBCDF039205D74DD0016100D /* CIQRCodeDescriptor+Data.swift in Sources */,
 				933D5BDB205D517900E7D107 /* UICollectionView+ReloadDataAnimation.swift in Sources */,
 				75842DDA205D4C7200877A1A /* MapView.swift in Sources */,
@@ -787,6 +794,7 @@
 				75842DE0205D8B1D00877A1A /* ExhibitionDetailViewController.swift in Sources */,
 				933D5BC2205D517900E7D107 /* SimpleTextFieldFormatter.swift in Sources */,
 				933D5BDC205D517900E7D107 /* UICollectionView+DequeueReusableCell.swift in Sources */,
+				75842DFD205DC0D200877A1A /* String+Exhibition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

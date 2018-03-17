@@ -27,8 +27,8 @@ class ExhibitionDetailHeaderView: ParallaxTableViewHeaderView {
 		label.numberOfLines = 2
 		label.snp.remakeConstraints { (make) in
 			make.left.equalToSuperview().offset(14.0)
-			make.bottom.equalToSuperview().offset(14.0)
-			make.right.equalToSuperview().offset(14.0)
+			make.bottom.equalToSuperview().offset(-14.0)
+			make.right.equalToSuperview().offset(-14.0)
 		}
 		
 		clipsToBounds = true
