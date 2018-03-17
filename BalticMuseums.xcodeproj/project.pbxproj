@@ -7,34 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08556B5DAF2356812AFB3E0A /* Pods_BalticMuseumsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8C00812BC9984925F38AB42 /* Pods_BalticMuseumsTests.framework */; };
-		43198FE8FDDC3C06874E0897 /* Pods_BalticMuseumsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 37F79FCD2EC0E2CEC4C77CF3 /* Pods_BalticMuseumsUITests.framework */; };
 		764F7630A5AE8932B9AACC09 /* Pods_BalticMuseums.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB09756C1A03984BE6478CC /* Pods_BalticMuseums.framework */; };
 		FB7BBD00205BB33400363510 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7BBCFF205BB33400363510 /* AppDelegate.swift */; };
 		FB7BBD02205BB33400363510 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7BBD01205BB33400363510 /* ViewController.swift */; };
 		FB7BBD05205BB33400363510 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7BBD03205BB33400363510 /* Main.storyboard */; };
 		FB7BBD07205BB33400363510 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7BBD06205BB33400363510 /* Assets.xcassets */; };
 		FB7BBD0A205BB33400363510 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7BBD08205BB33400363510 /* LaunchScreen.storyboard */; };
-		FB7BBD15205BB33500363510 /* BalticMuseumsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7BBD14205BB33500363510 /* BalticMuseumsTests.swift */; };
-		FB7BBD20205BB33500363510 /* BalticMuseumsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7BBD1F205BB33500363510 /* BalticMuseumsUITests.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		FB7BBD11205BB33500363510 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FB7BBCF4205BB33400363510 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FB7BBCFB205BB33400363510;
-			remoteInfo = BalticMuseums;
-		};
-		FB7BBD1C205BB33500363510 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = FB7BBCF4205BB33400363510 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = FB7BBCFB205BB33400363510;
-			remoteInfo = BalticMuseums;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		37F79FCD2EC0E2CEC4C77CF3 /* Pods_BalticMuseumsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BalticMuseumsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,12 +32,6 @@
 		FB7BBD06205BB33400363510 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB7BBD09205BB33400363510 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB7BBD0B205BB33400363510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FB7BBD10205BB33500363510 /* BalticMuseumsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BalticMuseumsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB7BBD14205BB33500363510 /* BalticMuseumsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalticMuseumsTests.swift; sourceTree = "<group>"; };
-		FB7BBD16205BB33500363510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FB7BBD1B205BB33500363510 /* BalticMuseumsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BalticMuseumsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		FB7BBD1F205BB33500363510 /* BalticMuseumsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalticMuseumsUITests.swift; sourceTree = "<group>"; };
-		FB7BBD21205BB33500363510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,22 +40,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				764F7630A5AE8932B9AACC09 /* Pods_BalticMuseums.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FB7BBD0D205BB33500363510 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				08556B5DAF2356812AFB3E0A /* Pods_BalticMuseumsTests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FB7BBD18205BB33500363510 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				43198FE8FDDC3C06874E0897 /* Pods_BalticMuseumsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,8 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				FB7BBCFE205BB33400363510 /* BalticMuseums */,
-				FB7BBD13205BB33500363510 /* BalticMuseumsTests */,
-				FB7BBD1E205BB33500363510 /* BalticMuseumsUITests */,
 				FB7BBCFD205BB33400363510 /* Products */,
 				D02394535E18961047A91346 /* Pods */,
 				5B4B2357B307248D5A9B4AA3 /* Frameworks */,
@@ -128,8 +83,6 @@
 			isa = PBXGroup;
 			children = (
 				FB7BBCFC205BB33400363510 /* BalticMuseums.app */,
-				FB7BBD10205BB33500363510 /* BalticMuseumsTests.xctest */,
-				FB7BBD1B205BB33500363510 /* BalticMuseumsUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,24 +98,6 @@
 				FB7BBD0B205BB33400363510 /* Info.plist */,
 			);
 			path = BalticMuseums;
-			sourceTree = "<group>";
-		};
-		FB7BBD13205BB33500363510 /* BalticMuseumsTests */ = {
-			isa = PBXGroup;
-			children = (
-				FB7BBD14205BB33500363510 /* BalticMuseumsTests.swift */,
-				FB7BBD16205BB33500363510 /* Info.plist */,
-			);
-			path = BalticMuseumsTests;
-			sourceTree = "<group>";
-		};
-		FB7BBD1E205BB33500363510 /* BalticMuseumsUITests */ = {
-			isa = PBXGroup;
-			children = (
-				FB7BBD1F205BB33500363510 /* BalticMuseumsUITests.swift */,
-				FB7BBD21205BB33500363510 /* Info.plist */,
-			);
-			path = BalticMuseumsUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -188,48 +123,6 @@
 			productReference = FB7BBCFC205BB33400363510 /* BalticMuseums.app */;
 			productType = "com.apple.product-type.application";
 		};
-		FB7BBD0F205BB33500363510 /* BalticMuseumsTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FB7BBD27205BB33500363510 /* Build configuration list for PBXNativeTarget "BalticMuseumsTests" */;
-			buildPhases = (
-				01A6931505D0195E00E28DDA /* [CP] Check Pods Manifest.lock */,
-				FB7BBD0C205BB33500363510 /* Sources */,
-				FB7BBD0D205BB33500363510 /* Frameworks */,
-				FB7BBD0E205BB33500363510 /* Resources */,
-				14F9B19657B91B1B8A72847F /* [CP] Embed Pods Frameworks */,
-				CB46C1CFF01666757D8F2301 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FB7BBD12205BB33500363510 /* PBXTargetDependency */,
-			);
-			name = BalticMuseumsTests;
-			productName = BalticMuseumsTests;
-			productReference = FB7BBD10205BB33500363510 /* BalticMuseumsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		FB7BBD1A205BB33500363510 /* BalticMuseumsUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = FB7BBD2A205BB33500363510 /* Build configuration list for PBXNativeTarget "BalticMuseumsUITests" */;
-			buildPhases = (
-				669BBF49D9B7CDC63A5D20DA /* [CP] Check Pods Manifest.lock */,
-				FB7BBD17205BB33500363510 /* Sources */,
-				FB7BBD18205BB33500363510 /* Frameworks */,
-				FB7BBD19205BB33500363510 /* Resources */,
-				08C4C98D8F23963914FA01C1 /* [CP] Embed Pods Frameworks */,
-				28F09E7C1F7F23F0BDE38B00 /* [CP] Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FB7BBD1D205BB33500363510 /* PBXTargetDependency */,
-			);
-			name = BalticMuseumsUITests;
-			productName = BalticMuseumsUITests;
-			productReference = FB7BBD1B205BB33500363510 /* BalticMuseumsUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -243,16 +136,6 @@
 					FB7BBCFB205BB33400363510 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
-					};
-					FB7BBD0F205BB33500363510 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = FB7BBCFB205BB33400363510;
-					};
-					FB7BBD1A205BB33500363510 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-						TestTargetID = FB7BBCFB205BB33400363510;
 					};
 				};
 			};
@@ -270,8 +153,6 @@
 			projectRoot = "";
 			targets = (
 				FB7BBCFB205BB33400363510 /* BalticMuseums */,
-				FB7BBD0F205BB33500363510 /* BalticMuseumsTests */,
-				FB7BBD1A205BB33500363510 /* BalticMuseumsUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -287,113 +168,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FB7BBD0E205BB33500363510 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FB7BBD19205BB33500363510 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		01A6931505D0195E00E28DDA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BalticMuseumsTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		08C4C98D8F23963914FA01C1 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BalticMuseumsUITests/Pods-BalticMuseumsUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		14F9B19657B91B1B8A72847F /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BalticMuseumsTests/Pods-BalticMuseumsTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		28F09E7C1F7F23F0BDE38B00 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BalticMuseumsUITests/Pods-BalticMuseumsUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		669BBF49D9B7CDC63A5D20DA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BalticMuseumsUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		71063E84155FA6EE09FAF24D /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-BalticMuseums/Pods-BalticMuseums-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Snapify/Snapify.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Snapify.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -433,21 +232,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BalticMuseums/Pods-BalticMuseums-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CB46C1CFF01666757D8F2301 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-BalticMuseumsTests/Pods-BalticMuseumsTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -460,36 +244,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FB7BBD0C205BB33500363510 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FB7BBD15205BB33500363510 /* BalticMuseumsTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FB7BBD17205BB33500363510 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FB7BBD20205BB33500363510 /* BalticMuseumsUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		FB7BBD12205BB33500363510 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FB7BBCFB205BB33400363510 /* BalticMuseums */;
-			targetProxy = FB7BBD11205BB33500363510 /* PBXContainerItemProxy */;
-		};
-		FB7BBD1D205BB33500363510 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = FB7BBCFB205BB33400363510 /* BalticMuseums */;
-			targetProxy = FB7BBD1C205BB33500363510 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		FB7BBD03205BB33400363510 /* Main.storyboard */ = {
@@ -648,72 +403,6 @@
 			};
 			name = Release;
 		};
-		FB7BBD28205BB33500363510 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA2E3808C930B4E9673133B8 /* Pods-BalticMuseumsTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = BalticMuseumsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = pl.hackathon.BalticMuseumsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BalticMuseums.app/BalticMuseums";
-			};
-			name = Debug;
-		};
-		FB7BBD29205BB33500363510 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = DD993EEA447FC89AA3F2A8A0 /* Pods-BalticMuseumsTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = BalticMuseumsTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = pl.hackathon.BalticMuseumsTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BalticMuseums.app/BalticMuseums";
-			};
-			name = Release;
-		};
-		FB7BBD2B205BB33500363510 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BD0DA3674D7475E15B81C9BD /* Pods-BalticMuseumsUITests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = BalticMuseumsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = pl.hackathon.BalticMuseumsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BalticMuseums;
-			};
-			name = Debug;
-		};
-		FB7BBD2C205BB33500363510 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3CB0065251AC546E215324EC /* Pods-BalticMuseumsUITests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = BalticMuseumsUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = pl.hackathon.BalticMuseumsUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = BalticMuseums;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -731,24 +420,6 @@
 			buildConfigurations = (
 				FB7BBD25205BB33500363510 /* Debug */,
 				FB7BBD26205BB33500363510 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FB7BBD27205BB33500363510 /* Build configuration list for PBXNativeTarget "BalticMuseumsTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FB7BBD28205BB33500363510 /* Debug */,
-				FB7BBD29205BB33500363510 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		FB7BBD2A205BB33500363510 /* Build configuration list for PBXNativeTarget "BalticMuseumsUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				FB7BBD2B205BB33500363510 /* Debug */,
-				FB7BBD2C205BB33500363510 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
