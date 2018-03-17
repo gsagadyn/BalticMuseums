@@ -13,6 +13,8 @@
 		75842DE0205D8B1D00877A1A /* ExhibitionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DDF205D8B1D00877A1A /* ExhibitionDetailViewController.swift */; };
 		75842DE3205D8CFC00877A1A /* Tab1Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DE1205D8CFB00877A1A /* Tab1Presenter.swift */; };
 		75842DE4205D8CFC00877A1A /* Tab1Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DE2205D8CFC00877A1A /* Tab1Navigator.swift */; };
+		75842DE6205D95DC00877A1A /* ParallaxTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DE5205D95DC00877A1A /* ParallaxTableViewHeaderView.swift */; };
+		75842DE8205D9C2000877A1A /* ExhibitionDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DE7205D9C2000877A1A /* ExhibitionDetailHeaderView.swift */; };
 		764F7630A5AE8932B9AACC09 /* Pods_BalticMuseums.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB09756C1A03984BE6478CC /* Pods_BalticMuseums.framework */; };
 		933D5AF6205D45F500E7D107 /* ViewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5AF5205D45F500E7D107 /* ViewStore.swift */; };
 		933D5B02205D467200E7D107 /* MapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 933D5AFE205D467200E7D107 /* MapViewController.storyboard */; };
@@ -79,6 +81,8 @@
 		75842DDF205D8B1D00877A1A /* ExhibitionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhibitionDetailViewController.swift; sourceTree = "<group>"; };
 		75842DE1205D8CFB00877A1A /* Tab1Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab1Presenter.swift; sourceTree = "<group>"; };
 		75842DE2205D8CFC00877A1A /* Tab1Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab1Navigator.swift; sourceTree = "<group>"; };
+		75842DE5205D95DC00877A1A /* ParallaxTableViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxTableViewHeaderView.swift; sourceTree = "<group>"; };
+		75842DE7205D9C2000877A1A /* ExhibitionDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhibitionDetailHeaderView.swift; sourceTree = "<group>"; };
 		933D5AF5205D45F500E7D107 /* ViewStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStore.swift; sourceTree = "<group>"; };
 		933D5AFE205D467200E7D107 /* MapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapViewController.storyboard; sourceTree = "<group>"; };
 		933D5AFF205D467200E7D107 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -216,6 +220,8 @@
 				75842DD9205D4C7200877A1A /* MapView.swift */,
 				75842DDB205D4E3500877A1A /* MapView.xib */,
 				75842DDF205D8B1D00877A1A /* ExhibitionDetailViewController.swift */,
+				75842DE5205D95DC00877A1A /* ParallaxTableViewHeaderView.swift */,
+				75842DE7205D9C2000877A1A /* ExhibitionDetailHeaderView.swift */,
 			);
 			path = Tab1;
 			sourceTree = "<group>";
@@ -710,6 +716,7 @@
 				FB7BBD02205BB33400363510 /* TabBarViewController.swift in Sources */,
 				933D5BC9205D517900E7D107 /* String+Localizable.swift in Sources */,
 				933D5BE0205D517900E7D107 /* UINavigationController+PopToClass.swift in Sources */,
+				75842DE8205D9C2000877A1A /* ExhibitionDetailHeaderView.swift in Sources */,
 				933D5BC6205D517900E7D107 /* NSAttributedString+Concatenate.swift in Sources */,
 				933D5BD5205D517900E7D107 /* UILabel+TextAnimation.swift in Sources */,
 				933D5BDE205D517900E7D107 /* UIViewController+HeadViewController.swift in Sources */,
@@ -722,6 +729,7 @@
 				FB7BBD00205BB33400363510 /* AppDelegate.swift in Sources */,
 				933D5AF6205D45F500E7D107 /* ViewStore.swift in Sources */,
 				75842DDE205D826B00877A1A /* MapViewBarViewController.swift in Sources */,
+				75842DE6205D95DC00877A1A /* ParallaxTableViewHeaderView.swift in Sources */,
 				933D5BC5205D517900E7D107 /* Reactive+Extensions.swift in Sources */,
 				933D5BD2205D517900E7D107 /* TableViewSection.swift in Sources */,
 				933D5B08205D467D00E7D107 /* Tab2Navigator.swift in Sources */,

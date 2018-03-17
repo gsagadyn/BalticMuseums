@@ -20,10 +20,6 @@ class MapViewController: UserInterfaceLayer.Controller<Tab1Presenter>, UIStorybo
     override func viewDidLoad() {
         super.viewDidLoad()
 		
-		Timer.scheduledTimer(withTimeInterval: 5, repeats: false) { (Timer) in
-			self.mapView.selectedExibition = Exhibition(rawValue: Int(arc4random() % 19))
-		}
-		
         view.backgroundColor = .white
 		
 		mapView.delegate = self
@@ -38,6 +34,14 @@ class MapViewController: UserInterfaceLayer.Controller<Tab1Presenter>, UIStorybo
 		bottomConstraint.constant = -70
 		view.setNeedsDisplay()
     }
+	
+	override func viewDidAppear(_ animated: Bool) {
+		super.viewDidAppear(animated)
+		
+		Timer.scheduledTimer(withTimeInterval: 5, repeats: true) { (Timer) in
+			self.mapView.selectedExibition = Exhibition(rawValue: Int(arc4random() % 19))
+		}
+	}
 	
 	func didSelectExhibition(exhibition: UIImageView) {
 		scrollView.zoom(to: exhibition.frame, animated: true)
@@ -66,6 +70,9 @@ class MapViewController: UserInterfaceLayer.Controller<Tab1Presenter>, UIStorybo
 		if segue.identifier == "MapViewBarViewControllerSegue" {
 			mapViewBarViewController = segue.destination as? MapViewBarViewController
 			mapViewBarViewController?.delegate = self
+		} else if segue.identifier == "ExhibitionDetail" {
+			let detailViewController = segue.destination as? ExhibitionDetailViewController
+			detailViewController?.selectedExibition = mapView.selectedExibition
 		}
 	}
 	

@@ -59,7 +59,7 @@
                         <outlet property="bottomConstraint" destination="x8r-ps-dsq" id="qE3-ec-tZk"/>
                         <outlet property="mapView" destination="MdP-nb-Xx6" id="RcD-u8-6fe"/>
                         <outlet property="scrollView" destination="vtt-Kw-b5b" id="SeB-m0-FHm"/>
-                        <segue destination="xE2-Mw-3lh" kind="presentation" identifier="ExhibitionDetail" modalPresentationStyle="overCurrentContext" id="spf-i4-X5Z"/>
+                        <segue destination="nGh-SE-plp" kind="presentation" identifier="ExhibitionDetail" modalPresentationStyle="overCurrentContext" id="WPQ-eV-bkl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7nb-Yq-VOs" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -75,10 +75,49 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I1d-Jj-BCi">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="9X4-tY-nyp">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mYG-sn-USd">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <prototypes>
+                                                <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellIdentifier" rowHeight="242" id="ejs-cC-W6t">
+                                                    <rect key="frame" x="0.0" y="28" width="375" height="242"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ejs-cC-W6t" id="TNz-sr-GU9">
+                                                        <rect key="frame" x="0.0" y="0.0" width="375" height="241.5"/>
+                                                        <autoresizingMask key="autoresizingMask"/>
+                                                    </tableViewCellContentView>
+                                                </tableViewCell>
+                                            </prototypes>
+                                            <connections>
+                                                <outlet property="dataSource" destination="nGh-SE-plp" id="AzF-JA-iel"/>
+                                                <outlet property="delegate" destination="nGh-SE-plp" id="6fx-1C-P3G"/>
+                                            </connections>
+                                        </tableView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yHU-6K-BGx">
+                                            <rect key="frame" x="20" y="20" width="30" height="30"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="30" id="ayb-BL-SZK"/>
+                                                <constraint firstAttribute="height" constant="30" id="m1F-H5-Um7"/>
+                                            </constraints>
+                                            <state key="normal" image="close"/>
+                                            <connections>
+                                                <action selector="closeAction:" destination="nGh-SE-plp" eventType="touchUpInside" id="vVj-au-Cqp"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="yHU-6K-BGx" firstAttribute="leading" secondItem="9X4-tY-nyp" secondAttribute="leading" constant="20" id="09z-8i-0PK"/>
+                                        <constraint firstItem="yHU-6K-BGx" firstAttribute="top" secondItem="9X4-tY-nyp" secondAttribute="top" constant="20" id="0Bx-Iu-Z2g"/>
+                                        <constraint firstAttribute="trailing" secondItem="mYG-sn-USd" secondAttribute="trailing" id="BYo-Jc-jIu"/>
+                                        <constraint firstItem="mYG-sn-USd" firstAttribute="top" secondItem="9X4-tY-nyp" secondAttribute="top" id="FVe-vh-b8H"/>
+                                        <constraint firstAttribute="bottom" secondItem="mYG-sn-USd" secondAttribute="bottom" id="ads-yV-ebC"/>
+                                        <constraint firstItem="mYG-sn-USd" firstAttribute="leading" secondItem="9X4-tY-nyp" secondAttribute="leading" id="kZD-gQ-CCg"/>
+                                    </constraints>
                                 </view>
                                 <blurEffect style="light"/>
                             </visualEffectView>
@@ -99,10 +138,14 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="closeButton" destination="yHU-6K-BGx" id="ZDd-ae-RzY"/>
+                        <outlet property="tableView" destination="mYG-sn-USd" id="gVD-SK-Exo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nVU-bv-PTK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2770" y="115"/>
+            <point key="canvasLocation" x="1436" y="115.59220389805098"/>
         </scene>
         <!--Map View Bar View Controller-->
         <scene sceneID="gHF-Th-Kxy">
@@ -156,26 +199,9 @@
             </objects>
             <point key="canvasLocation" x="348" y="635.98200899550227"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="zYD-3Y-k28">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="xE2-Mw-3lh" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hCK-fz-BHV">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="nGh-SE-plp" kind="relationship" relationship="rootViewController" id="aaK-iq-rrd"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8gj-2X-9qd" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1887" y="116"/>
-        </scene>
     </scenes>
     <resources>
+        <image name="close" width="85" height="85"/>
         <image name="disclosure_left" width="32" height="32"/>
     </resources>
 </document>
