@@ -15,6 +15,11 @@
 		75842DE4205D8CFC00877A1A /* Tab1Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DE2205D8CFC00877A1A /* Tab1Navigator.swift */; };
 		75842DE6205D95DC00877A1A /* ParallaxTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DE5205D95DC00877A1A /* ParallaxTableViewHeaderView.swift */; };
 		75842DE8205D9C2000877A1A /* ExhibitionDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DE7205D9C2000877A1A /* ExhibitionDetailHeaderView.swift */; };
+		75842DF1205DBD3C00877A1A /* LinearGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DEB205DBD3B00877A1A /* LinearGradientView.swift */; };
+		75842DF2205DBD3C00877A1A /* RadialGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DEC205DBD3C00877A1A /* RadialGradientView.swift */; };
+		75842DF4205DBD3C00877A1A /* RadialGradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DEE205DBD3C00877A1A /* RadialGradientButton.swift */; };
+		75842DF5205DBD3C00877A1A /* LinearGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DEF205DBD3C00877A1A /* LinearGradientLayer.swift */; };
+		75842DF6205DBD3C00877A1A /* RadialGradienLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DF0205DBD3C00877A1A /* RadialGradienLayer.swift */; };
 		764F7630A5AE8932B9AACC09 /* Pods_BalticMuseums.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB09756C1A03984BE6478CC /* Pods_BalticMuseums.framework */; };
 		933D5AF6205D45F500E7D107 /* ViewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5AF5205D45F500E7D107 /* ViewStore.swift */; };
 		933D5B02205D467200E7D107 /* MapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 933D5AFE205D467200E7D107 /* MapViewController.storyboard */; };
@@ -84,6 +89,11 @@
 		75842DE2205D8CFC00877A1A /* Tab1Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab1Navigator.swift; sourceTree = "<group>"; };
 		75842DE5205D95DC00877A1A /* ParallaxTableViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxTableViewHeaderView.swift; sourceTree = "<group>"; };
 		75842DE7205D9C2000877A1A /* ExhibitionDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhibitionDetailHeaderView.swift; sourceTree = "<group>"; };
+		75842DEB205DBD3B00877A1A /* LinearGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearGradientView.swift; sourceTree = "<group>"; };
+		75842DEC205DBD3C00877A1A /* RadialGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadialGradientView.swift; sourceTree = "<group>"; };
+		75842DEE205DBD3C00877A1A /* RadialGradientButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadialGradientButton.swift; sourceTree = "<group>"; };
+		75842DEF205DBD3C00877A1A /* LinearGradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearGradientLayer.swift; sourceTree = "<group>"; };
+		75842DF0205DBD3C00877A1A /* RadialGradienLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadialGradienLayer.swift; sourceTree = "<group>"; };
 		933D5AF5205D45F500E7D107 /* ViewStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStore.swift; sourceTree = "<group>"; };
 		933D5AFE205D467200E7D107 /* MapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapViewController.storyboard; sourceTree = "<group>"; };
 		933D5AFF205D467200E7D107 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -169,6 +179,18 @@
 				37F79FCD2EC0E2CEC4C77CF3 /* Pods_BalticMuseumsUITests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75842DF7205DBD4900877A1A /* Gradient */ = {
+			isa = PBXGroup;
+			children = (
+				75842DEF205DBD3C00877A1A /* LinearGradientLayer.swift */,
+				75842DEB205DBD3B00877A1A /* LinearGradientView.swift */,
+				75842DF0205DBD3C00877A1A /* RadialGradienLayer.swift */,
+				75842DEE205DBD3C00877A1A /* RadialGradientButton.swift */,
+				75842DEC205DBD3C00877A1A /* RadialGradientView.swift */,
+			);
+			path = Gradient;
 			sourceTree = "<group>";
 		};
 		933D5AF2205D45C200E7D107 /* View */ = {
@@ -395,6 +417,7 @@
 		933D5BA5205D517900E7D107 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
+				75842DF7205DBD4900877A1A /* Gradient */,
 				933D5BA6205D517900E7D107 /* UIImage */,
 				933D5BA8205D517900E7D107 /* UIWindow */,
 				933D5BAA205D517900E7D107 /* UILabel */,
@@ -711,10 +734,12 @@
 				933D5BDD205D517900E7D107 /* UINavigationBar+Appearance.swift in Sources */,
 				933D5BCF205D517900E7D107 /* CollectionViewSection.swift in Sources */,
 				933D5BC3205D517900E7D107 /* TextFieldFormatter.swift in Sources */,
+				75842DF5205DBD3C00877A1A /* LinearGradientLayer.swift in Sources */,
 				FBCDF039205D74DD0016100D /* CIQRCodeDescriptor+Data.swift in Sources */,
 				933D5BDB205D517900E7D107 /* UICollectionView+ReloadDataAnimation.swift in Sources */,
 				75842DDA205D4C7200877A1A /* MapView.swift in Sources */,
 				933D5B03205D467200E7D107 /* MapViewController.swift in Sources */,
+				75842DF1205DBD3C00877A1A /* LinearGradientView.swift in Sources */,
 				933D5BE1205D517900E7D107 /* UITableView+ReloadDataAnimation.swift in Sources */,
 				933D5BD7205D517900E7D107 /* UIResponder+HideApplicationContent.swift in Sources */,
 				933D5B1C205D469400E7D107 /* Tab4ViewController.swift in Sources */,
@@ -727,6 +752,7 @@
 				933D5BD6205D517900E7D107 /* UIApplication+HeadViewController.swift in Sources */,
 				933D5B0B205D467D00E7D107 /* Tab2ViewController.swift in Sources */,
 				FB7BBD02205BB33400363510 /* TabBarViewController.swift in Sources */,
+				75842DF6205DBD3C00877A1A /* RadialGradienLayer.swift in Sources */,
 				933D5BE6205D671E00E7D107 /* EstimoteService.swift in Sources */,
 				933D5BC9205D517900E7D107 /* String+Localizable.swift in Sources */,
 				933D5BE0205D517900E7D107 /* UINavigationController+PopToClass.swift in Sources */,
@@ -740,11 +766,13 @@
 				75842DE3205D8CFC00877A1A /* Tab1Presenter.swift in Sources */,
 				933D5BE2205D517900E7D107 /* UITableView+DequeueReusableCell.swift in Sources */,
 				933D5BD4205D517900E7D107 /* UIWindow+RootViewController.swift in Sources */,
+				75842DF4205DBD3C00877A1A /* RadialGradientButton.swift in Sources */,
 				FB7BBD00205BB33400363510 /* AppDelegate.swift in Sources */,
 				933D5AF6205D45F500E7D107 /* ViewStore.swift in Sources */,
 				75842DDE205D826B00877A1A /* MapViewBarViewController.swift in Sources */,
 				75842DE6205D95DC00877A1A /* ParallaxTableViewHeaderView.swift in Sources */,
 				933D5BC5205D517900E7D107 /* Reactive+Extensions.swift in Sources */,
+				75842DF2205DBD3C00877A1A /* RadialGradientView.swift in Sources */,
 				933D5BD2205D517900E7D107 /* TableViewSection.swift in Sources */,
 				933D5B08205D467D00E7D107 /* Tab2Navigator.swift in Sources */,
 				75842DE4205D8CFC00877A1A /* Tab1Navigator.swift in Sources */,
