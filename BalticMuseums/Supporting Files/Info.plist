@@ -4,6 +4,10 @@
 <dict>
 	<key>NSCameraUsageDescription</key>
 	<string>This application will use the camera for Augmented Reality.</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>We use low-energy Bluetooth and iBeacon devices installed at the airport to find you inside the hall, and provide relevant information. You don’t need to know security wait times when you’re already at the gate, do you?</string>
+    <key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+    <string>We use low-energy Bluetooth and iBeacon devices installed at the airport to find you inside the hall, and provide relevant information. You don’t need to know security wait times when you’re already at the gate, do you?</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

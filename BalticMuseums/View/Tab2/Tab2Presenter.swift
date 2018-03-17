@@ -1,5 +1,5 @@
 //
-//  Tab2Presenter.swift
+//  Tab3Presenter.swift
 //  BalticMuseums
 //
 //  Created by Kamil Szuba on 17.03.2018.
@@ -11,6 +11,6 @@ import Snapify
 
 class Tab2Presenter: PresenterLayer<Tab2Navigator> {
     
-    // Add Tab2Presenter implementation here.
+    // Add Tab3Presenter implementation here.
     
 }
