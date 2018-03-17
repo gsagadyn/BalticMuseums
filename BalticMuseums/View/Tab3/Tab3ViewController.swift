@@ -16,47 +16,20 @@ import SpriteKit
 class Tab3ViewController: UIViewController, UIStoryboardInstantiate {
     @IBOutlet var sceneView: ARSCNView!
     
+    var model = ["test": "cup.scn",
+                 "i tak nie wygrasz": "2.mov"]
+    
     var detectedDataAnchor: ARAnchor?
+    var detectedDataType: String?
     var isProcessing = false
-    var node: SCNNode? = nil
-    var videoPlayer: AVPlayer = {
-        let videoUrl = Bundle.main.url(forResource: "movie", withExtension: "mov")!
-        return AVPlayer(url: videoUrl)
-    }()
     
     // MARK: - View Controller Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-                
-        let spriteKitScene = SKScene(size: CGSize(width: 100, height: 100))
-        spriteKitScene.scaleMode = .aspectFit
-        
-        let videoSpriteKitNode = SKVideoNode(avPlayer: videoPlayer)
-        videoSpriteKitNode.position = CGPoint(x: spriteKitScene.size.width / 2.0, y: spriteKitScene.size.height / 2.0)
-        videoSpriteKitNode.size = spriteKitScene.size
-        videoSpriteKitNode.yScale = -1.0
-        videoSpriteKitNode.play()
-        spriteKitScene.addChild(videoSpriteKitNode)
-        
-        NotificationCenter.default.addObserver(
-            self,
-            selector: #selector(Tab3ViewController.playerItemDidReachEnd),
-            name: NSNotification.Name.AVPlayerItemDidPlayToEndTime,
-            object: videoPlayer.currentItem)
-                
-        // Create a SceneKit plane and add the SpriteKit scene as its material
-        let background = SCNPlane(width: CGFloat(0.2), height: CGFloat(0.2))
-        background.firstMaterial?.diffuse.contents = spriteKitScene
-        background.firstMaterial?.diffuse.wrapS = .clamp
-        background.firstMaterial?.diffuse.wrapT = .clamp
-        node = SCNNode(geometry: background)
-        
-        
         
         sceneView.delegate = self
         sceneView.session.delegate = self
-        sceneView.showsStatistics = true
     }
     
     @objc func playerItemDidReachEnd(notification: NSNotification) {
@@ -96,7 +69,6 @@ extension Tab3ViewController: ARSessionDelegate {
             
             let barcodeDescriptor = barcodeObservation.barcodeDescriptor as? CIQRCodeDescriptor
             let barcodeValue = String(data: barcodeDescriptor?.data ?? Data(), encoding: .utf8) ?? ""
-            print("QR Value: \(barcodeValue)")
             
             var rect = barcodeObservation.boundingBox
             rect = rect.applying(CGAffineTransform(scaleX: 1, y: -1))
@@ -104,7 +76,7 @@ extension Tab3ViewController: ARSessionDelegate {
             let center = CGPoint(x: rect.midX, y: rect.midY)
             
             DispatchQueue.main.async {
-                self?.process(location: center, at: frame)
+                self?.process(location: center, at: frame, withType: barcodeValue)
                 self?.isProcessing = false
             }
         }
@@ -118,15 +90,23 @@ extension Tab3ViewController: ARSessionDelegate {
     
     // MARK: - Process Location
     
-    private func process(location: CGPoint, at frame: ARFrame) {
+    private func process(location: CGPoint, at frame: ARFrame, withType type: String) {
         let hitTestResults = frame.hitTest(location, types: [.featurePoint] )
         guard let location = hitTestResults.first else { return }
         
-        if let anchor = self.detectedDataAnchor, let node = self.sceneView.node(for: anchor) {
-            node.transform = SCNMatrix4(location.worldTransform)
+        let rotate = simd_float4x4(SCNMatrix4MakeRotation(sceneView.session.currentFrame!.camera.eulerAngles.y, 0, 1, 0))
+        let worldTransform = simd_mul(location.worldTransform, rotate)
+        
+        if let anchor = self.detectedDataAnchor, let node = self.sceneView.node(for: anchor), detectedDataType == type {
+            node.transform = SCNMatrix4(worldTransform)
         } else {
-            self.detectedDataAnchor = ARAnchor(transform: location.worldTransform)
-            self.sceneView.session.add(anchor: self.detectedDataAnchor!)
+            if let anchor = detectedDataAnchor {
+                sceneView.session.remove(anchor: anchor)
+            }
+            
+            detectedDataType = type
+            detectedDataAnchor = ARAnchor(transform: worldTransform)
+            sceneView.session.add(anchor: detectedDataAnchor!)
         }
     }
 }
@@ -136,27 +116,74 @@ extension Tab3ViewController: ARSessionDelegate {
 // -----------------------------------------------------------------------------
 
 extension Tab3ViewController: ARSCNViewDelegate {
+    // MARK: - Base Renderer
+    
     internal func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
         guard detectedDataAnchor?.identifier == anchor.identifier else { return nil }
         
-//        // Create a 3D Cup to display
-//        guard let virtualObjectScene = SCNScene(named: "cup.scn", inDirectory: "Models.scnassets/cup") else {
-//            return nil
-//        }
+        let assetName = model[detectedDataType ?? ""]
         
-//        let test = UIView()
-//        test.backgroundColor = .red
+        switch assetName {
+        case let name where (name ?? "").hasSuffix(".mov"):
+            return rendererVideo(name: (name ?? ""), renderer: renderer, nodeFor: anchor)
+        case let name where (name ?? "").count > 0:
+            return rendererModel(name: (name ?? ""), renderer: renderer, nodeFor: anchor)
+        default:
+            return nil
+        }
+    }
+    
+    // MARK: - Video
+    
+    private func rendererVideo(name: String, renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
+        guard detectedDataAnchor?.identifier == anchor.identifier else { return nil }
         
-//        let plane = SCNPlane(width: 1.0, height: 0.75)
-//        plane.firstMaterial?.diffuse.contents = planeView
-//        plane.firstMaterial?.isDoubleSided = true
-//
-//        let wrapperNode = SCNNode(geometry: plane)
+        let videoNode = SKVideoNode(fileNamed: name)
+        videoNode.play()
         
-        node?.transform = SCNMatrix4(anchor.transform)
-//
-        return node
+        let skScene = SKScene(size: CGSize(width: 640, height: 480))
+        skScene.addChild(videoNode)
         
-//        return nil
+        videoNode.position = CGPoint(x: skScene.size.width/2, y: skScene.size.height/2)
+        videoNode.size = skScene.size
+        
+        let scale: CGFloat = 0.5
+        let tvPlane = SCNPlane(width: 1.0 * scale, height: 0.75 * scale)
+        tvPlane.firstMaterial?.diffuse.contents = skScene
+        tvPlane.firstMaterial?.isDoubleSided = true
+        
+        let tvPlaneNode = SCNNode(geometry: tvPlane)
+        var translation = matrix_identity_float4x4
+        translation.columns.3.z = -1.0
+        
+        tvPlaneNode.pivot = SCNMatrix4MakeRotation(Float.pi, 1, 0, 0)
+        tvPlaneNode.simdTransform = matrix_multiply(anchor.transform, translation)
+        tvPlaneNode.eulerAngles = SCNVector3(Double.pi,0,0)
+        
+        return tvPlaneNode
+    }
+    
+    // MARK: - 3D Model
+    
+    private func rendererModel(name: String, renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
+        guard detectedDataAnchor?.identifier == anchor.identifier else { return nil }
+        
+        let directoryName = "Models.scnassets/" + String(name.split(separator: ".").first ?? "")
+        guard let virtualObjectScene = SCNScene(named: name, inDirectory: directoryName) else {
+            return nil
+        }
+        
+        let wrapperNode = SCNNode()
+        
+        for child in virtualObjectScene.rootNode.childNodes {
+            child.geometry?.firstMaterial?.lightingModel = .physicallyBased
+            child.movabilityHint = .movable
+            wrapperNode.addChildNode(child)
+        }
+        
+        wrapperNode.transform = SCNMatrix4(anchor.transform)
+        
+        return wrapperNode
+
     }
 }

@@ -19,13 +19,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rde-tY-IPG">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </arscnView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="rde-tY-IPG" firstAttribute="leading" secondItem="jU0-EV-19J" secondAttribute="leading" id="8BQ-V3-g3z"/>
-                            <constraint firstItem="rde-tY-IPG" firstAttribute="top" secondItem="jU0-EV-19J" secondAttribute="top" id="9UG-aa-tad"/>
+                            <constraint firstItem="rde-tY-IPG" firstAttribute="top" secondItem="KDa-7W-dlX" secondAttribute="top" id="9UG-aa-tad"/>
                             <constraint firstItem="jU0-EV-19J" firstAttribute="trailing" secondItem="rde-tY-IPG" secondAttribute="trailing" id="SrS-dC-c3T"/>
                             <constraint firstItem="jU0-EV-19J" firstAttribute="bottom" secondItem="rde-tY-IPG" secondAttribute="bottom" id="kP6-r4-P2S"/>
                         </constraints>
