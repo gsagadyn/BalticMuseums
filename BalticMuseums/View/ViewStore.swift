@@ -43,7 +43,16 @@ private class DefaultViewStoreModule: IDependencyStoreModule {
 
         dependencyStore.bind(closure: { () -> Tab4ViewController in
             let vc = Tab4ViewController.instantiate()
-            vc.presenter = Tab4Presenter(Tab4Navigator(vc))
+            return vc
+        })
+        
+        dependencyStore.bind(closure: { () -> Tab4ViewController in
+            let vc = Tab4ViewController.instantiate()
+            return vc
+        })
+        
+        dependencyStore.bind(closure: { () -> QuizNavigationViewController in
+            let vc = QuizNavigationViewController.instantiate()
             return vc
         })
     }

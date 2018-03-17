@@ -25,7 +25,7 @@ class TabBarViewController: UITabBarController, UIStoryboardInstantiate {
                        image: nil,
                        title: "Tab3",
                        isCustomActionEnabled: false),
-        ControllerData(controller: ViewStore.shared[Tab4ViewController.self],
+        ControllerData(controller: ViewStore.shared[QuizNavigationViewController.self],
                        image: nil,
                        title: "Tab4",
                        isCustomActionEnabled: false),
