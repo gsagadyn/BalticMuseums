@@ -38,7 +38,6 @@ private class DefaultViewStoreModule: IDependencyStoreModule {
 
         dependencyStore.bind(closure: { () -> Tab3ViewController in
             let vc = Tab3ViewController.instantiate()
-            vc.presenter = Tab3Presenter(Tab3Navigator(vc))
             return vc
         })
 

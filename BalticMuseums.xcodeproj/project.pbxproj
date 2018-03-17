@@ -19,8 +19,6 @@
 		933D5B09205D467D00E7D107 /* Tab2Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5B05205D467D00E7D107 /* Tab2Presenter.swift */; };
 		933D5B0A205D467D00E7D107 /* Tab2ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 933D5B06205D467D00E7D107 /* Tab2ViewController.storyboard */; };
 		933D5B0B205D467D00E7D107 /* Tab2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5B07205D467D00E7D107 /* Tab2ViewController.swift */; };
-		933D5B10205D468700E7D107 /* Tab3Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5B0C205D468700E7D107 /* Tab3Navigator.swift */; };
-		933D5B11205D468700E7D107 /* Tab3Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5B0D205D468700E7D107 /* Tab3Presenter.swift */; };
 		933D5B12205D468700E7D107 /* Tab3ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 933D5B0E205D468700E7D107 /* Tab3ViewController.storyboard */; };
 		933D5B13205D468700E7D107 /* Tab3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5B0F205D468700E7D107 /* Tab3ViewController.swift */; };
 		933D5B19205D469400E7D107 /* Tab4Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5B15205D469400E7D107 /* Tab4Navigator.swift */; };
@@ -83,8 +81,6 @@
 		933D5B05205D467D00E7D107 /* Tab2Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2Presenter.swift; sourceTree = "<group>"; };
 		933D5B06205D467D00E7D107 /* Tab2ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tab2ViewController.storyboard; sourceTree = "<group>"; };
 		933D5B07205D467D00E7D107 /* Tab2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2ViewController.swift; sourceTree = "<group>"; };
-		933D5B0C205D468700E7D107 /* Tab3Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab3Navigator.swift; sourceTree = "<group>"; };
-		933D5B0D205D468700E7D107 /* Tab3Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab3Presenter.swift; sourceTree = "<group>"; };
 		933D5B0E205D468700E7D107 /* Tab3ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tab3ViewController.storyboard; sourceTree = "<group>"; };
 		933D5B0F205D468700E7D107 /* Tab3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab3ViewController.swift; sourceTree = "<group>"; };
 		933D5B15205D469400E7D107 /* Tab4Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab4Navigator.swift; sourceTree = "<group>"; };
@@ -231,8 +227,6 @@
 			isa = PBXGroup;
 			children = (
 				933D5B0E205D468700E7D107 /* Tab3ViewController.storyboard */,
-				933D5B0C205D468700E7D107 /* Tab3Navigator.swift */,
-				933D5B0D205D468700E7D107 /* Tab3Presenter.swift */,
 				933D5B0F205D468700E7D107 /* Tab3ViewController.swift */,
 			);
 			path = Tab3;
@@ -650,7 +644,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B32BFD287A0993811BA7183F /* [CP] Copy Pods Resources */ = {
@@ -710,7 +704,6 @@
 				933D5BD4205D517900E7D107 /* UIWindow+RootViewController.swift in Sources */,
 				FB7BBD00205BB33400363510 /* AppDelegate.swift in Sources */,
 				933D5AF6205D45F500E7D107 /* ViewStore.swift in Sources */,
-				933D5B11205D468700E7D107 /* Tab3Presenter.swift in Sources */,
 				933D5BC5205D517900E7D107 /* Reactive+Extensions.swift in Sources */,
 				933D5BD2205D517900E7D107 /* TableViewSection.swift in Sources */,
 				933D5B08205D467D00E7D107 /* Tab2Navigator.swift in Sources */,
@@ -724,7 +717,6 @@
 				933D5BCD205D517900E7D107 /* String+Tools.swift in Sources */,
 				933D5BC2205D517900E7D107 /* SimpleTextFieldFormatter.swift in Sources */,
 				933D5BDC205D517900E7D107 /* UICollectionView+DequeueReusableCell.swift in Sources */,
-				933D5B10205D468700E7D107 /* Tab3Navigator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
