@@ -43,6 +43,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jU0-EV-19J"/>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="MdP-nb-Xx6" id="RcD-u8-6fe"/>
+                        <outlet property="scrollView" destination="vtt-Kw-b5b" id="SeB-m0-FHm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7nb-Yq-VOs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

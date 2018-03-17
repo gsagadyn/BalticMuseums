@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum Exhibition {
+enum Exhibition : Int {
 	case Lecture
 	case Human
 	case InvisibleForces
@@ -28,6 +28,10 @@ enum Exhibition {
 	case Entrance
 	case Shop
 	case PortableScene
+}
+
+protocol MapViewDelegate: NSObjectProtocol {
+	func didSelectExhibition(exhibition: UIImageView)
 }
 
 class MapView: UIView {
@@ -52,9 +56,28 @@ class MapView: UIView {
 	@IBOutlet weak var shop: UIImageView!
 	@IBOutlet weak var portableScene: UIImageView!
 	
+	weak var delegate: MapViewDelegate?
 	var selectedExibition: Exhibition? {
 		didSet {
-			
+			if let exhibition = selectedExibition {
+				print(exhibition)
+
+				for subview in subviews {
+					subview.layer.removeAllAnimations()
+				}
+				
+				let pulseAnimation = CABasicAnimation(keyPath: #keyPath(CALayer.opacity))
+				pulseAnimation.duration = 1
+				pulseAnimation.fromValue = 0.3
+				pulseAnimation.toValue = 1
+				pulseAnimation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
+				pulseAnimation.autoreverses = true
+				pulseAnimation.repeatCount = .greatestFiniteMagnitude
+				
+				let selectedExhibition = exhibitionForType(exhibition)
+				selectedExhibition.layer.add(pulseAnimation, forKey: "animateOpacity")
+				delegate?.didSelectExhibition(exhibition: selectedExhibition)
+			}
 		}
 	}
 	
@@ -66,5 +89,48 @@ class MapView: UIView {
 
 	override func awakeAfter(using aDecoder: NSCoder) -> Any? {
 		return self.instantiateView(owner:nil)
+	}
+	
+	func exhibitionForType(_ type: Exhibition) -> UIImageView {
+		switch type {
+		case .Lecture:
+			return lectureRoom
+		case .Human:
+			return human
+		case .InvisibleForces:
+			return invisibleForces
+		case .TreeOfLife:
+			return treeOfLife
+		case .LaboratoryRoom:
+			return laboratoryRoom
+		case .RestRoom:
+			return restRoom
+		case .Kid:
+			return kid
+		case .Hydro:
+			return hydro
+		case .Health:
+			return health
+		case .WorkshopRoom:
+			return workshopRoom
+		case .TempExhibition:
+			return tempExhibition
+		case .CloakRoom:
+			return cloakRoom
+		case .Toilets:
+			return toilets
+		case .FamilyRoom:
+			return familyRoom
+		case .GuestCloakRoom:
+			return guestCloakRoom
+		case .Cash:
+			return cash
+		case .Entrance:
+			return entrance
+		case .Shop:
+			return shop
+		case .PortableScene:
+			return portableScene
+		}
 	}
 }
