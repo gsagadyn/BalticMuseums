@@ -16,4 +16,7 @@ class MapView: UIView {
 		return mapImageView.intrinsicContentSize
 	}
 
+	override func awakeAfter(using aDecoder: NSCoder) -> Any? {
+		return self.instantiateView(owner:nil)
+	}
 }
