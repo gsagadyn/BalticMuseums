@@ -13,7 +13,7 @@ class TabBarViewController: UITabBarController, UIStoryboardInstantiate {
     // MARK: - Private Properties
 
     private let controllersData: [ControllerData] = [
-        ControllerData(controller: ViewStore.shared[Tab1ViewController.self],
+        ControllerData(controller: ViewStore.shared[MapViewController.self],
                        image: nil,
                        title: "Tab1",
                        isCustomActionEnabled: false),
@@ -25,10 +25,14 @@ class TabBarViewController: UITabBarController, UIStoryboardInstantiate {
                        image: nil,
                        title: "Tab3",
                        isCustomActionEnabled: false),
-        ControllerData(controller: ViewStore.shared[Tab4ViewController.self],
+        ControllerData(controller: ViewStore.shared[QuizNavigationViewController.self],
                        image: nil,
                        title: "Tab4",
                        isCustomActionEnabled: false),
+        ControllerData(controller: ViewStore.shared[NewsFeedNavigationViewController.self],
+                       image: nil,
+                       title: "Aktualności",
+                       isCustomActionEnabled: false)
     ]
 
     private struct ControllerData {

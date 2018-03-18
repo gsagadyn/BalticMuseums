@@ -7,23 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4069DD9A205D822300C28545 /* QuizQuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4069DD99205D822300C28545 /* QuizQuestionModel.swift */; };
+		4069DD9C205D830900C28545 /* QuizService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4069DD9B205D830900C28545 /* QuizService.swift */; };
+		4069DD9E205D85F900C28545 /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4069DD9D205D85F900C28545 /* QuizViewController.swift */; };
+		4069DDA0205D8FBB00C28545 /* QuizExtenisons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4069DD9F205D8FBB00C28545 /* QuizExtenisons.swift */; };
+		4069DDA2205DAACF00C28545 /* QuizNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4069DDA1205DAACF00C28545 /* QuizNavigationViewController.swift */; };
+		4069DDA4205DB4BB00C28545 /* QuizHighscoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4069DDA3205DB4BB00C28545 /* QuizHighscoreCell.swift */; };
+		4069DDA6205DB50100C28545 /* QuizHighscoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4069DDA5205DB50100C28545 /* QuizHighscoreViewController.swift */; };
+		4069DDA9205DB67100C28545 /* QuizHighscoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4069DDA8205DB67100C28545 /* QuizHighscoreModel.swift */; };
+		407E5150205DD16C008CDB7B /* NewsFeedNavigationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 407E514F205DD16C008CDB7B /* NewsFeedNavigationViewController.storyboard */; };
+		407E5152205DD191008CDB7B /* NewsFeedNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407E5151205DD191008CDB7B /* NewsFeedNavigationViewController.swift */; };
+		407E5154205DD1B3008CDB7B /* NewsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407E5153205DD1B3008CDB7B /* NewsFeedViewController.swift */; };
 		75842DDA205D4C7200877A1A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DD9205D4C7200877A1A /* MapView.swift */; };
 		75842DDC205D4E3500877A1A /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75842DDB205D4E3500877A1A /* MapView.xib */; };
+		75842DDE205D826B00877A1A /* MapViewBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DDD205D826B00877A1A /* MapViewBarViewController.swift */; };
+		75842DE0205D8B1D00877A1A /* ExhibitionDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DDF205D8B1D00877A1A /* ExhibitionDetailViewController.swift */; };
+		75842DE3205D8CFC00877A1A /* Tab1Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DE1205D8CFB00877A1A /* Tab1Presenter.swift */; };
+		75842DE4205D8CFC00877A1A /* Tab1Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DE2205D8CFC00877A1A /* Tab1Navigator.swift */; };
+		75842DE6205D95DC00877A1A /* ParallaxTableViewHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DE5205D95DC00877A1A /* ParallaxTableViewHeaderView.swift */; };
+		75842DE8205D9C2000877A1A /* ExhibitionDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DE7205D9C2000877A1A /* ExhibitionDetailHeaderView.swift */; };
+		75842DF1205DBD3C00877A1A /* LinearGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DEB205DBD3B00877A1A /* LinearGradientView.swift */; };
+		75842DF2205DBD3C00877A1A /* RadialGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DEC205DBD3C00877A1A /* RadialGradientView.swift */; };
+		75842DF4205DBD3C00877A1A /* RadialGradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DEE205DBD3C00877A1A /* RadialGradientButton.swift */; };
+		75842DF5205DBD3C00877A1A /* LinearGradientLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DEF205DBD3C00877A1A /* LinearGradientLayer.swift */; };
+		75842DF6205DBD3C00877A1A /* RadialGradienLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DF0205DBD3C00877A1A /* RadialGradienLayer.swift */; };
+		75842DFD205DC0D200877A1A /* String+Exhibition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DFC205DC0D200877A1A /* String+Exhibition.swift */; };
+		75842DFF205DC14000877A1A /* UIImage+Exhibition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DFE205DC14000877A1A /* UIImage+Exhibition.swift */; };
 		764F7630A5AE8932B9AACC09 /* Pods_BalticMuseums.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB09756C1A03984BE6478CC /* Pods_BalticMuseums.framework */; };
 		933D5AF6205D45F500E7D107 /* ViewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5AF5205D45F500E7D107 /* ViewStore.swift */; };
-		933D5B00205D467200E7D107 /* Tab1Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5AFC205D467200E7D107 /* Tab1Navigator.swift */; };
-		933D5B01205D467200E7D107 /* Tab1Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5AFD205D467200E7D107 /* Tab1Presenter.swift */; };
-		933D5B02205D467200E7D107 /* Tab1ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 933D5AFE205D467200E7D107 /* Tab1ViewController.storyboard */; };
-		933D5B03205D467200E7D107 /* Tab1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5AFF205D467200E7D107 /* Tab1ViewController.swift */; };
+		933D5B02205D467200E7D107 /* MapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 933D5AFE205D467200E7D107 /* MapViewController.storyboard */; };
+		933D5B03205D467200E7D107 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5AFF205D467200E7D107 /* MapViewController.swift */; };
 		933D5B08205D467D00E7D107 /* Tab2Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5B04205D467D00E7D107 /* Tab2Navigator.swift */; };
 		933D5B09205D467D00E7D107 /* Tab2Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5B05205D467D00E7D107 /* Tab2Presenter.swift */; };
 		933D5B0A205D467D00E7D107 /* Tab2ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 933D5B06205D467D00E7D107 /* Tab2ViewController.storyboard */; };
 		933D5B0B205D467D00E7D107 /* Tab2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5B07205D467D00E7D107 /* Tab2ViewController.swift */; };
 		933D5B12205D468700E7D107 /* Tab3ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 933D5B0E205D468700E7D107 /* Tab3ViewController.storyboard */; };
 		933D5B13205D468700E7D107 /* Tab3ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5B0F205D468700E7D107 /* Tab3ViewController.swift */; };
-		933D5B19205D469400E7D107 /* Tab4Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5B15205D469400E7D107 /* Tab4Navigator.swift */; };
-		933D5B1A205D469400E7D107 /* Tab4Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5B16205D469400E7D107 /* Tab4Presenter.swift */; };
-		933D5B1B205D469400E7D107 /* Tab4ViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 933D5B17205D469400E7D107 /* Tab4ViewController.storyboard */; };
+		933D5B1B205D469400E7D107 /* QuizNavigationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 933D5B17205D469400E7D107 /* QuizNavigationViewController.storyboard */; };
 		933D5B1C205D469400E7D107 /* Tab4ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5B18205D469400E7D107 /* Tab4ViewController.swift */; };
 		933D5BC1205D517900E7D107 /* AmountTextFieldFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5B8A205D517900E7D107 /* AmountTextFieldFormatter.swift */; };
 		933D5BC2205D517900E7D107 /* SimpleTextFieldFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5B8B205D517900E7D107 /* SimpleTextFieldFormatter.swift */; };
@@ -59,6 +79,7 @@
 		933D5BE0205D517900E7D107 /* UINavigationController+PopToClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5BBD205D517900E7D107 /* UINavigationController+PopToClass.swift */; };
 		933D5BE1205D517900E7D107 /* UITableView+ReloadDataAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5BBF205D517900E7D107 /* UITableView+ReloadDataAnimation.swift */; };
 		933D5BE2205D517900E7D107 /* UITableView+DequeueReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5BC0205D517900E7D107 /* UITableView+DequeueReusableCell.swift */; };
+		933D5BE6205D671E00E7D107 /* EstimoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5BE5205D671E00E7D107 /* EstimoteService.swift */; };
 		FB7BBD00205BB33400363510 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7BBCFF205BB33400363510 /* AppDelegate.swift */; };
 		FB7BBD02205BB33400363510 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7BBD01205BB33400363510 /* TabBarViewController.swift */; };
 		FB7BBD05205BB33400363510 /* TabBarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7BBD03205BB33400363510 /* TabBarViewController.storyboard */; };
@@ -73,23 +94,43 @@
 /* Begin PBXFileReference section */
 		37F79FCD2EC0E2CEC4C77CF3 /* Pods_BalticMuseumsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BalticMuseumsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CB0065251AC546E215324EC /* Pods-BalticMuseumsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalticMuseumsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BalticMuseumsUITests/Pods-BalticMuseumsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4069DD99205D822300C28545 /* QuizQuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizQuestionModel.swift; sourceTree = "<group>"; };
+		4069DD9B205D830900C28545 /* QuizService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizService.swift; sourceTree = "<group>"; };
+		4069DD9D205D85F900C28545 /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
+		4069DD9F205D8FBB00C28545 /* QuizExtenisons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizExtenisons.swift; sourceTree = "<group>"; };
+		4069DDA1205DAACF00C28545 /* QuizNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizNavigationViewController.swift; sourceTree = "<group>"; };
+		4069DDA3205DB4BB00C28545 /* QuizHighscoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizHighscoreCell.swift; sourceTree = "<group>"; };
+		4069DDA5205DB50100C28545 /* QuizHighscoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizHighscoreViewController.swift; sourceTree = "<group>"; };
+		4069DDA8205DB67100C28545 /* QuizHighscoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizHighscoreModel.swift; sourceTree = "<group>"; };
+		407E514F205DD16C008CDB7B /* NewsFeedNavigationViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewsFeedNavigationViewController.storyboard; sourceTree = "<group>"; };
+		407E5151205DD191008CDB7B /* NewsFeedNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedNavigationViewController.swift; sourceTree = "<group>"; };
+		407E5153205DD1B3008CDB7B /* NewsFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedViewController.swift; sourceTree = "<group>"; };
 		4BB09756C1A03984BE6478CC /* Pods_BalticMuseums.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BalticMuseums.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75842DD9205D4C7200877A1A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		75842DDB205D4E3500877A1A /* MapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
+		75842DDD205D826B00877A1A /* MapViewBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewBarViewController.swift; sourceTree = "<group>"; };
+		75842DDF205D8B1D00877A1A /* ExhibitionDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhibitionDetailViewController.swift; sourceTree = "<group>"; };
+		75842DE1205D8CFB00877A1A /* Tab1Presenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab1Presenter.swift; sourceTree = "<group>"; };
+		75842DE2205D8CFC00877A1A /* Tab1Navigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tab1Navigator.swift; sourceTree = "<group>"; };
+		75842DE5205D95DC00877A1A /* ParallaxTableViewHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParallaxTableViewHeaderView.swift; sourceTree = "<group>"; };
+		75842DE7205D9C2000877A1A /* ExhibitionDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExhibitionDetailHeaderView.swift; sourceTree = "<group>"; };
+		75842DEB205DBD3B00877A1A /* LinearGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearGradientView.swift; sourceTree = "<group>"; };
+		75842DEC205DBD3C00877A1A /* RadialGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadialGradientView.swift; sourceTree = "<group>"; };
+		75842DEE205DBD3C00877A1A /* RadialGradientButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadialGradientButton.swift; sourceTree = "<group>"; };
+		75842DEF205DBD3C00877A1A /* LinearGradientLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinearGradientLayer.swift; sourceTree = "<group>"; };
+		75842DF0205DBD3C00877A1A /* RadialGradienLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadialGradienLayer.swift; sourceTree = "<group>"; };
+		75842DFC205DC0D200877A1A /* String+Exhibition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Exhibition.swift"; sourceTree = "<group>"; };
+		75842DFE205DC14000877A1A /* UIImage+Exhibition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Exhibition.swift"; sourceTree = "<group>"; };
 		933D5AF5205D45F500E7D107 /* ViewStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStore.swift; sourceTree = "<group>"; };
-		933D5AFC205D467200E7D107 /* Tab1Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1Navigator.swift; sourceTree = "<group>"; };
-		933D5AFD205D467200E7D107 /* Tab1Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1Presenter.swift; sourceTree = "<group>"; };
-		933D5AFE205D467200E7D107 /* Tab1ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tab1ViewController.storyboard; sourceTree = "<group>"; };
-		933D5AFF205D467200E7D107 /* Tab1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab1ViewController.swift; sourceTree = "<group>"; };
+		933D5AFE205D467200E7D107 /* MapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapViewController.storyboard; sourceTree = "<group>"; };
+		933D5AFF205D467200E7D107 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		933D5B04205D467D00E7D107 /* Tab2Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2Navigator.swift; sourceTree = "<group>"; };
 		933D5B05205D467D00E7D107 /* Tab2Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2Presenter.swift; sourceTree = "<group>"; };
 		933D5B06205D467D00E7D107 /* Tab2ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tab2ViewController.storyboard; sourceTree = "<group>"; };
 		933D5B07205D467D00E7D107 /* Tab2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab2ViewController.swift; sourceTree = "<group>"; };
 		933D5B0E205D468700E7D107 /* Tab3ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tab3ViewController.storyboard; sourceTree = "<group>"; };
 		933D5B0F205D468700E7D107 /* Tab3ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab3ViewController.swift; sourceTree = "<group>"; };
-		933D5B15205D469400E7D107 /* Tab4Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab4Navigator.swift; sourceTree = "<group>"; };
-		933D5B16205D469400E7D107 /* Tab4Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab4Presenter.swift; sourceTree = "<group>"; };
-		933D5B17205D469400E7D107 /* Tab4ViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Tab4ViewController.storyboard; sourceTree = "<group>"; };
+		933D5B17205D469400E7D107 /* QuizNavigationViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = QuizNavigationViewController.storyboard; sourceTree = "<group>"; };
 		933D5B18205D469400E7D107 /* Tab4ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab4ViewController.swift; sourceTree = "<group>"; };
 		933D5B8A205D517900E7D107 /* AmountTextFieldFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmountTextFieldFormatter.swift; sourceTree = "<group>"; };
 		933D5B8B205D517900E7D107 /* SimpleTextFieldFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleTextFieldFormatter.swift; sourceTree = "<group>"; };
@@ -125,6 +166,7 @@
 		933D5BBD205D517900E7D107 /* UINavigationController+PopToClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavigationController+PopToClass.swift"; sourceTree = "<group>"; };
 		933D5BBF205D517900E7D107 /* UITableView+ReloadDataAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+ReloadDataAnimation.swift"; sourceTree = "<group>"; };
 		933D5BC0205D517900E7D107 /* UITableView+DequeueReusableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+DequeueReusableCell.swift"; sourceTree = "<group>"; };
+		933D5BE5205D671E00E7D107 /* EstimoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimoteService.swift; sourceTree = "<group>"; };
 		AA2E3808C930B4E9673133B8 /* Pods-BalticMuseumsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalticMuseumsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BalticMuseumsTests/Pods-BalticMuseumsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BD0DA3674D7475E15B81C9BD /* Pods-BalticMuseumsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalticMuseumsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BalticMuseumsUITests/Pods-BalticMuseumsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C46C846EA0BDD3C6326E3261 /* Pods-BalticMuseums.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalticMuseums.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BalticMuseums/Pods-BalticMuseums.debug.xcconfig"; sourceTree = "<group>"; };
@@ -156,6 +198,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4069DDA7205DB65800C28545 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4069DD99205D822300C28545 /* QuizQuestionModel.swift */,
+				4069DDA8205DB67100C28545 /* QuizHighscoreModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		4069DDAA205DB6BF00C28545 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				4069DD9B205D830900C28545 /* QuizService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		4069DDAB205DBDA300C28545 /* Highscore */ = {
+			isa = PBXGroup;
+			children = (
+				4069DDA5205DB50100C28545 /* QuizHighscoreViewController.swift */,
+				4069DDA3205DB4BB00C28545 /* QuizHighscoreCell.swift */,
+			);
+			path = Highscore;
+			sourceTree = "<group>";
+		};
+		407E514E205DD14F008CDB7B /* NewsFeed */ = {
+			isa = PBXGroup;
+			children = (
+				407E514F205DD16C008CDB7B /* NewsFeedNavigationViewController.storyboard */,
+				407E5151205DD191008CDB7B /* NewsFeedNavigationViewController.swift */,
+				407E5153205DD1B3008CDB7B /* NewsFeedViewController.swift */,
+			);
+			path = NewsFeed;
+			sourceTree = "<group>";
+		};
 		5B4B2357B307248D5A9B4AA3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -166,6 +244,18 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		75842DF7205DBD4900877A1A /* Gradient */ = {
+			isa = PBXGroup;
+			children = (
+				75842DEF205DBD3C00877A1A /* LinearGradientLayer.swift */,
+				75842DEB205DBD3B00877A1A /* LinearGradientView.swift */,
+				75842DF0205DBD3C00877A1A /* RadialGradienLayer.swift */,
+				75842DEE205DBD3C00877A1A /* RadialGradientButton.swift */,
+				75842DEC205DBD3C00877A1A /* RadialGradientView.swift */,
+			);
+			path = Gradient;
+			sourceTree = "<group>";
+		};
 		933D5AF2205D45C200E7D107 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,6 +264,7 @@
 				933D5AF9205D463100E7D107 /* Tab2 */,
 				933D5AFA205D463300E7D107 /* Tab3 */,
 				933D5AFB205D463600E7D107 /* Tab4 */,
+				407E514E205DD14F008CDB7B /* NewsFeed */,
 				933D5AF5205D45F500E7D107 /* ViewStore.swift */,
 			);
 			path = View;
@@ -210,12 +301,18 @@
 		933D5AF8205D462700E7D107 /* Tab1 */ = {
 			isa = PBXGroup;
 			children = (
-				933D5AFE205D467200E7D107 /* Tab1ViewController.storyboard */,
-				933D5AFC205D467200E7D107 /* Tab1Navigator.swift */,
-				933D5AFD205D467200E7D107 /* Tab1Presenter.swift */,
-				933D5AFF205D467200E7D107 /* Tab1ViewController.swift */,
+				933D5AFE205D467200E7D107 /* MapViewController.storyboard */,
+				75842DE2205D8CFC00877A1A /* Tab1Navigator.swift */,
+				75842DE1205D8CFB00877A1A /* Tab1Presenter.swift */,
+				933D5AFF205D467200E7D107 /* MapViewController.swift */,
+				75842DDD205D826B00877A1A /* MapViewBarViewController.swift */,
 				75842DD9205D4C7200877A1A /* MapView.swift */,
 				75842DDB205D4E3500877A1A /* MapView.xib */,
+				75842DDF205D8B1D00877A1A /* ExhibitionDetailViewController.swift */,
+				75842DE5205D95DC00877A1A /* ParallaxTableViewHeaderView.swift */,
+				75842DE7205D9C2000877A1A /* ExhibitionDetailHeaderView.swift */,
+				75842DFC205DC0D200877A1A /* String+Exhibition.swift */,
+				75842DFE205DC14000877A1A /* UIImage+Exhibition.swift */,
 			);
 			path = Tab1;
 			sourceTree = "<group>";
@@ -244,10 +341,14 @@
 		933D5AFB205D463600E7D107 /* Tab4 */ = {
 			isa = PBXGroup;
 			children = (
-				933D5B17205D469400E7D107 /* Tab4ViewController.storyboard */,
-				933D5B15205D469400E7D107 /* Tab4Navigator.swift */,
-				933D5B16205D469400E7D107 /* Tab4Presenter.swift */,
+				4069DDA7205DB65800C28545 /* Model */,
+				4069DDAA205DB6BF00C28545 /* Service */,
+				4069DDAB205DBDA300C28545 /* Highscore */,
+				933D5B17205D469400E7D107 /* QuizNavigationViewController.storyboard */,
+				4069DDA1205DAACF00C28545 /* QuizNavigationViewController.swift */,
 				933D5B18205D469400E7D107 /* Tab4ViewController.swift */,
+				4069DD9D205D85F900C28545 /* QuizViewController.swift */,
+				4069DD9F205D8FBB00C28545 /* QuizExtenisons.swift */,
 			);
 			path = Tab4;
 			sourceTree = "<group>";
@@ -263,6 +364,7 @@
 		933D5B7F205D515300E7D107 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				933D5BE4205D670F00E7D107 /* Estimote */,
 				933D5BA5205D517900E7D107 /* Layout */,
 				933D5B88205D517900E7D107 /* Tools */,
 			);
@@ -377,6 +479,7 @@
 		933D5BA5205D517900E7D107 /* Layout */ = {
 			isa = PBXGroup;
 			children = (
+				75842DF7205DBD4900877A1A /* Gradient */,
 				933D5BA6205D517900E7D107 /* UIImage */,
 				933D5BA8205D517900E7D107 /* UIWindow */,
 				933D5BAA205D517900E7D107 /* UILabel */,
@@ -483,6 +586,14 @@
 				933D5BC0205D517900E7D107 /* UITableView+DequeueReusableCell.swift */,
 			);
 			path = UITableView;
+			sourceTree = "<group>";
+		};
+		933D5BE4205D670F00E7D107 /* Estimote */ = {
+			isa = PBXGroup;
+			children = (
+				933D5BE5205D671E00E7D107 /* EstimoteService.swift */,
+			);
+			path = Estimote;
 			sourceTree = "<group>";
 		};
 		D02394535E18961047A91346 /* Pods */ = {
@@ -611,11 +722,13 @@
 				FB7BBD0A205BB33400363510 /* LaunchScreen.storyboard in Resources */,
 				FBCDF048205DD7590016100D /* Models.scnassets in Resources */,
 				FB7BBD07205BB33400363510 /* Assets.xcassets in Resources */,
-				933D5B1B205D469400E7D107 /* Tab4ViewController.storyboard in Resources */,
+				933D5B1B205D469400E7D107 /* QuizNavigationViewController.storyboard in Resources */,
 				FBCDF046205DCF200016100D /* 1.mov in Resources */,
+				933D5B1B205D469400E7D107 /* QuizNavigationViewController.storyboard in Resources */,
 				FB7BBD05205BB33400363510 /* TabBarViewController.storyboard in Resources */,
-				933D5B02205D467200E7D107 /* Tab1ViewController.storyboard in Resources */,
+				933D5B02205D467200E7D107 /* MapViewController.storyboard in Resources */,
 				75842DDC205D4E3500877A1A /* MapView.xib in Resources */,
+				407E5150205DD16C008CDB7B /* NewsFeedNavigationViewController.storyboard in Resources */,
 				933D5B0A205D467D00E7D107 /* Tab2ViewController.storyboard in Resources */,
 				933D5B12205D468700E7D107 /* Tab3ViewController.storyboard in Resources */,
 			);
@@ -698,49 +811,69 @@
 				933D5BDD205D517900E7D107 /* UINavigationBar+Appearance.swift in Sources */,
 				933D5BCF205D517900E7D107 /* CollectionViewSection.swift in Sources */,
 				933D5BC3205D517900E7D107 /* TextFieldFormatter.swift in Sources */,
+				75842DF5205DBD3C00877A1A /* LinearGradientLayer.swift in Sources */,
+				75842DFF205DC14000877A1A /* UIImage+Exhibition.swift in Sources */,
 				FBCDF039205D74DD0016100D /* CIQRCodeDescriptor+Data.swift in Sources */,
 				933D5BDB205D517900E7D107 /* UICollectionView+ReloadDataAnimation.swift in Sources */,
 				75842DDA205D4C7200877A1A /* MapView.swift in Sources */,
-				933D5B03205D467200E7D107 /* Tab1ViewController.swift in Sources */,
+				933D5B03205D467200E7D107 /* MapViewController.swift in Sources */,
+				4069DDA0205D8FBB00C28545 /* QuizExtenisons.swift in Sources */,
+				75842DF1205DBD3C00877A1A /* LinearGradientView.swift in Sources */,
 				933D5BE1205D517900E7D107 /* UITableView+ReloadDataAnimation.swift in Sources */,
 				933D5BD7205D517900E7D107 /* UIResponder+HideApplicationContent.swift in Sources */,
 				933D5B1C205D469400E7D107 /* Tab4ViewController.swift in Sources */,
+				4069DDA9205DB67100C28545 /* QuizHighscoreModel.swift in Sources */,
 				933D5BD1205D517900E7D107 /* TableViewItem.swift in Sources */,
-				933D5B01205D467200E7D107 /* Tab1Presenter.swift in Sources */,
 				933D5BCC205D517900E7D107 /* String+AccountFormatter.swift in Sources */,
 				933D5BC4205D517900E7D107 /* Array+RemoveObject.swift in Sources */,
+				4069DDA2205DAACF00C28545 /* QuizNavigationViewController.swift in Sources */,
 				933D5BD9205D517900E7D107 /* UIView+HideAnimation.swift in Sources */,
-				933D5B19205D469400E7D107 /* Tab4Navigator.swift in Sources */,
 				933D5BD3205D517900E7D107 /* UIImage+Color.swift in Sources */,
 				933D5BD6205D517900E7D107 /* UIApplication+HeadViewController.swift in Sources */,
 				933D5B0B205D467D00E7D107 /* Tab2ViewController.swift in Sources */,
+				4069DD9C205D830900C28545 /* QuizService.swift in Sources */,
 				FB7BBD02205BB33400363510 /* TabBarViewController.swift in Sources */,
+				75842DF6205DBD3C00877A1A /* RadialGradienLayer.swift in Sources */,
+				933D5BE6205D671E00E7D107 /* EstimoteService.swift in Sources */,
 				933D5BC9205D517900E7D107 /* String+Localizable.swift in Sources */,
-				933D5B00205D467200E7D107 /* Tab1Navigator.swift in Sources */,
+				4069DDA6205DB50100C28545 /* QuizHighscoreViewController.swift in Sources */,
 				933D5BE0205D517900E7D107 /* UINavigationController+PopToClass.swift in Sources */,
+				75842DE8205D9C2000877A1A /* ExhibitionDetailHeaderView.swift in Sources */,
+				4069DD9A205D822300C28545 /* QuizQuestionModel.swift in Sources */,
 				933D5BC6205D517900E7D107 /* NSAttributedString+Concatenate.swift in Sources */,
 				933D5BD5205D517900E7D107 /* UILabel+TextAnimation.swift in Sources */,
+				407E5152205DD191008CDB7B /* NewsFeedNavigationViewController.swift in Sources */,
 				933D5BDE205D517900E7D107 /* UIViewController+HeadViewController.swift in Sources */,
 				933D5BDF205D517900E7D107 /* UINavigationController+Back.swift in Sources */,
 				933D5BC8205D517900E7D107 /* ObservableType+AlertController.swift in Sources */,
 				933D5BCA205D517900E7D107 /* String+CardFormatter.swift in Sources */,
+				75842DE3205D8CFC00877A1A /* Tab1Presenter.swift in Sources */,
 				933D5BE2205D517900E7D107 /* UITableView+DequeueReusableCell.swift in Sources */,
 				933D5BD4205D517900E7D107 /* UIWindow+RootViewController.swift in Sources */,
+				75842DF4205DBD3C00877A1A /* RadialGradientButton.swift in Sources */,
 				FB7BBD00205BB33400363510 /* AppDelegate.swift in Sources */,
 				933D5AF6205D45F500E7D107 /* ViewStore.swift in Sources */,
+				75842DDE205D826B00877A1A /* MapViewBarViewController.swift in Sources */,
+				75842DE6205D95DC00877A1A /* ParallaxTableViewHeaderView.swift in Sources */,
+				407E5154205DD1B3008CDB7B /* NewsFeedViewController.swift in Sources */,
 				933D5BC5205D517900E7D107 /* Reactive+Extensions.swift in Sources */,
+				75842DF2205DBD3C00877A1A /* RadialGradientView.swift in Sources */,
 				933D5BD2205D517900E7D107 /* TableViewSection.swift in Sources */,
 				933D5B08205D467D00E7D107 /* Tab2Navigator.swift in Sources */,
+				75842DE4205D8CFC00877A1A /* Tab1Navigator.swift in Sources */,
 				933D5BC1205D517900E7D107 /* AmountTextFieldFormatter.swift in Sources */,
 				933D5BCE205D517900E7D107 /* CollectionViewItem.swift in Sources */,
 				933D5BCB205D517900E7D107 /* String+AmountFormatter.swift in Sources */,
 				933D5BD0205D517900E7D107 /* ILocalizedError.swift in Sources */,
-				933D5B1A205D469400E7D107 /* Tab4Presenter.swift in Sources */,
 				933D5BD8205D517900E7D107 /* UIView+Instantiate.swift in Sources */,
+				4069DD9E205D85F900C28545 /* QuizViewController.swift in Sources */,
 				933D5B09205D467D00E7D107 /* Tab2Presenter.swift in Sources */,
 				933D5BCD205D517900E7D107 /* String+Tools.swift in Sources */,
+				75842DE0205D8B1D00877A1A /* ExhibitionDetailViewController.swift in Sources */,
 				933D5BC2205D517900E7D107 /* SimpleTextFieldFormatter.swift in Sources */,
+				4069DDA4205DB4BB00C28545 /* QuizHighscoreCell.swift in Sources */,
 				933D5BDC205D517900E7D107 /* UICollectionView+DequeueReusableCell.swift in Sources */,
+				75842DFD205DC0D200877A1A /* String+Exhibition.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -884,6 +1017,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.hackathon.BalticMuseums;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/Supporting Files/Resources/ObjCBridge.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -900,6 +1034,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = pl.hackathon.BalticMuseums;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "${PROJECT_NAME}/Supporting Files/Resources/ObjCBridge.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

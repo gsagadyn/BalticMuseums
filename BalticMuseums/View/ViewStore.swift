@@ -24,8 +24,8 @@ class ViewStore: DependencyStore {
 
 private class DefaultViewStoreModule: IDependencyStoreModule {
     fileprivate func load(to dependencyStore: DependencyStore) {
-        dependencyStore.bind(closure: { () -> Tab1ViewController in
-            let vc = Tab1ViewController.instantiate()
+        dependencyStore.bind(closure: { () -> MapViewController in
+            let vc = MapViewController.instantiate()
             vc.presenter = Tab1Presenter(Tab1Navigator(vc))
             return vc
         })
@@ -43,7 +43,21 @@ private class DefaultViewStoreModule: IDependencyStoreModule {
 
         dependencyStore.bind(closure: { () -> Tab4ViewController in
             let vc = Tab4ViewController.instantiate()
-            vc.presenter = Tab4Presenter(Tab4Navigator(vc))
+            return vc
+        })
+        
+        dependencyStore.bind(closure: { () -> Tab4ViewController in
+            let vc = Tab4ViewController.instantiate()
+            return vc
+        })
+        
+        dependencyStore.bind(closure: { () -> QuizNavigationViewController in
+            let vc = QuizNavigationViewController.instantiate()
+            return vc
+        })
+        
+        dependencyStore.bind(closure: { () -> NewsFeedNavigationViewController in
+            let vc = NewsFeedNavigationViewController.instantiate()
             return vc
         })
     }
