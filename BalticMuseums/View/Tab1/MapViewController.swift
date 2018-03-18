@@ -25,8 +25,8 @@ class MapViewController: UserInterfaceLayer.Controller<Tab1Presenter>, UIStorybo
 		
 		mapView.delegate = self
 		
-		let widthScale = scrollView.frame.width / mapView.bounds.width * 1.3
-		let heightScale = scrollView.frame.height / mapView.bounds.height * 1.3
+		let widthScale = scrollView.frame.width / mapView.bounds.width
+		let heightScale = scrollView.frame.height / mapView.bounds.height
 		let maxScale = min(widthScale, heightScale)
 		
 		scrollView.maximumZoomScale = maxScale
@@ -42,10 +42,10 @@ class MapViewController: UserInterfaceLayer.Controller<Tab1Presenter>, UIStorybo
 		scrollView.zoom(to: exhibition.frame, animated: true)
 		
 		var rect = exhibition.frame
-		rect.origin.x *= scrollView.zoomScale
-		rect.origin.y *= scrollView.zoomScale
-		rect.size.width *= scrollView.zoomScale
-		rect.size.height *= scrollView.zoomScale
+		rect.origin.x *= scrollView.zoomScale - rect.width / 2
+		rect.origin.y *= scrollView.zoomScale - rect.height / 2
+		rect.size.width *= scrollView.zoomScale + rect.width
+		rect.size.height *= scrollView.zoomScale + rect.height
 		
 		scrollView.scrollRectToVisible(rect, animated: true)
 		
@@ -96,7 +96,7 @@ class MapViewController: UserInterfaceLayer.Controller<Tab1Presenter>, UIStorybo
 	
 	func didDiscover(beaconId: Int) {
 		if beaconId == 9294 {
-			mapView.selectedExibition = Exhibition.Hydro
+			mapView.selectedExibition = Exhibition.TreeOfLife
 		} else if beaconId == 9000 {
 			mapView.selectedExibition = Exhibition.Health
 		}
