@@ -27,6 +27,8 @@ class ExhibitionDetailViewController: UIViewController, UITableViewDelegate, UIT
 		
 		closeButton.setImage(UIImage(named: "close")?.withRenderingMode(UIImageRenderingMode.alwaysTemplate), for: UIControlState.normal)
 		closeButton.tintColor = UIColor(named: "main")
+		
+		tableView.backgroundColor = .clear
 	}
 	
 	@IBAction func closeAction(_ sender: Any) {
