@@ -10,7 +10,6 @@ def shared_pods
     pod 'Snapify'
     pod 'SnapKit'
     pod 'RxOptional'
-    pod 'IQKeyboardManagerSwift'
     pod 'EstimoteSDK', '~> 4.27.0'
 end
 

@@ -18,11 +18,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="6n3-ob-QQS">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="experymentIcon" translatesAutoresizingMaskIntoConstraints="NO" id="6n3-ob-QQS">
+                                <rect key="frame" x="123.5" y="279.5" width="128" height="128"/>
                             </imageView>
-                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="v9b-pL-D5E">
-                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="v9b-pL-D5E">
+                                <rect key="frame" x="178" y="334" width="20" height="20"/>
                             </activityIndicatorView>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rde-tY-IPG">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -87,15 +87,13 @@ KOD QR</string>
                         <constraints>
                             <constraint firstItem="rde-tY-IPG" firstAttribute="leading" secondItem="jU0-EV-19J" secondAttribute="leading" id="8BQ-V3-g3z"/>
                             <constraint firstItem="rde-tY-IPG" firstAttribute="top" secondItem="KDa-7W-dlX" secondAttribute="top" id="9UG-aa-tad"/>
-                            <constraint firstAttribute="trailing" secondItem="6n3-ob-QQS" secondAttribute="trailing" id="HZq-5o-jux"/>
                             <constraint firstItem="rt0-Rz-ZlV" firstAttribute="centerY" secondItem="jU0-EV-19J" secondAttribute="centerY" id="JBX-ND-6ve"/>
                             <constraint firstItem="v9b-pL-D5E" firstAttribute="centerY" secondItem="6n3-ob-QQS" secondAttribute="centerY" id="JKj-I8-zWi"/>
-                            <constraint firstItem="6n3-ob-QQS" firstAttribute="top" secondItem="KDa-7W-dlX" secondAttribute="top" id="NHv-PO-TTL"/>
+                            <constraint firstItem="6n3-ob-QQS" firstAttribute="centerX" secondItem="jU0-EV-19J" secondAttribute="centerX" id="Omw-fo-Hg2"/>
                             <constraint firstItem="jU0-EV-19J" firstAttribute="trailing" secondItem="rde-tY-IPG" secondAttribute="trailing" id="SrS-dC-c3T"/>
                             <constraint firstItem="jU0-EV-19J" firstAttribute="bottom" secondItem="rde-tY-IPG" secondAttribute="bottom" id="kP6-r4-P2S"/>
                             <constraint firstItem="v9b-pL-D5E" firstAttribute="centerX" secondItem="6n3-ob-QQS" secondAttribute="centerX" id="laB-W5-OJt"/>
-                            <constraint firstAttribute="bottom" secondItem="6n3-ob-QQS" secondAttribute="bottom" id="mDn-ri-QPp"/>
-                            <constraint firstItem="6n3-ob-QQS" firstAttribute="leading" secondItem="KDa-7W-dlX" secondAttribute="leading" id="qHN-oO-bLa"/>
+                            <constraint firstItem="6n3-ob-QQS" firstAttribute="centerY" secondItem="jU0-EV-19J" secondAttribute="centerY" id="qOd-t8-NwA"/>
                             <constraint firstItem="rt0-Rz-ZlV" firstAttribute="centerX" secondItem="jU0-EV-19J" secondAttribute="centerX" id="xtw-Ay-LYM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jU0-EV-19J"/>
@@ -111,7 +109,7 @@ KOD QR</string>
         </scene>
     </scenes>
     <resources>
-        <image name="Background" width="1280" height="1600"/>
+        <image name="experymentIcon" width="128" height="128"/>
         <image name="qrcode" width="523" height="499"/>
     </resources>
 </document>
