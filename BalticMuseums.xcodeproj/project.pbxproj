@@ -18,6 +18,9 @@
 		407E5150205DD16C008CDB7B /* NewsFeedNavigationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 407E514F205DD16C008CDB7B /* NewsFeedNavigationViewController.storyboard */; };
 		407E5152205DD191008CDB7B /* NewsFeedNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407E5151205DD191008CDB7B /* NewsFeedNavigationViewController.swift */; };
 		407E5154205DD1B3008CDB7B /* NewsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407E5153205DD1B3008CDB7B /* NewsFeedViewController.swift */; };
+		407E5156205DDF44008CDB7B /* NewsFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407E5155205DDF44008CDB7B /* NewsFeedModel.swift */; };
+		407E5158205DDFB4008CDB7B /* NewsFeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407E5157205DDFB4008CDB7B /* NewsFeedService.swift */; };
+		407E515A205DE2A9008CDB7B /* NewsFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407E5159205DE2A9008CDB7B /* NewsFeedCell.swift */; };
 		75842DDA205D4C7200877A1A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DD9205D4C7200877A1A /* MapView.swift */; };
 		75842DDC205D4E3500877A1A /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75842DDB205D4E3500877A1A /* MapView.xib */; };
 		75842DDE205D826B00877A1A /* MapViewBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DDD205D826B00877A1A /* MapViewBarViewController.swift */; };
@@ -109,6 +112,9 @@
 		407E514F205DD16C008CDB7B /* NewsFeedNavigationViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewsFeedNavigationViewController.storyboard; sourceTree = "<group>"; };
 		407E5151205DD191008CDB7B /* NewsFeedNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedNavigationViewController.swift; sourceTree = "<group>"; };
 		407E5153205DD1B3008CDB7B /* NewsFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedViewController.swift; sourceTree = "<group>"; };
+		407E5155205DDF44008CDB7B /* NewsFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedModel.swift; sourceTree = "<group>"; };
+		407E5157205DDFB4008CDB7B /* NewsFeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedService.swift; sourceTree = "<group>"; };
+		407E5159205DE2A9008CDB7B /* NewsFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedCell.swift; sourceTree = "<group>"; };
 		4BB09756C1A03984BE6478CC /* Pods_BalticMuseums.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BalticMuseums.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		75842DD9205D4C7200877A1A /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		75842DDB205D4E3500877A1A /* MapView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
@@ -238,6 +244,9 @@
 				407E514F205DD16C008CDB7B /* NewsFeedNavigationViewController.storyboard */,
 				407E5151205DD191008CDB7B /* NewsFeedNavigationViewController.swift */,
 				407E5153205DD1B3008CDB7B /* NewsFeedViewController.swift */,
+				407E5155205DDF44008CDB7B /* NewsFeedModel.swift */,
+				407E5157205DDFB4008CDB7B /* NewsFeedService.swift */,
+				407E5159205DE2A9008CDB7B /* NewsFeedCell.swift */,
 			);
 			path = NewsFeed;
 			sourceTree = "<group>";
@@ -840,6 +849,7 @@
 				933D5B03205D467200E7D107 /* MapViewController.swift in Sources */,
 				4069DDA0205D8FBB00C28545 /* QuizExtenisons.swift in Sources */,
 				75842DF1205DBD3C00877A1A /* LinearGradientView.swift in Sources */,
+				407E515A205DE2A9008CDB7B /* NewsFeedCell.swift in Sources */,
 				933D5BE1205D517900E7D107 /* UITableView+ReloadDataAnimation.swift in Sources */,
 				933D5BFC205DDB1C00E7D107 /* MainViewController.swift in Sources */,
 				933D5BD7205D517900E7D107 /* UIResponder+HideApplicationContent.swift in Sources */,
@@ -865,6 +875,7 @@
 				4069DD9A205D822300C28545 /* QuizQuestionModel.swift in Sources */,
 				933D5BC6205D517900E7D107 /* NSAttributedString+Concatenate.swift in Sources */,
 				933D5BD5205D517900E7D107 /* UILabel+TextAnimation.swift in Sources */,
+				407E5158205DDFB4008CDB7B /* NewsFeedService.swift in Sources */,
 				407E5152205DD191008CDB7B /* NewsFeedNavigationViewController.swift in Sources */,
 				933D5BDE205D517900E7D107 /* UIViewController+HeadViewController.swift in Sources */,
 				933D5BDF205D517900E7D107 /* UINavigationController+Back.swift in Sources */,
@@ -893,6 +904,7 @@
 				4069DD9E205D85F900C28545 /* QuizViewController.swift in Sources */,
 				933D5B09205D467D00E7D107 /* Tab2Presenter.swift in Sources */,
 				933D5BCD205D517900E7D107 /* String+Tools.swift in Sources */,
+				407E5156205DDF44008CDB7B /* NewsFeedModel.swift in Sources */,
 				75842DE0205D8B1D00877A1A /* ExhibitionDetailViewController.swift in Sources */,
 				933D5BC2205D517900E7D107 /* SimpleTextFieldFormatter.swift in Sources */,
 				4069DDA4205DB4BB00C28545 /* QuizHighscoreCell.swift in Sources */,
