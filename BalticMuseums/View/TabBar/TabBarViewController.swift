@@ -13,7 +13,7 @@ class TabBarViewController: UITabBarController, UIStoryboardInstantiate {
     // MARK: - Private Properties
 
     private let controllersData: [ControllerData] = [
-		ControllerData(controller: ViewStore.shared[NewsFeedNavigationViewController.self],
+		ControllerData(controller: ViewStore.shared[NewsFeedViewController.self],
 					   image: UIImage(named: "if_files-folders-66_808606"),
 					   title: "Aktualności",
 					   isCustomActionEnabled: false),
