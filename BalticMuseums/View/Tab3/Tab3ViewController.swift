@@ -15,11 +15,18 @@ import SpriteKit
 
 class Tab3ViewController: UIViewController, UIStoryboardInstantiate {
     @IBOutlet var sceneView: ARSCNView!
+    @IBOutlet weak var alertView: UIView!
     
     var model = ["test": "cup.scn",
                  "i tak nie wygrasz": "2.mov"]
     
-    var detectedDataAnchor: ARAnchor?
+    var detectedDataAnchor: ARAnchor? {
+        didSet {
+            UIView.animate(withDuration: 0.3, delay: 0.0, options: [], animations: {
+                self.alertView.alpha = 0.0
+            }, completion: nil)
+        }
+    }
     var detectedDataType: String?
     var isProcessing = false
     
@@ -30,6 +37,8 @@ class Tab3ViewController: UIViewController, UIStoryboardInstantiate {
         
         sceneView.delegate = self
         sceneView.session.delegate = self
+        alertView.layer.cornerRadius = 8.0
+        alertView.clipsToBounds = true
     }
     
     @objc func playerItemDidReachEnd(notification: NSNotification) {
@@ -44,11 +53,36 @@ class Tab3ViewController: UIViewController, UIStoryboardInstantiate {
         let configuration = ARWorldTrackingConfiguration()
         configuration.planeDetection = .horizontal
         sceneView.session.run(configuration)
+        sceneView.alpha = 0.0
+        alertView.alpha = 0.0
+        alertView.transform = CGAffineTransform(scaleX: 0.0, y: 0.0)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        UIView.animate(withDuration: 0.4, delay: 1.0, options: [], animations: {
+            self.sceneView.alpha = 1.0
+        }, completion: nil)
+        
+        UIView.animate(withDuration: 0.5, delay: 1.4, usingSpringWithDamping: 0.4, initialSpringVelocity: 1.0, options: [], animations: {
+            self.alertView.alpha = 1.0
+            self.alertView.transform = CGAffineTransform.identity
+        }, completion: nil)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         sceneView.session.pause()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if let anchor = detectedDataAnchor {
+            sceneView.session.remove(anchor: anchor)
+        }
+        detectedDataAnchor = nil
     }
 }
 
