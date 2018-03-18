@@ -16,20 +16,32 @@ class MiniPlayerView: UIView {
 	
 	let label = UILabel()
 	let playButton = UIButton()
-	let blur = UIVisualEffectView(effect: UIBlurEffect(style: .light))
+    let icon = UIImageView()
+	let blur = UIVisualEffectView(effect: UIBlurEffect(style: .extraLight))
 	weak var delegate: MapViewBarViewControllerDelegate?
 
 	override init(frame: CGRect) {
 		super.init(frame: frame)
 		
-		addSubview(blur)
-		blur.snp.remakeConstraints { (make) in
-			make.edges.equalToSuperview()
-		}
+        label.font = UIFont.boldSystemFont(ofSize: 16.0)
+        
+        addSubview(blur)
+        blur.snp.remakeConstraints { (make) in
+            make.edges.equalToSuperview()
+        }
+        
+        addSubview(icon)
+        icon.image = UIImage(named: "experymentIcon")
+        icon.contentMode = .scaleAspectFit
+        icon.snp.remakeConstraints { (make) in
+            make.left.equalToSuperview().offset(16)
+            make.centerY.equalToSuperview()
+            make.width.height.equalTo(32)
+        }
 		
 		addSubview(label)
 		label.snp.remakeConstraints { (make) in
-			make.left.equalToSuperview().offset(14)
+			make.left.equalTo(icon.snp.right).offset(14)
 			make.centerY.equalToSuperview()
 		}
 		
@@ -39,7 +51,7 @@ class MiniPlayerView: UIView {
 		playButton.isUserInteractionEnabled = false
 		playButton.snp.remakeConstraints { (make) in
 			make.left.equalTo(label.snp.right).offset(10)
-			make.right.equalToSuperview().offset(-10)
+			make.right.equalToSuperview().offset(-24)
 			make.centerY.equalToSuperview()
 		}
 		
