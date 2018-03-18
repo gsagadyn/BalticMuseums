@@ -28,7 +28,6 @@ class MiniPlayerView: UIView {
 		}
 		
 		addSubview(label)
-		label.text = "label"
 		label.snp.remakeConstraints { (make) in
 			make.left.equalToSuperview().offset(14)
 			make.centerY.equalToSuperview()
