@@ -37,7 +37,6 @@
 		75842DFD205DC0D200877A1A /* String+Exhibition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DFC205DC0D200877A1A /* String+Exhibition.swift */; };
 		75842DFF205DC14000877A1A /* UIImage+Exhibition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75842DFE205DC14000877A1A /* UIImage+Exhibition.swift */; };
 		75C3F0E0205DF296006B6A78 /* MiniPlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75C3F0DF205DF296006B6A78 /* MiniPlayerView.swift */; };
-		75C3F0E2205DF2A4006B6A78 /* MiniPlayerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75C3F0E1205DF2A4006B6A78 /* MiniPlayerView.xib */; };
 		764F7630A5AE8932B9AACC09 /* Pods_BalticMuseums.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB09756C1A03984BE6478CC /* Pods_BalticMuseums.framework */; };
 		933D5AF6205D45F500E7D107 /* ViewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5AF5205D45F500E7D107 /* ViewStore.swift */; };
 		933D5B02205D467200E7D107 /* MapViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 933D5AFE205D467200E7D107 /* MapViewController.storyboard */; };
@@ -134,7 +133,6 @@
 		75842DFC205DC0D200877A1A /* String+Exhibition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Exhibition.swift"; sourceTree = "<group>"; };
 		75842DFE205DC14000877A1A /* UIImage+Exhibition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Exhibition.swift"; sourceTree = "<group>"; };
 		75C3F0DF205DF296006B6A78 /* MiniPlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniPlayerView.swift; sourceTree = "<group>"; };
-		75C3F0E1205DF2A4006B6A78 /* MiniPlayerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MiniPlayerView.xib; sourceTree = "<group>"; };
 		933D5AF5205D45F500E7D107 /* ViewStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewStore.swift; sourceTree = "<group>"; };
 		933D5AFE205D467200E7D107 /* MapViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MapViewController.storyboard; sourceTree = "<group>"; };
 		933D5AFF205D467200E7D107 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -289,7 +287,6 @@
 				407E514E205DD14F008CDB7B /* NewsFeed */,
 				933D5AF5205D45F500E7D107 /* ViewStore.swift */,
 				75C3F0DF205DF296006B6A78 /* MiniPlayerView.swift */,
-				75C3F0E1205DF2A4006B6A78 /* MiniPlayerView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -753,7 +750,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75C3F0E2205DF2A4006B6A78 /* MiniPlayerView.xib in Resources */,
 				FBCDF045205DCF200016100D /* 2.mov in Resources */,
 				933D5BFB205DDB1C00E7D107 /* MainViewController.storyboard in Resources */,
 				FB7BBD0A205BB33400363510 /* LaunchScreen.storyboard in Resources */,

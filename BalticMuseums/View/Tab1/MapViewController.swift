@@ -9,7 +9,7 @@
 import UIKit
 import Snapify
 
-class MapViewController: UserInterfaceLayer.Controller<Tab1Presenter>, UIStoryboardInstantiate, MapViewDelegate, UIScrollViewDelegate, MapViewBarViewControllerDelegate, EstimoteServiceDelegate {
+class MapViewController: UserInterfaceLayer.Controller<Tab1Presenter>, UIStoryboardInstantiate, MapViewDelegate, UIScrollViewDelegate, MapViewBarViewControllerDelegate, EstimoteServiceDelegate, MiniPlayerViewDelegate {
 	
 	@IBOutlet weak var mapView: MapView!
 	@IBOutlet weak var scrollView: UIScrollView!
@@ -81,12 +81,14 @@ class MapViewController: UserInterfaceLayer.Controller<Tab1Presenter>, UIStorybo
 	func showBar() {
 		
 		let playerView = MiniPlayerView()
+		playerView.label.text = String.exhibitionTitleForType(mapView.selectedExibition!)
 		tabBarController?.view.addSubview(playerView)
+		playerView.delegate = self
 		playerView.snp.remakeConstraints { (make) in
 			make.left.equalToSuperview()
 			make.right.equalToSuperview()
 			make.bottom.equalTo((tabBarController?.tabBar.snp.top)!)
-			make.height.equalTo(100)
+			make.height.equalTo(60)
 		}
 		
 //		bottomConstraint.constant = -10
