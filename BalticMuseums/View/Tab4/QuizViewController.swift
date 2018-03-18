@@ -72,7 +72,7 @@ class QuizViewController: UIViewController {
             return
         }
         let question = questions[currentQuestionIndex]
-        categoryLabel.text = question.category
+        categoryLabel.text = question.category.uppercased()
         questionLabel.text = question.question
         
         let shuffledAnswers = question.answers.shuffled

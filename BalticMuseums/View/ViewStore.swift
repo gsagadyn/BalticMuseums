@@ -62,8 +62,8 @@ private class DefaultViewStoreModule: IDependencyStoreModule {
             return vc
         })
         
-        dependencyStore.bind(closure: { () -> NewsFeedNavigationViewController in
-            let vc = NewsFeedNavigationViewController.instantiate()
+        dependencyStore.bind(closure: { () -> NewsFeedViewController in
+            let vc = NewsFeedViewController.instantiate()
             return vc
         })
     }

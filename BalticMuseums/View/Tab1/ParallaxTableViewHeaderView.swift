@@ -12,7 +12,11 @@ import RxSwift
 
 class ParallaxTableViewHeaderView: UIView {
 
-	var percentageScroll: CGFloat = 0.0
+    var percentageScroll: CGFloat = 0.0 {
+        didSet {
+            percentageChanged(value: percentageScroll)
+        }
+    }
     var bag = DisposeBag()
 	
 	init(tableView: UITableView, minHeight:CGFloat, maxHeight:CGFloat) {
@@ -51,4 +55,7 @@ class ParallaxTableViewHeaderView: UIView {
 		super.init(coder: aDecoder)
 	}
 
+    
+    func percentageChanged(value: CGFloat) {
+    }
 }

@@ -15,8 +15,7 @@
 		4069DDA4205DB4BB00C28545 /* QuizHighscoreCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4069DDA3205DB4BB00C28545 /* QuizHighscoreCell.swift */; };
 		4069DDA6205DB50100C28545 /* QuizHighscoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4069DDA5205DB50100C28545 /* QuizHighscoreViewController.swift */; };
 		4069DDA9205DB67100C28545 /* QuizHighscoreModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4069DDA8205DB67100C28545 /* QuizHighscoreModel.swift */; };
-		407E5150205DD16C008CDB7B /* NewsFeedNavigationViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 407E514F205DD16C008CDB7B /* NewsFeedNavigationViewController.storyboard */; };
-		407E5152205DD191008CDB7B /* NewsFeedNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407E5151205DD191008CDB7B /* NewsFeedNavigationViewController.swift */; };
+		407E5150205DD16C008CDB7B /* NewsFeedViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 407E514F205DD16C008CDB7B /* NewsFeedViewController.storyboard */; };
 		407E5154205DD1B3008CDB7B /* NewsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407E5153205DD1B3008CDB7B /* NewsFeedViewController.swift */; };
 		407E5156205DDF44008CDB7B /* NewsFeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407E5155205DDF44008CDB7B /* NewsFeedModel.swift */; };
 		407E5158205DDFB4008CDB7B /* NewsFeedService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 407E5157205DDFB4008CDB7B /* NewsFeedService.swift */; };
@@ -110,8 +109,7 @@
 		4069DDA3205DB4BB00C28545 /* QuizHighscoreCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizHighscoreCell.swift; sourceTree = "<group>"; };
 		4069DDA5205DB50100C28545 /* QuizHighscoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizHighscoreViewController.swift; sourceTree = "<group>"; };
 		4069DDA8205DB67100C28545 /* QuizHighscoreModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizHighscoreModel.swift; sourceTree = "<group>"; };
-		407E514F205DD16C008CDB7B /* NewsFeedNavigationViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewsFeedNavigationViewController.storyboard; sourceTree = "<group>"; };
-		407E5151205DD191008CDB7B /* NewsFeedNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedNavigationViewController.swift; sourceTree = "<group>"; };
+		407E514F205DD16C008CDB7B /* NewsFeedViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewsFeedViewController.storyboard; sourceTree = "<group>"; };
 		407E5153205DD1B3008CDB7B /* NewsFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedViewController.swift; sourceTree = "<group>"; };
 		407E5155205DDF44008CDB7B /* NewsFeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedModel.swift; sourceTree = "<group>"; };
 		407E5157205DDFB4008CDB7B /* NewsFeedService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsFeedService.swift; sourceTree = "<group>"; };
@@ -243,8 +241,7 @@
 		407E514E205DD14F008CDB7B /* NewsFeed */ = {
 			isa = PBXGroup;
 			children = (
-				407E514F205DD16C008CDB7B /* NewsFeedNavigationViewController.storyboard */,
-				407E5151205DD191008CDB7B /* NewsFeedNavigationViewController.swift */,
+				407E514F205DD16C008CDB7B /* NewsFeedViewController.storyboard */,
 				407E5153205DD1B3008CDB7B /* NewsFeedViewController.swift */,
 				407E5155205DDF44008CDB7B /* NewsFeedModel.swift */,
 				407E5157205DDFB4008CDB7B /* NewsFeedService.swift */,
@@ -761,7 +758,7 @@
 				FB7BBD05205BB33400363510 /* TabBarViewController.storyboard in Resources */,
 				933D5B02205D467200E7D107 /* MapViewController.storyboard in Resources */,
 				75842DDC205D4E3500877A1A /* MapView.xib in Resources */,
-				407E5150205DD16C008CDB7B /* NewsFeedNavigationViewController.storyboard in Resources */,
+				407E5150205DD16C008CDB7B /* NewsFeedViewController.storyboard in Resources */,
 				933D5B0A205D467D00E7D107 /* Tab2ViewController.storyboard in Resources */,
 				933D5B12205D468700E7D107 /* Tab3ViewController.storyboard in Resources */,
 			);
@@ -879,7 +876,6 @@
 				933D5BC6205D517900E7D107 /* NSAttributedString+Concatenate.swift in Sources */,
 				933D5BD5205D517900E7D107 /* UILabel+TextAnimation.swift in Sources */,
 				407E5158205DDFB4008CDB7B /* NewsFeedService.swift in Sources */,
-				407E5152205DD191008CDB7B /* NewsFeedNavigationViewController.swift in Sources */,
 				933D5BDE205D517900E7D107 /* UIViewController+HeadViewController.swift in Sources */,
 				933D5BDF205D517900E7D107 /* UINavigationController+Back.swift in Sources */,
 				933D5BC8205D517900E7D107 /* ObservableType+AlertController.swift in Sources */,

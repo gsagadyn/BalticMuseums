@@ -13,10 +13,23 @@ class ExhibitionDetailHeaderView: ParallaxTableViewHeaderView {
 	
 	let imageView = UIImageView()
 	let label = UILabel()
-
+    let blurView = UIVisualEffectView(effect: UIBlurEffect(style: UIBlurEffectStyle.extraLight))
+    
+    var blurEnabled: Bool = false {
+        didSet {
+            percentageChanged(value: percentageScroll)
+        }
+    }
+    
 	override init(tableView: UITableView, minHeight: CGFloat, maxHeight: CGFloat) {
 		super.init(tableView: tableView, minHeight: minHeight, maxHeight: maxHeight)
-		
+		blurView.alpha = 0.0
+        
+        addSubview(blurView)
+        blurView.snp.remakeConstraints { (make) in
+            make.edges.equalToSuperview()
+        }
+        
 		addSubview(imageView)
 		imageView.contentMode = UIViewContentMode.scaleAspectFill
 		imageView.snp.remakeConstraints { (make) in
@@ -38,4 +51,12 @@ class ExhibitionDetailHeaderView: ParallaxTableViewHeaderView {
 		super.init(coder: aDecoder)
 	}
 
+    override func percentageChanged(value: CGFloat) {
+        guard blurEnabled else {
+            return
+        }
+        
+        blurView.alpha = 1.0 - value
+    }
+    
 }

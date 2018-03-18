@@ -11,8 +11,8 @@ import UIKit
 class NewsFeedCell: UITableViewCell {
     @IBOutlet private weak var descriptionLabel: UILabel!
     @IBOutlet private weak var firstImage: UIImageView!
-    @IBOutlet private weak var secongImage: UIImageView!
-    @IBOutlet private weak var thirdImage: UIImageView!
+    @IBOutlet private weak var cardView: UIView!
+    @IBOutlet weak var shadowView: UIView!
     
     var model: NewsFeedModel? {
         didSet {
@@ -22,10 +22,16 @@ class NewsFeedCell: UITableViewCell {
     
     func updateUI() {
         guard let model = model else { return }
+        clipsToBounds = false
         
         descriptionLabel.text = model.text
         firstImage.image = model.photos[0]
-        secongImage.image = model.photos[1]
-        thirdImage.image = model.photos[2]
+        cardView.layer.cornerRadius = 8.0
+        shadowView.layer.cornerRadius = 8.0
+        
+        shadowView.layer.shadowColor = UIColor.black.cgColor
+        shadowView.layer.shadowOpacity = 0.6
+        shadowView.layer.shadowOffset = CGSize.zero
+        shadowView.layer.shadowRadius = 10
     }
 }
