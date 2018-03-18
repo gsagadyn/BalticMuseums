@@ -79,11 +79,21 @@ class MapViewController: UserInterfaceLayer.Controller<Tab1Presenter>, UIStorybo
 	}
 	
 	func showBar() {
-		bottomConstraint.constant = -10
-		mapViewBarViewController?.selectedExibition = mapView.selectedExibition
-		UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.6, options: UIViewAnimationOptions.curveEaseOut, animations: {
-			self.view.layoutIfNeeded()
-		}, completion: nil)
+		
+		let playerView = MiniPlayerView()
+		tabBarController?.view.addSubview(playerView)
+		playerView.snp.remakeConstraints { (make) in
+			make.left.equalToSuperview()
+			make.right.equalToSuperview()
+			make.bottom.equalTo((tabBarController?.tabBar.snp.top)!)
+			make.height.equalTo(100)
+		}
+		
+//		bottomConstraint.constant = -10
+//		mapViewBarViewController?.selectedExibition = mapView.selectedExibition
+//		UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.6, options: UIViewAnimationOptions.curveEaseOut, animations: {
+//			self.view.layoutIfNeeded()
+//		}, completion: nil)
 	}
 	
 	func didChangedAuthorizaiton(status: CLAuthorizationStatus) {
@@ -91,6 +101,15 @@ class MapViewController: UserInterfaceLayer.Controller<Tab1Presenter>, UIStorybo
 	}
 	
 	func didFindBeaconZone() {
+		
+	}
+	
+	@IBAction func beaconEmergencyButton(_ sender: Any) {
+		if mapView.selectedExibition == .TreeOfLife {
+			mapView.selectedExibition = Exhibition.Health
+		} else {
+			mapView.selectedExibition = Exhibition.TreeOfLife
+		}
 		
 	}
 	

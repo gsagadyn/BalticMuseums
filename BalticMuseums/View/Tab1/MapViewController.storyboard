@@ -33,6 +33,16 @@
                                     <constraint firstAttribute="bottom" secondItem="MdP-nb-Xx6" secondAttribute="bottom" id="ess-NK-QFO"/>
                                 </constraints>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qCG-vJ-H81">
+                                <rect key="frame" x="275" y="293.5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="f5F-LP-4Mr"/>
+                                    <constraint firstAttribute="height" constant="100" id="yfp-pi-aTo"/>
+                                </constraints>
+                                <connections>
+                                    <action selector="beaconEmergencyButton:" destination="BaU-2v-Ukl" eventType="touchUpInside" id="esB-My-JJg"/>
+                                </connections>
+                            </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n0j-j2-lJP">
                                 <rect key="frame" x="0.0" y="597" width="375" height="70"/>
                                 <constraints>
@@ -48,9 +58,11 @@
                             <constraint firstItem="jU0-EV-19J" firstAttribute="trailing" secondItem="vtt-Kw-b5b" secondAttribute="trailing" id="5e7-sK-vH9"/>
                             <constraint firstItem="jU0-EV-19J" firstAttribute="bottom" secondItem="vtt-Kw-b5b" secondAttribute="bottom" id="72I-Jo-yTr"/>
                             <constraint firstItem="vtt-Kw-b5b" firstAttribute="top" secondItem="jU0-EV-19J" secondAttribute="top" id="DkI-bW-ghV"/>
+                            <constraint firstItem="qCG-vJ-H81" firstAttribute="trailing" secondItem="vtt-Kw-b5b" secondAttribute="trailing" id="Fpx-a5-PfH"/>
                             <constraint firstItem="n0j-j2-lJP" firstAttribute="leading" secondItem="jU0-EV-19J" secondAttribute="leading" id="ITa-sd-Muv"/>
                             <constraint firstItem="jU0-EV-19J" firstAttribute="trailing" secondItem="n0j-j2-lJP" secondAttribute="trailing" id="K3h-dO-IVG"/>
                             <constraint firstItem="vtt-Kw-b5b" firstAttribute="leading" secondItem="jU0-EV-19J" secondAttribute="leading" id="WSI-qh-hhE"/>
+                            <constraint firstItem="qCG-vJ-H81" firstAttribute="centerY" secondItem="vtt-Kw-b5b" secondAttribute="centerY" id="XnC-pt-VdF"/>
                             <constraint firstItem="jU0-EV-19J" firstAttribute="bottom" secondItem="n0j-j2-lJP" secondAttribute="bottom" id="x8r-ps-dsq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jU0-EV-19J"/>
@@ -189,6 +201,7 @@
                             <constraint firstItem="MiO-x8-SQV" firstAttribute="top" secondItem="GQf-w7-mtB" secondAttribute="top" id="gcP-of-Hmw"/>
                             <constraint firstItem="MiO-x8-SQV" firstAttribute="leading" secondItem="GQf-w7-mtB" secondAttribute="leading" id="wUH-oF-d1f"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="Yr0-h4-ZlI"/>
                     </view>
                     <connections>
                         <outlet property="iconImageView" destination="QTy-sr-zC8" id="6py-XM-hSB"/>
