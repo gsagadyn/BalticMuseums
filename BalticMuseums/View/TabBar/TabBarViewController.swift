@@ -13,26 +13,26 @@ class TabBarViewController: UITabBarController, UIStoryboardInstantiate {
     // MARK: - Private Properties
 
     private let controllersData: [ControllerData] = [
-        ControllerData(controller: ViewStore.shared[MapViewController.self],
-                       image: nil,
-                       title: "Tab1",
-                       isCustomActionEnabled: false),
+		ControllerData(controller: ViewStore.shared[NewsFeedNavigationViewController.self],
+					   image: UIImage(named: "if_files-folders-66_808606"),
+					   title: "Aktualności",
+					   isCustomActionEnabled: false),
+		ControllerData(controller: ViewStore.shared[MapViewController.self],
+					   image: UIImage(named: "if_map-marker_1608533"),
+					   title: "Map",
+					   isCustomActionEnabled: false),
+		ControllerData(controller: ViewStore.shared[QuizNavigationViewController.self],
+					   image: UIImage(named: "if_ic_format_list_bulleted_48px_352389"),
+					   title: "Quiz",
+					   isCustomActionEnabled: false),
+		ControllerData(controller: ViewStore.shared[Tab3ViewController.self],
+					   image: UIImage(named: "if_SVG_LINE_TECHNOLOGY-09_2897342"),
+					   title: "AR",
+					   isCustomActionEnabled: false),
         ControllerData(controller: ViewStore.shared[Tab2ViewController.self],
-                       image: nil,
+					   image: nil,
                        title: "Tab2",
                        isCustomActionEnabled: false),
-        ControllerData(controller: ViewStore.shared[Tab3ViewController.self],
-                       image: nil,
-                       title: "Tab3",
-                       isCustomActionEnabled: false),
-        ControllerData(controller: ViewStore.shared[QuizNavigationViewController.self],
-                       image: nil,
-                       title: "Tab4",
-                       isCustomActionEnabled: false),
-        ControllerData(controller: ViewStore.shared[NewsFeedNavigationViewController.self],
-                       image: nil,
-                       title: "Aktualności",
-                       isCustomActionEnabled: false)
     ]
 
     private struct ControllerData {
@@ -50,7 +50,7 @@ class TabBarViewController: UITabBarController, UIStoryboardInstantiate {
         prepareControllers()
         prepareTabs()
         tabBar.barTintColor = .white
-        tabBar.tintColor = .black
+        tabBar.tintColor = UIColor(named: "main")
         tabBar.unselectedItemTintColor = .gray
     }
 }
@@ -110,7 +110,7 @@ private extension TabBarViewController {
 
         viewControllers?.enumerated().forEach { (index, _) in
             let tabBarItem = tabBar.items?[index]
-//            tabBarItem?.image = controllersData[index].image.withRenderingMode(.alwaysTemplate)
+			tabBarItem?.image = controllersData[index].image?.withRenderingMode(.alwaysTemplate)
             tabBarItem?.title = controllersData[index].title
             tabBarItem?.setTitleTextAttributes(normalTextAttributes, for: .normal)
             tabBarItem?.setTitleTextAttributes(selectedTextAttributes, for: .selected)

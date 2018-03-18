@@ -83,12 +83,19 @@
 		933D5BE1205D517900E7D107 /* UITableView+ReloadDataAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5BBF205D517900E7D107 /* UITableView+ReloadDataAnimation.swift */; };
 		933D5BE2205D517900E7D107 /* UITableView+DequeueReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5BC0205D517900E7D107 /* UITableView+DequeueReusableCell.swift */; };
 		933D5BE6205D671E00E7D107 /* EstimoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5BE5205D671E00E7D107 /* EstimoteService.swift */; };
+		933D5BF9205DDB1C00E7D107 /* MainNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5BF5205DDB1C00E7D107 /* MainNavigator.swift */; };
+		933D5BFA205DDB1C00E7D107 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5BF6205DDB1C00E7D107 /* MainPresenter.swift */; };
+		933D5BFB205DDB1C00E7D107 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 933D5BF7205DDB1C00E7D107 /* MainViewController.storyboard */; };
+		933D5BFC205DDB1C00E7D107 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D5BF8205DDB1C00E7D107 /* MainViewController.swift */; };
 		FB7BBD00205BB33400363510 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7BBCFF205BB33400363510 /* AppDelegate.swift */; };
 		FB7BBD02205BB33400363510 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7BBD01205BB33400363510 /* TabBarViewController.swift */; };
 		FB7BBD05205BB33400363510 /* TabBarViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7BBD03205BB33400363510 /* TabBarViewController.storyboard */; };
 		FB7BBD07205BB33400363510 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB7BBD06205BB33400363510 /* Assets.xcassets */; };
 		FB7BBD0A205BB33400363510 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB7BBD08205BB33400363510 /* LaunchScreen.storyboard */; };
 		FBCDF039205D74DD0016100D /* CIQRCodeDescriptor+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBCDF038205D74DD0016100D /* CIQRCodeDescriptor+Data.swift */; };
+		FBCDF045205DCF200016100D /* 2.mov in Resources */ = {isa = PBXBuildFile; fileRef = FBCDF043205DCF200016100D /* 2.mov */; };
+		FBCDF046205DCF200016100D /* 1.mov in Resources */ = {isa = PBXBuildFile; fileRef = FBCDF044205DCF200016100D /* 1.mov */; };
+		FBCDF048205DD7590016100D /* Models.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = FBCDF047205DD7590016100D /* Models.scnassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -171,6 +178,10 @@
 		933D5BC0205D517900E7D107 /* UITableView+DequeueReusableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+DequeueReusableCell.swift"; sourceTree = "<group>"; };
 		933D5BE5205D671E00E7D107 /* EstimoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimoteService.swift; sourceTree = "<group>"; };
 		933D5BE7205D712A00E7D107 /* ObjCBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCBridge.h; sourceTree = "<group>"; };
+		933D5BF5205DDB1C00E7D107 /* MainNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigator.swift; sourceTree = "<group>"; };
+		933D5BF6205DDB1C00E7D107 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		933D5BF7205DDB1C00E7D107 /* MainViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainViewController.storyboard; sourceTree = "<group>"; };
+		933D5BF8205DDB1C00E7D107 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		AA2E3808C930B4E9673133B8 /* Pods-BalticMuseumsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalticMuseumsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BalticMuseumsTests/Pods-BalticMuseumsTests.debug.xcconfig"; sourceTree = "<group>"; };
 		BD0DA3674D7475E15B81C9BD /* Pods-BalticMuseumsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalticMuseumsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BalticMuseumsUITests/Pods-BalticMuseumsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		C46C846EA0BDD3C6326E3261 /* Pods-BalticMuseums.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BalticMuseums.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BalticMuseums/Pods-BalticMuseums.debug.xcconfig"; sourceTree = "<group>"; };
@@ -185,6 +196,9 @@
 		FB7BBD09205BB33400363510 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB7BBD0B205BB33400363510 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FBCDF038205D74DD0016100D /* CIQRCodeDescriptor+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CIQRCodeDescriptor+Data.swift"; sourceTree = "<group>"; };
+		FBCDF043205DCF200016100D /* 2.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = 2.mov; sourceTree = "<group>"; };
+		FBCDF044205DCF200016100D /* 1.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = 1.mov; sourceTree = "<group>"; };
+		FBCDF047205DD7590016100D /* Models.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = Models.scnassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -263,6 +277,7 @@
 		933D5AF2205D45C200E7D107 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				933D5BEC205DDAC400E7D107 /* First Launch Screen */,
 				933D5AF7205D462000E7D107 /* TabBar */,
 				933D5AF8205D462700E7D107 /* Tab1 */,
 				933D5AF9205D463100E7D107 /* Tab2 */,
@@ -285,7 +300,7 @@
 		933D5AF4205D45D000E7D107 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				933D5B1D205D47E000E7D107 /* Resources */,
+				FBCDF03C205D87B50016100D /* Resources */,
 				933D5B1E205D47FB00E7D107 /* Plist */,
 				FB7BBD08205BB33400363510 /* LaunchScreen.storyboard */,
 				FB7BBD0B205BB33400363510 /* Info.plist */,
@@ -355,14 +370,6 @@
 				4069DD9F205D8FBB00C28545 /* QuizExtenisons.swift */,
 			);
 			path = Tab4;
-			sourceTree = "<group>";
-		};
-		933D5B1D205D47E000E7D107 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				933D5BE7205D712A00E7D107 /* ObjCBridge.h */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		933D5B1E205D47FB00E7D107 /* Plist */ = {
@@ -608,6 +615,17 @@
 			path = Estimote;
 			sourceTree = "<group>";
 		};
+		933D5BEC205DDAC400E7D107 /* First Launch Screen */ = {
+			isa = PBXGroup;
+			children = (
+				933D5BF7205DDB1C00E7D107 /* MainViewController.storyboard */,
+				933D5BF5205DDB1C00E7D107 /* MainNavigator.swift */,
+				933D5BF6205DDB1C00E7D107 /* MainPresenter.swift */,
+				933D5BF8205DDB1C00E7D107 /* MainViewController.swift */,
+			);
+			path = "First Launch Screen";
+			sourceTree = "<group>";
+		};
 		D02394535E18961047A91346 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -656,6 +674,16 @@
 				FBCDF038205D74DD0016100D /* CIQRCodeDescriptor+Data.swift */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		FBCDF03C205D87B50016100D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FBCDF047205DD7590016100D /* Models.scnassets */,
+				FBCDF044205DCF200016100D /* 1.mov */,
+				FBCDF043205DCF200016100D /* 2.mov */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -720,8 +748,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FBCDF045205DCF200016100D /* 2.mov in Resources */,
+				933D5BFB205DDB1C00E7D107 /* MainViewController.storyboard in Resources */,
 				FB7BBD0A205BB33400363510 /* LaunchScreen.storyboard in Resources */,
+				FBCDF048205DD7590016100D /* Models.scnassets in Resources */,
 				FB7BBD07205BB33400363510 /* Assets.xcassets in Resources */,
+				933D5B1B205D469400E7D107 /* QuizNavigationViewController.storyboard in Resources */,
+				FBCDF046205DCF200016100D /* 1.mov in Resources */,
 				933D5B1B205D469400E7D107 /* QuizNavigationViewController.storyboard in Resources */,
 				FB7BBD05205BB33400363510 /* TabBarViewController.storyboard in Resources */,
 				933D5B02205D467200E7D107 /* MapViewController.storyboard in Resources */,
@@ -778,7 +811,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B32BFD287A0993811BA7183F /* [CP] Copy Pods Resources */ = {
@@ -819,6 +852,7 @@
 				75842DF1205DBD3C00877A1A /* LinearGradientView.swift in Sources */,
 				407E515A205DE2A9008CDB7B /* NewsFeedCell.swift in Sources */,
 				933D5BE1205D517900E7D107 /* UITableView+ReloadDataAnimation.swift in Sources */,
+				933D5BFC205DDB1C00E7D107 /* MainViewController.swift in Sources */,
 				933D5BD7205D517900E7D107 /* UIResponder+HideApplicationContent.swift in Sources */,
 				933D5B1C205D469400E7D107 /* Tab4ViewController.swift in Sources */,
 				4069DDA9205DB67100C28545 /* QuizHighscoreModel.swift in Sources */,
@@ -832,6 +866,7 @@
 				933D5B0B205D467D00E7D107 /* Tab2ViewController.swift in Sources */,
 				4069DD9C205D830900C28545 /* QuizService.swift in Sources */,
 				FB7BBD02205BB33400363510 /* TabBarViewController.swift in Sources */,
+				933D5BFA205DDB1C00E7D107 /* MainPresenter.swift in Sources */,
 				75842DF6205DBD3C00877A1A /* RadialGradienLayer.swift in Sources */,
 				933D5BE6205D671E00E7D107 /* EstimoteService.swift in Sources */,
 				933D5BC9205D517900E7D107 /* String+Localizable.swift in Sources */,
@@ -847,6 +882,7 @@
 				933D5BDF205D517900E7D107 /* UINavigationController+Back.swift in Sources */,
 				933D5BC8205D517900E7D107 /* ObservableType+AlertController.swift in Sources */,
 				933D5BCA205D517900E7D107 /* String+CardFormatter.swift in Sources */,
+				933D5BF9205DDB1C00E7D107 /* MainNavigator.swift in Sources */,
 				75842DE3205D8CFC00877A1A /* Tab1Presenter.swift in Sources */,
 				933D5BE2205D517900E7D107 /* UITableView+DequeueReusableCell.swift in Sources */,
 				933D5BD4205D517900E7D107 /* UIWindow+RootViewController.swift in Sources */,
