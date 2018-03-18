@@ -8,10 +8,12 @@
 
 import UIKit
 import RxCocoa
+import RxSwift
 
 class ParallaxTableViewHeaderView: UIView {
 
 	var percentageScroll: CGFloat = 0.0
+    var bag = DisposeBag()
 	
 	init(tableView: UITableView, minHeight:CGFloat, maxHeight:CGFloat) {
 		super.init(frame: CGRect.zero)
@@ -42,6 +44,7 @@ class ParallaxTableViewHeaderView: UIView {
 				self.percentageScroll = tmpPercentageScroll
 			}
 		}
+        .disposed(by: bag)
 	}
 	
 	required init?(coder aDecoder: NSCoder) {

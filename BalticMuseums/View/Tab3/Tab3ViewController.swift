@@ -11,11 +11,16 @@ import Snapify
 import SceneKit
 import ARKit
 import Vision
+import SpriteKit
 
 class Tab3ViewController: UIViewController, UIStoryboardInstantiate {
     @IBOutlet var sceneView: ARSCNView!
     
+    var model = ["test": "cup.scn",
+                 "i tak nie wygrasz": "2.mov"]
+    
     var detectedDataAnchor: ARAnchor?
+    var detectedDataType: String?
     var isProcessing = false
     
     // MARK: - View Controller Lifecycle
@@ -25,7 +30,12 @@ class Tab3ViewController: UIViewController, UIStoryboardInstantiate {
         
         sceneView.delegate = self
         sceneView.session.delegate = self
-        sceneView.showsStatistics = true
+    }
+    
+    @objc func playerItemDidReachEnd(notification: NSNotification) {
+        if let playerItem: AVPlayerItem = notification.object as? AVPlayerItem {
+            playerItem.seek(to: kCMTimeZero, completionHandler: nil)
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -59,7 +69,6 @@ extension Tab3ViewController: ARSessionDelegate {
             
             let barcodeDescriptor = barcodeObservation.barcodeDescriptor as? CIQRCodeDescriptor
             let barcodeValue = String(data: barcodeDescriptor?.data ?? Data(), encoding: .utf8) ?? ""
-            print("QR Value: \(barcodeValue)")
             
             var rect = barcodeObservation.boundingBox
             rect = rect.applying(CGAffineTransform(scaleX: 1, y: -1))
@@ -67,7 +76,7 @@ extension Tab3ViewController: ARSessionDelegate {
             let center = CGPoint(x: rect.midX, y: rect.midY)
             
             DispatchQueue.main.async {
-                self?.process(location: center, at: frame)
+                self?.process(location: center, at: frame, withType: barcodeValue)
                 self?.isProcessing = false
             }
         }
@@ -81,15 +90,23 @@ extension Tab3ViewController: ARSessionDelegate {
     
     // MARK: - Process Location
     
-    private func process(location: CGPoint, at frame: ARFrame) {
+    private func process(location: CGPoint, at frame: ARFrame, withType type: String) {
         let hitTestResults = frame.hitTest(location, types: [.featurePoint] )
         guard let location = hitTestResults.first else { return }
         
-        if let anchor = self.detectedDataAnchor, let node = self.sceneView.node(for: anchor) {
-            node.transform = SCNMatrix4(location.worldTransform)
+        let rotate = simd_float4x4(SCNMatrix4MakeRotation(sceneView.session.currentFrame!.camera.eulerAngles.y, 0, 1, 0))
+        let worldTransform = simd_mul(location.worldTransform, rotate)
+        
+        if let anchor = self.detectedDataAnchor, let node = self.sceneView.node(for: anchor), detectedDataType == type {
+            node.transform = SCNMatrix4(worldTransform)
         } else {
-            self.detectedDataAnchor = ARAnchor(transform: location.worldTransform)
-            self.sceneView.session.add(anchor: self.detectedDataAnchor!)
+            if let anchor = detectedDataAnchor {
+                sceneView.session.remove(anchor: anchor)
+            }
+            
+            detectedDataType = type
+            detectedDataAnchor = ARAnchor(transform: worldTransform)
+            sceneView.session.add(anchor: detectedDataAnchor!)
         }
     }
 }
@@ -99,7 +116,74 @@ extension Tab3ViewController: ARSessionDelegate {
 // -----------------------------------------------------------------------------
 
 extension Tab3ViewController: ARSCNViewDelegate {
+    // MARK: - Base Renderer
+    
     internal func renderer(_ renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
-        return nil
+        guard detectedDataAnchor?.identifier == anchor.identifier else { return nil }
+        
+        let assetName = model[detectedDataType ?? ""]
+        
+        switch assetName {
+        case let name where (name ?? "").hasSuffix(".mov"):
+            return rendererVideo(name: (name ?? ""), renderer: renderer, nodeFor: anchor)
+        case let name where (name ?? "").count > 0:
+            return rendererModel(name: (name ?? ""), renderer: renderer, nodeFor: anchor)
+        default:
+            return nil
+        }
+    }
+    
+    // MARK: - Video
+    
+    private func rendererVideo(name: String, renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
+        guard detectedDataAnchor?.identifier == anchor.identifier else { return nil }
+        
+        let videoNode = SKVideoNode(fileNamed: name)
+        videoNode.play()
+        
+        let skScene = SKScene(size: CGSize(width: 640, height: 480))
+        skScene.addChild(videoNode)
+        
+        videoNode.position = CGPoint(x: skScene.size.width/2, y: skScene.size.height/2)
+        videoNode.size = skScene.size
+        
+        let scale: CGFloat = 0.5
+        let tvPlane = SCNPlane(width: 1.0 * scale, height: 0.75 * scale)
+        tvPlane.firstMaterial?.diffuse.contents = skScene
+        tvPlane.firstMaterial?.isDoubleSided = true
+        
+        let tvPlaneNode = SCNNode(geometry: tvPlane)
+        var translation = matrix_identity_float4x4
+        translation.columns.3.z = -1.0
+        
+        tvPlaneNode.pivot = SCNMatrix4MakeRotation(Float.pi, 1, 0, 0)
+        tvPlaneNode.simdTransform = matrix_multiply(anchor.transform, translation)
+        tvPlaneNode.eulerAngles = SCNVector3(Double.pi,0,0)
+        
+        return tvPlaneNode
+    }
+    
+    // MARK: - 3D Model
+    
+    private func rendererModel(name: String, renderer: SCNSceneRenderer, nodeFor anchor: ARAnchor) -> SCNNode? {
+        guard detectedDataAnchor?.identifier == anchor.identifier else { return nil }
+        
+        let directoryName = "Models.scnassets/" + String(name.split(separator: ".").first ?? "")
+        guard let virtualObjectScene = SCNScene(named: name, inDirectory: directoryName) else {
+            return nil
+        }
+        
+        let wrapperNode = SCNNode()
+        
+        for child in virtualObjectScene.rootNode.childNodes {
+            child.geometry?.firstMaterial?.lightingModel = .physicallyBased
+            child.movabilityHint = .movable
+            wrapperNode.addChildNode(child)
+        }
+        
+        wrapperNode.transform = SCNMatrix4(anchor.transform)
+        
+        return wrapperNode
+
     }
 }
