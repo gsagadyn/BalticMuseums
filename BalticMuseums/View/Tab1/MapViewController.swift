@@ -9,7 +9,7 @@
 import UIKit
 import Snapify
 
-class MapViewController: UserInterfaceLayer.Controller<Tab1Presenter>, UIStoryboardInstantiate, MapViewDelegate, UIScrollViewDelegate, MapViewBarViewControllerDelegate, EstimoteServiceDelegate {
+class MapViewController: UserInterfaceLayer.Controller<Tab1Presenter>, UIStoryboardInstantiate, MapViewDelegate, UIScrollViewDelegate, MapViewBarViewControllerDelegate, EstimoteServiceDelegate, MiniPlayerViewDelegate {
 	
 	@IBOutlet weak var mapView: MapView!
 	@IBOutlet weak var scrollView: UIScrollView!
@@ -79,11 +79,23 @@ class MapViewController: UserInterfaceLayer.Controller<Tab1Presenter>, UIStorybo
 	}
 	
 	func showBar() {
-		bottomConstraint.constant = -10
-		mapViewBarViewController?.selectedExibition = mapView.selectedExibition
-		UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.6, options: UIViewAnimationOptions.curveEaseOut, animations: {
-			self.view.layoutIfNeeded()
-		}, completion: nil)
+		
+		let playerView = MiniPlayerView()
+		playerView.label.text = String.exhibitionTitleForType(mapView.selectedExibition!)
+		tabBarController?.view.addSubview(playerView)
+		playerView.delegate = self
+		playerView.snp.remakeConstraints { (make) in
+			make.left.equalToSuperview()
+			make.right.equalToSuperview()
+			make.bottom.equalTo((tabBarController?.tabBar.snp.top)!)
+			make.height.equalTo(60)
+		}
+		
+//		bottomConstraint.constant = -10
+//		mapViewBarViewController?.selectedExibition = mapView.selectedExibition
+//		UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.6, initialSpringVelocity: 0.6, options: UIViewAnimationOptions.curveEaseOut, animations: {
+//			self.view.layoutIfNeeded()
+//		}, completion: nil)
 	}
 	
 	func didChangedAuthorizaiton(status: CLAuthorizationStatus) {
@@ -91,6 +103,15 @@ class MapViewController: UserInterfaceLayer.Controller<Tab1Presenter>, UIStorybo
 	}
 	
 	func didFindBeaconZone() {
+		
+	}
+	
+	@IBAction func beaconEmergencyButton(_ sender: Any) {
+		if mapView.selectedExibition == .TreeOfLife {
+			mapView.selectedExibition = Exhibition.Health
+		} else {
+			mapView.selectedExibition = Exhibition.TreeOfLife
+		}
 		
 	}
 	
