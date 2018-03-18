@@ -19,7 +19,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="experymentIcon" translatesAutoresizingMaskIntoConstraints="NO" id="6n3-ob-QQS">
-                                <rect key="frame" x="123.5" y="279.5" width="128" height="128"/>
+                                <rect key="frame" x="144.5" y="300.5" width="86" height="86"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="86" id="VFp-Q8-jwl"/>
+                                    <constraint firstAttribute="height" constant="86" id="aPk-WZ-v5A"/>
+                                </constraints>
                             </imageView>
                             <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="v9b-pL-D5E">
                                 <rect key="frame" x="178" y="334" width="20" height="20"/>
@@ -109,7 +113,7 @@ KOD QR</string>
         </scene>
     </scenes>
     <resources>
-        <image name="experymentIcon" width="128" height="128"/>
+        <image name="experymentIcon" width="256" height="256"/>
         <image name="qrcode" width="523" height="499"/>
     </resources>
 </document>
