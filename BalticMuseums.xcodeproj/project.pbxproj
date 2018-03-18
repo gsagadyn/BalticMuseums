@@ -171,7 +171,6 @@
 		933D5BBF205D517900E7D107 /* UITableView+ReloadDataAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+ReloadDataAnimation.swift"; sourceTree = "<group>"; };
 		933D5BC0205D517900E7D107 /* UITableView+DequeueReusableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+DequeueReusableCell.swift"; sourceTree = "<group>"; };
 		933D5BE5205D671E00E7D107 /* EstimoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimoteService.swift; sourceTree = "<group>"; };
-		933D5BE7205D712A00E7D107 /* ObjCBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCBridge.h; sourceTree = "<group>"; };
 		933D5BF5205DDB1C00E7D107 /* MainNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigator.swift; sourceTree = "<group>"; };
 		933D5BF6205DDB1C00E7D107 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
 		933D5BF7205DDB1C00E7D107 /* MainViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainViewController.storyboard; sourceTree = "<group>"; };

@@ -18,20 +18,90 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="6n3-ob-QQS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="v9b-pL-D5E">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                            </activityIndicatorView>
                             <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rde-tY-IPG">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </arscnView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rt0-Rz-ZlV" userLabel="Alert View">
+                                <rect key="frame" x="87" y="270.5" width="200" height="146"/>
+                                <subviews>
+                                    <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RoG-Ap-yH7">
+                                        <rect key="frame" x="0.0" y="-0.5" width="200" height="146"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="jLI-AK-Xvr">
+                                            <rect key="frame" x="0.0" y="0.0" width="200" height="146"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <subviews>
+                                                <visualEffectView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8kQ-11-YXf">
+                                                    <rect key="frame" x="0.0" y="0.0" width="200" height="146"/>
+                                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="uxT-ZT-ePB">
+                                                        <rect key="frame" x="0.0" y="0.0" width="200" height="146"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    </view>
+                                                    <vibrancyEffect>
+                                                        <blurEffect style="light"/>
+                                                    </vibrancyEffect>
+                                                </visualEffectView>
+                                            </subviews>
+                                        </view>
+                                        <blurEffect style="light"/>
+                                    </visualEffectView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="qrcode" translatesAutoresizingMaskIntoConstraints="NO" id="9eg-rj-Z1a">
+                                        <rect key="frame" x="70" y="15.5" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="3sb-Hk-QcT"/>
+                                            <constraint firstAttribute="width" constant="60" id="wdi-vY-pXG"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sob-pg-4pc">
+                                        <rect key="frame" x="16" y="88.5" width="168" height="42.5"/>
+                                        <string key="text">ZESKANUJ
+KOD QR</string>
+                                        <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="9eg-rj-Z1a" firstAttribute="centerX" secondItem="rt0-Rz-ZlV" secondAttribute="centerX" id="4dJ-rJ-kim"/>
+                                    <constraint firstItem="9eg-rj-Z1a" firstAttribute="top" secondItem="rt0-Rz-ZlV" secondAttribute="top" constant="15.5" id="7ZV-AB-44a"/>
+                                    <constraint firstItem="RoG-Ap-yH7" firstAttribute="leading" secondItem="rt0-Rz-ZlV" secondAttribute="leading" id="A6r-Cu-LZB"/>
+                                    <constraint firstItem="RoG-Ap-yH7" firstAttribute="top" secondItem="rt0-Rz-ZlV" secondAttribute="top" id="BxQ-8N-dya"/>
+                                    <constraint firstItem="Sob-pg-4pc" firstAttribute="leading" secondItem="rt0-Rz-ZlV" secondAttribute="leading" constant="16" id="HB6-eU-jY8"/>
+                                    <constraint firstAttribute="bottom" secondItem="Sob-pg-4pc" secondAttribute="bottom" constant="15" id="cGW-80-ADW"/>
+                                    <constraint firstAttribute="trailing" secondItem="Sob-pg-4pc" secondAttribute="trailing" constant="16" id="eGr-j2-0jm"/>
+                                    <constraint firstAttribute="width" constant="200" id="eWP-AC-ibY"/>
+                                    <constraint firstAttribute="height" constant="146" id="jx8-R6-sYl"/>
+                                    <constraint firstAttribute="bottom" secondItem="RoG-Ap-yH7" secondAttribute="bottom" id="wiQ-uT-K6v"/>
+                                    <constraint firstAttribute="trailing" secondItem="RoG-Ap-yH7" secondAttribute="trailing" id="xHl-7W-RBI"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="rde-tY-IPG" firstAttribute="leading" secondItem="jU0-EV-19J" secondAttribute="leading" id="8BQ-V3-g3z"/>
                             <constraint firstItem="rde-tY-IPG" firstAttribute="top" secondItem="KDa-7W-dlX" secondAttribute="top" id="9UG-aa-tad"/>
+                            <constraint firstAttribute="trailing" secondItem="6n3-ob-QQS" secondAttribute="trailing" id="HZq-5o-jux"/>
+                            <constraint firstItem="rt0-Rz-ZlV" firstAttribute="centerY" secondItem="jU0-EV-19J" secondAttribute="centerY" id="JBX-ND-6ve"/>
+                            <constraint firstItem="v9b-pL-D5E" firstAttribute="centerY" secondItem="6n3-ob-QQS" secondAttribute="centerY" id="JKj-I8-zWi"/>
+                            <constraint firstItem="6n3-ob-QQS" firstAttribute="top" secondItem="KDa-7W-dlX" secondAttribute="top" id="NHv-PO-TTL"/>
                             <constraint firstItem="jU0-EV-19J" firstAttribute="trailing" secondItem="rde-tY-IPG" secondAttribute="trailing" id="SrS-dC-c3T"/>
                             <constraint firstItem="jU0-EV-19J" firstAttribute="bottom" secondItem="rde-tY-IPG" secondAttribute="bottom" id="kP6-r4-P2S"/>
+                            <constraint firstItem="v9b-pL-D5E" firstAttribute="centerX" secondItem="6n3-ob-QQS" secondAttribute="centerX" id="laB-W5-OJt"/>
+                            <constraint firstAttribute="bottom" secondItem="6n3-ob-QQS" secondAttribute="bottom" id="mDn-ri-QPp"/>
+                            <constraint firstItem="6n3-ob-QQS" firstAttribute="leading" secondItem="KDa-7W-dlX" secondAttribute="leading" id="qHN-oO-bLa"/>
+                            <constraint firstItem="rt0-Rz-ZlV" firstAttribute="centerX" secondItem="jU0-EV-19J" secondAttribute="centerX" id="xtw-Ay-LYM"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="jU0-EV-19J"/>
                     </view>
                     <connections>
+                        <outlet property="alertView" destination="rt0-Rz-ZlV" id="vwt-gj-Ean"/>
                         <outlet property="sceneView" destination="rde-tY-IPG" id="d9Y-9R-EHJ"/>
                     </connections>
                 </viewController>
@@ -40,4 +110,8 @@
             <point key="canvasLocation" x="348" y="116"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Background" width="1280" height="1600"/>
+        <image name="qrcode" width="523" height="499"/>
+    </resources>
 </document>
